@@ -1,0 +1,181 @@
+Ayarlar|Settings
+⚙️ Ayarlar|⚙️ Settings
+Grup modunu ve tercihleri ayarla|Manage your group and preferences
+GRUP MODU|GROUP MODE
+Grup Büyüklüğü|Group size
+Kaç kişiyle oynuyorsunuz?|How many people are playing?
+Ekranı Uyanık Tut|Keep screen awake
+Oyun sırasında ekran kapanmaz|Keep the screen on while playing
+SES VE GÖRSEL|SOUND & APPEARANCE
+Ses Efektleri|Sound effects
+Oyun içi sesler|In-game sounds
+Karanlık Mod|Dark mode
+Loş ortamlarda rahat görünüm|Comfortable viewing in dim light
+Dil|Language
+HESAP|ACCOUNT
+VIP Durum|VIP status
+FriendGames Plus aktif|FriendGames Plus is active
+Ücretsiz plan|Free plan
+Gizlilik Politikası|Privacy policy
+Verileriniz nasıl kullanılır|How your data is used
+Hakkında|About
+Kapat|Close
+Oyunlar|Games
+Favoriler|Favorites
+❤️ Favorilerim|❤️ My favorites
+Grubunuz için kaydedilen oyunlar|Saved games for your group
+Henüz favori oyun eklemediniz.|You haven't saved any games yet.
+Bir oyun açıp ❤️ ikonuna basın.|Open a game and tap ❤️.
+oyun kaydedildi|games saved
+oyuncu ·|players ·
+oyuncu|players
+dk|min
+sn|sec
+❤️ Favorilere eklendi|❤️ Added to favorites
+💔 Favorilerden çıkarıldı|💔 Removed from favorites
+← Geri|← Back
+Bu Oyun VIP Pass Gerektiriyor|This game requires VIP Pass
+FriendGames Plus'a abone olarak bu oyunun kilidini aç ve daha fazlasını keşfet.|Unlock this game and discover more with FriendGames Plus.
+👑 VIP Pass Al|👑 Get VIP Pass
+📋 NASIL OYNANIR?|📋 HOW TO PLAY
+🎮 OYUN MOTORU|🎮 PLAY
+Oyun ara...|Search games...
+👥 KAÇ KİŞİSİNİZ?|👥 HOW MANY PLAYERS?
+oyun|games
+Oyunlar yükleniyor...|Loading games...
+Bu kriterlere uygun oyun bulunamadı.|No games match these filters.
+Filtreleri değiştirmeyi deneyin.|Try changing your filters.
+Tüm VIP oyunlara erişim|Access all VIP games
+Reklamsız deneyim|Ad-free experience
+500+ ekstra kart & soru|500+ extra cards & questions
+Yeni oyunlara öncelikli erişim|Early access to new games
+Grup profili & istatistikler|Group profile & statistics
+Özel tema seçenekleri|Custom themes
+Sır Dedektifi|Secret Detective
+Afet Adası|Disaster Island
+Manipülatör|Manipulator
+Genetik Dedektif|Genetic Detective
+₺79/ay|₺79/month
+₺47/ay · ₺564/yıl|₺47/month · ₺564/year
+İstediğin zaman iptal et|Cancel any time
+Yıllık faturalama ile %40 tasarruf|Save 40% with annual billing
+Daha fazla oyun, daha az reklam, sınırsız eğlence|More games, fewer ads, endless fun
+Aylık|Monthly
+Yıllık|Yearly
+VIP demosunu kapat|Turn off VIP demo
+VIP demosunu aç|Try VIP demo
+Demo açık. Bu oturumda VIP oyunları deneyebilirsin.|Demo enabled. Try VIP games during this session.
+Ücretsiz prototip demosu. Ödeme alınmaz; fiyatlar ve avantajlar taslaktır.|Free prototype demo. No payment is taken; prices and benefits are drafts.
+🔒 VIP Oyunlar Önizleme|🔒 VIP game preview
+Tümü|All
+1-2 Kişi|1–2 players
+3-4 Kişi|3–4 players
+5+ Kişi|5+ players
+🎮 Tüm Oyunlar|🎮 All games
+🧊 Buz Kırıcılar|🧊 Icebreakers
+🎭 Gizli Roller|🎭 Hidden roles
+💬 Kelime & Anlatım|💬 Word games
+⭐ FriendGames Özel|⭐ FriendGames Originals
+🔒 VIP Kilidi Aç|🔒 Unlock VIP
+▶ Nasıl Oynanır|▶ How to play
+💡 Soru Kartı|💡 Question card
+Kart çekmek için aşağıdaki butona bas|Tap the button below to draw a card
+🔀 Kart Çek|🔀 Draw a card
+🃏 Tabu Kart Motoru|🃏 Taboo cards
+Yeni tur başlat|Start a new round
+60 saniyelik tur başlat|Start a 60-second round
+Hazır mısınız?|Ready?
+YASAK KELİMELER|FORBIDDEN WORDS
+✓ Doğru|✓ Correct
+⏭ Pas|⏭ Pass
+Doğru|Correct
+Pas|Pass
+🔄 Skoru Sıfırla|🔄 Reset score
+🎲 Rol Dağıtım Motoru|🎲 Secret role dealer
+Kaç kişi oynuyor?|How many players?
+▶ Dağıtmaya Başla|▶ Deal roles
+✅ Dağıtım tamamlandı!|✅ All roles dealt!
+🌙 Herkes rolünü aldı. Moderatör geceyi başlatabilir.|🌙 Everyone has a role. The moderator can begin the night.
+👇 Telefonu bir sonraki kişiye uzat ve butona bas|👇 Pass the phone to the next player and tap below
+🙈 Gizle & Sonraki|🙈 Hide & next
+👁 Rolümü Gör|👁 Reveal my role
+🔄 Oyunu Sıfırla|🔄 Reset game
+Vampir-Köylü|Vampires & Villagers
+Gizli Rol|Hidden roles
+Popüler|Popular
+Rol Oyunu|Role game
+Kelime & Anlatım|Word games
+Kelime|Word
+Hızlı|Quick
+Buz Kırıcı|Icebreaker
+Kolay|Easy
+Doğruluk mu Yalan mı?|Two Truths and a Lie
+Eğlenceli|Fun
+Mafya Lite|Mafia Lite
+Kim Daha Çok?|Most Likely To
+FriendGames Özel|FriendGames Originals
+Özel|Original
+Şirin mi Cani mi?|Would You Rather?
+Ajan Mı?|Who's the Spy?
+Hız Kelimesi|Word Rush
+Sınır Sorusu|Daring Questions
+Vampir|Vampire
+Köylü|Villager
+Doktor|Doctor
+Komiser|Detective
+Her gece bir kurban seçersin. Kimliğini saklaman gerekiyor.|Choose a victim each night. Keep your identity secret.
+Gündüz tartışarak vampirleri bulmalısın.|Discuss during the day to find the vampires.
+Her gece birini koruyabilirsin. Kendini de seçebilirsin.|Protect someone each night. You may choose yourself.
+Her gece bir kişinin vampir olup olmadığını öğrenebilirsin.|Each night, find out whether one player is a vampire.
+Kimsenin kimseye güvenemediği, vampirlerin köylüleri yok etmeye çalıştığı klasik dedektif oyunu.|A classic deduction game where vampires hunt villagers and nobody knows whom to trust.
+Herkes gözlerini kapatır. Moderatör rolleri dağıtır.|Everyone closes their eyes. The moderator assigns roles.
+Vampirler uyandırılır, aralarında kurban seçer ve gözlerini kapatır.|Vampires wake up, choose a victim together, then close their eyes.
+Gündüz herkes tartışarak bir şüpheliyi oylamayla eler.|During the day, discuss and vote to eliminate a suspect.
+Vampirler köylülerin yarısını elediyse kazanır; köylüler tüm vampirleri elerse kazanır.|Vampires win by eliminating half the villagers; villagers win by eliminating all vampires.
+Doktor her gece birini kurtarabilir. Komiser vampir mi değil mi anlayabilir.|The doctor can protect one player each night. The detective can check a player's identity.
+Yasak kelimeleri kullanmadan takımına kelimeyi anlat. Dikkat: Tabu kelimeleri söylersen sayaç başlıyor!|Help your team guess the word without saying any forbidden words. Race against the clock!
+İki takıma ayrılın. Anlatıcı her turda bir kart çeker.|Split into two teams. The clue giver draws a card each turn.
+Ana kelimeyi tabu kelimeleri kullanmadan takımına anlat.|Describe the main word without using the forbidden words.
+Tabu kelimesi söylenirse rakip takım uyarır, kart sayılmaz.|If a forbidden word is used, the other team calls it out and the card does not count.
+Her doğru kelimede 1 puan. Süre dolunca turlar değişir.|Score one point per correct word. Switch turns when time runs out.
+En çok puanı toplayan takım oyunu kazanır.|The team with the most points wins.
+Yeni tanışanlar veya uzun süredir görüşmeyenler için sohbeti açan, samimi soru kartları.|Friendly conversation starters for new friends or people catching up.
+Sırası gelen kişi kart çeker ve soruyu yüksek sesle okur.|On your turn, draw a card and read the question aloud.
+Soru sahibi önce cevaplar, ardından isteyen ekler.|The reader answers first, then anyone else can join in.
+Kimse zorla cevap vermek zorunda değil; "pas" diyebilir.|No one has to answer. You can always pass.
+Amaç tartışmak değil, birbirini daha iyi tanımak.|The goal is to get to know each other better.
+Her oyuncu iki doğru, bir yalan söyler. Grup hangisinin yalan olduğunu tahmin eder.|Each player tells two truths and a lie. The group guesses the lie.
+Sırası gelen kişi kendisi hakkında 3 cümle söyler: 2 doğru, 1 yalan.|On your turn, share three statements about yourself: two true, one false.
+Diğerleri tartışarak hangisinin yalan olduğuna karar verir.|The others discuss and decide which statement is false.
+Her doğru tahmin için 1 puan kazanılır.|Earn one point for each correct guess.
+Yanlış tahmin edilen yalancı da puan alır.|The storyteller also scores if the group guesses incorrectly.
+Klasik Mafya oyununun sadeleştirilmiş hızlı versiyonu. Az kuralla çok eğlence.|A quick, simplified version of Mafia. Fewer rules, more fun.
+Mafya ve vatandaşlar olarak 2 gruba ayrılın.|Assign players to the mafia or the townspeople.
+Gece: Mafya bir kurban seçer.|Night: the mafia chooses a victim.
+Gündüz: Herkes tartışarak bir şüpheliyi atar.|Day: everyone discusses and votes out a suspect.
+Tüm mafyayı atan şehir, ya da şehirle eşitlenen mafya kazanır.|The town wins by eliminating all mafia; the mafia wins by matching the town's numbers.
+"Bunu en çok kim yapar?" sorusu okunur, herkes birini gösterir.|Read a "most likely to" question and everyone points to someone.
+Kart çekilir ve soru okunur: "Bunu en çok kim yapar?"|Draw a card and read the "most likely to" question.
+Herkes aynı anda birini işaret eder.|Everyone points to someone at the same time.
+En çok oy alan kişi o özelliğin sahibidir.|The person with the most votes gets the title.
+Amaç eğlenmek; oyun puan tutmaz!|Just have fun. No scorekeeping!
+İki seçenekli absürt sorular. Hangi tarafı seçtiğini açıklayarak arkadaşlarını şaşırt!|Absurd choices. Surprise your friends by explaining your answer!
+Sıradaki kişi kart çeker ve soruyu okur.|The next player draws a card and reads it aloud.
+Herkes sessizce A veya B'yi seçer.|Everyone silently chooses A or B.
+Hep birlikte açıklanır; azınlıkta kalan neden seçtiğini anlatır.|Reveal together. Those in the minority explain their choice.
+Uzun süre konuşturan soru en iyi sorudur!|The best question is the one that keeps you talking!
+Herkes aynı yeri bilir, sadece ajan bilmez. Ajan konumu tahmin etmeye, diğerleri ajanı bulmaya çalışır.|Everyone knows the location except the spy. The spy guesses the place while others try to find the spy.
+Bir oyuncu ajan olur, diğerleri aynı konumu öğrenir.|One player is the spy. Everyone else learns the same location.
+Herkes sırayla birbirine ipucu içeren sorular sorar.|Take turns asking each other questions with subtle clues.
+Ajan bulunmadan konumu tahmin ederse ajanlar kazanır.|The spy wins by guessing the location before being caught.
+Grup ajanı tespit ederse köylüler kazanır.|The group wins if they identify the spy.
+Kategoriden ard arda kelime say! Aynı kelimeyi tekrarlamak veya donakalmak seni eler.|Name words in a category. Repeat a word or freeze and you're out!
+Bir kategori belirlenir (hayvanlar, şehirler, markalar…).|Choose a category: animals, cities, brands, and so on.
+Sırayla ve hızlıca o kategoriden kelime söylenir.|Take turns quickly naming a word from that category.
+3 saniyeden fazla bekleyen veya tekrar eden elenir.|Take longer than three seconds or repeat a word and you're out.
+Son kalan kazanır.|The last player standing wins.
+Cevaplamak için gerçekten cesaret isteyen sorular. Arkadaşlarını şaşırtmaya hazır mısın?|Questions that take courage to answer. Ready to surprise your friends?
+Sıradaki kişi bir soru kartı çeker.|The next player draws a question card.
+"Cevaplarım" veya "Pas" diyebilir.|Choose to answer or pass.
+Cevaplayan öz ve dürüst cevap verir.|Keep your answer brief and honest.
+Grupta herkes hakkında yapılan soruları herkes yanıtlayabilir.|Everyone can answer questions about the group.

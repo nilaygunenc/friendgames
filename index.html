@@ -1,0 +1,2258 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FriendGames</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* =============================================
+       RESET & BASE
+    ============================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg-deep:      #0B0D17;
+      --bg-card:      #141829;
+      --bg-glass:     rgba(255,255,255,0.05);
+      --border-glass: rgba(255,255,255,0.08);
+      --primary:      #6366F1;
+      --primary-dark: #7928CA;
+      --primary-glow: #FF0080;
+      --accent-green: #10B981;
+      --accent-gold:  #F59E0B;
+      --accent-red:   #EF4444;
+      --text-primary: #F1F5F9;
+      --text-muted:   #94A3B8;
+      --radius-card:  16px;
+      --radius-pill:  999px;
+    }
+    html, body {
+      height: 100%;
+      background: #05060E;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* =============================================
+       PHONE FRAME
+    ============================================= */
+    .phone-frame {
+      width: 390px;
+      height: 844px;
+      border-radius: 44px;
+      background: var(--bg-deep);
+      position: relative;
+      overflow: hidden;
+      box-shadow:
+        0 0 0 2px rgba(255,255,255,0.12),
+        0 0 0 8px rgba(0,0,0,0.6),
+        0 30px 80px rgba(0,0,0,0.8),
+        inset 0 0 60px rgba(99,102,241,0.06);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* =============================================
+       STATUS BAR
+    ============================================= */
+    .status-bar {
+      height: 44px;
+      padding: 10px 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+      position: relative;
+    }
+    .status-bar .time {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.3px;
+    }
+    .status-bar .notch {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 6px;
+      width: 126px;
+      height: 34px;
+      background: #000;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 10px;
+      gap: 6px;
+    }
+    .notch-cam {
+      width: 12px;
+      height: 12px;
+      background: #1a1a1a;
+      border-radius: 50%;
+      border: 2px solid #222;
+    }
+    .status-icons {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-primary);
+      font-size: 12px;
+    }
+    .battery-bar {
+      width: 22px;
+      height: 11px;
+      border: 1.5px solid rgba(255,255,255,0.6);
+      border-radius: 3px;
+      position: relative;
+      padding: 1.5px;
+    }
+    .battery-bar::after {
+      content: '';
+      position: absolute;
+      right: -5px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 3px;
+      height: 5px;
+      background: rgba(255,255,255,0.5);
+      border-radius: 0 2px 2px 0;
+    }
+    .battery-fill {
+      height: 100%;
+      width: 78%;
+      background: var(--accent-green);
+      border-radius: 1.5px;
+    }
+
+    /* =============================================
+       SCROLLABLE CONTENT WRAPPER
+    ============================================= */
+    .screen {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 70px;
+      scroll-behavior: smooth;
+    }
+    .screen::-webkit-scrollbar { display: none; }
+
+    /* =============================================
+       HEADER
+    ============================================= */
+    .app-header {
+      padding: 12px 20px 0;
+      flex-shrink: 0;
+    }
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      background: linear-gradient(135deg, #a78bfa, #ec4899, #f59e0b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      font-weight: 400;
+      opacity: 0.8;
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .icon-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glass);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-primary);
+      font-size: 14px;
+      cursor: pointer;
+      position: relative;
+      backdrop-filter: blur(12px);
+      transition: background .2s;
+    }
+    .icon-btn:hover { background: rgba(255,255,255,0.1); }
+    .notif-dot {
+      position: absolute;
+      top: 5px; right: 5px;
+      width: 8px; height: 8px;
+      background: var(--accent-red);
+      border-radius: 50%;
+      border: 1.5px solid var(--bg-deep);
+    }
+    .vip-badge-header {
+      background: linear-gradient(135deg, #F59E0B, #F97316);
+      color: #000;
+      font-size: 9px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: var(--radius-pill);
+      letter-spacing: 0.5px;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glass);
+      border-radius: 14px;
+      padding: 10px 14px;
+      backdrop-filter: blur(12px);
+      margin-bottom: 16px;
+    }
+    .search-bar i { color: var(--text-muted); font-size: 14px; }
+    .search-bar input {
+      flex: 1;
+      background: none;
+      border: none;
+      outline: none;
+      color: var(--text-primary);
+      font-size: 14px;
+    }
+    .search-bar input::placeholder { color: var(--text-muted); }
+    .search-clear {
+      color: var(--text-muted);
+      font-size: 13px;
+      cursor: pointer;
+      display: none;
+    }
+
+    /* =============================================
+       FILTER: GROUP SIZE
+    ============================================= */
+    .filter-section { padding: 0 20px; flex-shrink: 0; }
+    .filter-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .group-filter {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .group-btn {
+      flex: 1;
+      padding: 8px 4px;
+      border-radius: 12px;
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glass);
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: center;
+      transition: all .2s;
+    }
+    .group-btn.active {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      border-color: transparent;
+      color: #fff;
+      box-shadow: 0 0 16px rgba(99,102,241,0.5);
+    }
+    .group-btn i { display: block; font-size: 14px; margin-bottom: 3px; }
+
+    /* =============================================
+       FILTER: CATEGORIES
+    ============================================= */
+    .category-scroll {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      margin-bottom: 16px;
+    }
+    .category-scroll::-webkit-scrollbar { display: none; }
+    .cat-pill {
+      flex-shrink: 0;
+      padding: 7px 14px;
+      border-radius: var(--radius-pill);
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glass);
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all .2s;
+      backdrop-filter: blur(8px);
+    }
+    .cat-pill.active {
+      background: rgba(99,102,241,0.2);
+      border-color: var(--primary);
+      color: #a5b4fc;
+      box-shadow: 0 0 12px rgba(99,102,241,0.3);
+    }
+
+    /* =============================================
+       SECTION HEADER
+    ============================================= */
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      margin-bottom: 12px;
+      flex-shrink: 0;
+    }
+    .section-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .game-count {
+      font-size: 12px;
+      color: var(--text-muted);
+      background: var(--bg-glass);
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-glass);
+    }
+
+    /* =============================================
+       GAMES GRID
+    ============================================= */
+    .games-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      padding: 0 20px;
+    }
+    .game-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-card);
+      padding: 14px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: transform .2s, box-shadow .2s;
+      backdrop-filter: blur(12px);
+    }
+    .game-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .game-card:active { transform: scale(0.97); }
+    .game-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+
+    /* accent top border per category */
+    .game-card[data-cat="buz-kirici"]  { border-top: 2px solid var(--accent-green); }
+    .game-card[data-cat="gizli-rol"]   { border-top: 2px solid var(--accent-red); }
+    .game-card[data-cat="kelime"]      { border-top: 2px solid var(--primary); }
+    .game-card[data-cat="friendgames"] { border-top: 2px solid var(--accent-gold); }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    .card-icon {
+      font-size: 26px;
+      line-height: 1;
+    }
+    .vip-lock {
+      background: linear-gradient(135deg, #F59E0B, #F97316);
+      color: #000;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 3px 7px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+    .card-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 6px;
+    }
+    .badge {
+      font-size: 9px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: var(--radius-pill);
+      letter-spacing: 0.3px;
+    }
+    .badge-green  { background: rgba(16,185,129,0.15); color: var(--accent-green); }
+    .badge-red    { background: rgba(239,68,68,0.15);  color: var(--accent-red); }
+    .badge-purple { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+    .badge-gold   { background: rgba(245,158,11,0.15); color: var(--accent-gold); }
+    .badge-pop    { background: rgba(236,72,153,0.15); color: #f9a8d4; }
+
+    .card-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+      line-height: 1.2;
+    }
+    .card-desc {
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin-bottom: 10px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .card-meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 10px;
+      color: var(--text-muted);
+    }
+    .meta-item i { font-size: 9px; }
+    .card-footer {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-glass);
+    }
+    .btn-start {
+      width: 100%;
+      padding: 8px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      border: none;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 0.3px;
+      transition: opacity .2s;
+    }
+    .btn-start:hover { opacity: 0.85; }
+    .btn-start.vip-locked {
+      background: linear-gradient(135deg, #F59E0B, #F97316);
+      color: #000;
+    }
+
+    /* Empty state */
+    .empty-state {
+      grid-column: 1 / -1;
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--text-muted);
+    }
+    .empty-state i { font-size: 36px; margin-bottom: 12px; opacity: 0.4; }
+    .empty-state p { font-size: 13px; }
+
+    /* =============================================
+       BOTTOM NAV
+    ============================================= */
+    .bottom-nav {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 70px;
+      background: rgba(20,24,41,0.92);
+      backdrop-filter: blur(20px);
+      border-top: 1px solid var(--border-glass);
+      display: flex;
+      align-items: flex-start;
+      padding-top: 10px;
+      z-index: 100;
+    }
+    .nav-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      cursor: pointer;
+      transition: color .2s;
+    }
+    .nav-item i { font-size: 18px; transition: transform .2s; }
+    .nav-item span { font-size: 10px; font-weight: 600; }
+    .nav-item.inactive { color: var(--text-muted); }
+    .nav-item.active { color: var(--primary); }
+    .nav-item.active i { transform: translateY(-2px); }
+    .nav-item.vip-nav { color: var(--accent-gold); }
+    .nav-item.vip-nav.active { color: var(--accent-gold); }
+
+    /* =============================================
+       TAB PANELS
+    ============================================= */
+    .tab-panel { display: none; flex-direction: column; flex: 1; }
+    .tab-panel.active { display: flex; }
+
+    /* =============================================
+       FAVORITES TAB
+    ============================================= */
+    .fav-header {
+      padding: 16px 20px 0;
+      flex-shrink: 0;
+    }
+    .fav-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .fav-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .fav-empty {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: var(--text-muted);
+      padding: 40px 30px;
+      text-align: center;
+    }
+    .fav-empty i { font-size: 48px; opacity: 0.3; }
+    .fav-empty p { font-size: 13px; line-height: 1.5; }
+    .fav-list {
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .fav-row {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-card);
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .fav-row:hover { background: rgba(255,255,255,0.06); }
+    .fav-icon { font-size: 24px; }
+    .fav-info { flex: 1; }
+    .fav-name { font-size: 14px; font-weight: 700; color: var(--text-primary); }
+    .fav-meta { font-size: 11px; color: var(--text-muted); }
+    .fav-unfav { color: #f43f5e; font-size: 16px; cursor: pointer; padding: 4px; }
+
+    /* =============================================
+       VIP TAB
+    ============================================= */
+    .vip-screen {
+      flex: 1;
+      overflow-y: auto;
+      padding-bottom: 80px;
+    }
+    .vip-screen::-webkit-scrollbar { display: none; }
+    .vip-hero {
+      padding: 24px 20px 20px;
+      text-align: center;
+      background: linear-gradient(160deg, rgba(121,40,202,0.25), rgba(239,68,68,0.08));
+      border-bottom: 1px solid var(--border-glass);
+    }
+    .vip-crown { font-size: 42px; margin-bottom: 8px; }
+    .vip-title {
+      font-size: 24px;
+      font-weight: 800;
+      background: linear-gradient(135deg, #F59E0B, #F97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .vip-tagline {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .plan-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin: 16px 20px;
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-pill);
+      padding: 4px;
+    }
+    .plan-btn {
+      flex: 1;
+      padding: 8px;
+      border-radius: var(--radius-pill);
+      border: none;
+      background: none;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all .2s;
+      position: relative;
+    }
+    .plan-btn.active {
+      background: linear-gradient(135deg, #F59E0B, #F97316);
+      color: #000;
+      box-shadow: 0 4px 12px rgba(245,158,11,0.4);
+    }
+    .save-badge {
+      position: absolute;
+      top: -8px; right: -2px;
+      background: #10B981;
+      color: #fff;
+      font-size: 8px;
+      font-weight: 800;
+      padding: 2px 5px;
+      border-radius: var(--radius-pill);
+    }
+    .price-card {
+      margin: 0 20px 16px;
+      background: linear-gradient(135deg, rgba(245,158,11,0.1), rgba(249,115,22,0.1));
+      border: 1.5px solid rgba(245,158,11,0.3);
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+    }
+    .price-amount {
+      font-size: 36px;
+      font-weight: 900;
+      color: #F59E0B;
+    }
+    .price-amount span { font-size: 16px; font-weight: 500; color: var(--text-muted); }
+    .price-desc { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+    .vip-features {
+      padding: 0 20px;
+      margin-bottom: 16px;
+    }
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-glass);
+      font-size: 13px;
+      color: var(--text-primary);
+    }
+    .feature-item:last-child { border-bottom: none; }
+    .feature-item i { color: var(--accent-gold); width: 16px; text-align: center; }
+    .btn-subscribe {
+      display: block;
+      margin: 0 20px 16px;
+      padding: 16px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #F59E0B, #F97316);
+      border: none;
+      color: #000;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      text-align: center;
+      transition: opacity .2s, transform .1s;
+      letter-spacing: 0.3px;
+    }
+    .btn-subscribe:active { transform: scale(0.98); opacity: 0.9; }
+    .btn-subscribe.active-vip {
+      background: linear-gradient(135deg, var(--accent-green), #059669);
+      color: #fff;
+    }
+    .trial-note { text-align: center; font-size: 11px; color: var(--text-muted); margin-bottom: 20px; }
+
+    /* locked vip games preview */
+    .vip-preview { padding: 0 20px; }
+    .vip-preview-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 10px;
+    }
+    .vip-prev-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glass);
+      border-radius: 12px;
+      margin-bottom: 8px;
+      filter: saturate(0.5);
+      opacity: 0.6;
+    }
+    .vip-prev-icon { font-size: 20px; }
+    .vip-prev-name { font-size: 13px; font-weight: 700; color: var(--text-primary); flex: 1; }
+    .vip-prev-lock { color: var(--accent-gold); font-size: 14px; }
+
+    /* =============================================
+       SETTINGS TAB
+    ============================================= */
+    .settings-screen { flex: 1; overflow-y: auto; padding-bottom: 80px; }
+    .settings-screen::-webkit-scrollbar { display: none; }
+    .settings-hero {
+      padding: 24px 20px 16px;
+    }
+    .settings-title { font-size: 22px; font-weight: 800; color: var(--text-primary); margin-bottom: 2px; }
+    .settings-sub { font-size: 13px; color: var(--text-muted); }
+    .settings-group {
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+    .settings-group-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .setting-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 16px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: 12px;
+      margin-bottom: 6px;
+    }
+    .setting-row-left { display: flex; align-items: center; gap: 12px; }
+    .setting-row-icon {
+      width: 32px; height: 32px;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+    }
+    .si-purple { background: rgba(99,102,241,0.2); color: #a5b4fc; }
+    .si-green  { background: rgba(16,185,129,0.2); color: var(--accent-green); }
+    .si-gold   { background: rgba(245,158,11,0.2); color: var(--accent-gold); }
+    .si-red    { background: rgba(239,68,68,0.2);  color: var(--accent-red); }
+    .si-blue   { background: rgba(59,130,246,0.2); color: #60a5fa; }
+    .setting-row-text { font-size: 13px; font-weight: 600; color: var(--text-primary); }
+    .setting-row-sub  { font-size: 11px; color: var(--text-muted); }
+    .toggle {
+      width: 44px; height: 26px;
+      background: #334155;
+      border-radius: var(--radius-pill);
+      position: relative;
+      cursor: pointer;
+      transition: background .3s;
+      border: none;
+    }
+    .toggle.on { background: var(--primary); }
+    .toggle::after {
+      content: '';
+      position: absolute;
+      top: 3px; left: 3px;
+      width: 20px; height: 20px;
+      background: #fff;
+      border-radius: 50%;
+      transition: transform .3s;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    }
+    .toggle.on::after { transform: translateX(18px); }
+    .setting-row-arrow { color: var(--text-muted); font-size: 12px; }
+    .group-size-picker {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .gsp-btn {
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glass);
+      color: var(--text-primary);
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .gsp-val { font-size: 16px; font-weight: 800; color: var(--text-primary); min-width: 24px; text-align: center; }
+    .version-info {
+      text-align: center;
+      padding: 10px 20px 20px;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    /* =============================================
+       MODAL
+    ============================================= */
+    .modal-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(6px);
+      z-index: 200;
+      display: flex;
+      align-items: flex-end;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s;
+    }
+    .modal-overlay.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+    .modal {
+      width: 100%;
+      max-height: 88%;
+      background: #1a1f38;
+      border-radius: 28px 28px 0 0;
+      border: 1px solid var(--border-glass);
+      border-bottom: none;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transform: translateY(100%);
+      transition: transform .35s cubic-bezier(.32,.72,0,1);
+    }
+    .modal-overlay.open .modal { transform: translateY(0); }
+    .modal-handle {
+      width: 40px; height: 4px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 2px;
+      margin: 10px auto 0;
+      flex-shrink: 0;
+    }
+    .modal-scroll {
+      overflow-y: auto;
+      flex: 1;
+      padding: 0 0 20px;
+    }
+    .modal-scroll::-webkit-scrollbar { display: none; }
+    .modal-hero {
+      padding: 16px 20px 14px;
+      border-bottom: 1px solid var(--border-glass);
+    }
+    .modal-icon { font-size: 36px; margin-bottom: 6px; }
+    .modal-badges { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px; }
+    .modal-title { font-size: 20px; font-weight: 800; color: var(--text-primary); margin-bottom: 4px; }
+    .modal-desc { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+    .modal-meta-row {
+      display: flex;
+      gap: 16px;
+      margin-top: 10px;
+    }
+    .modal-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .modal-meta-item i { color: var(--primary); }
+    .modal-section { padding: 16px 20px 0; }
+    .modal-section-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 10px;
+    }
+    .rules-list { list-style: none; }
+    .rules-list li {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 13px;
+      color: var(--text-primary);
+      line-height: 1.5;
+    }
+    .rule-num {
+      flex-shrink: 0;
+      width: 22px; height: 22px;
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px;
+      font-weight: 800;
+      color: #fff;
+      margin-top: 1px;
+    }
+
+    /* Game engine areas */
+    .engine-card {
+      margin: 14px 20px 0;
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glass);
+      border-radius: 16px;
+      padding: 16px;
+      backdrop-filter: blur(12px);
+    }
+    .engine-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .engine-title i { color: var(--primary); }
+
+    /* Role card */
+    .role-card {
+      background: var(--bg-deep);
+      border-radius: 14px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 12px;
+      border: 1px solid var(--border-glass);
+      min-height: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all .3s;
+    }
+    .role-card.hidden-role .role-content { display: none; }
+    .role-card .cover-text { font-size: 13px; color: var(--text-muted); }
+    .role-emoji { font-size: 40px; }
+    .role-name {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+    .role-name.vampir { color: var(--accent-red); }
+    .role-name.koylu  { color: var(--accent-green); }
+    .role-name.doktor { color: #60a5fa; }
+    .role-name.komiser{ color: #f59e0b; }
+    .role-desc-text { font-size: 11px; color: var(--text-muted); max-width: 200px; line-height: 1.4; }
+
+    .player-counter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .player-counter span { font-size: 12px; color: var(--text-muted); }
+    .player-dots { display: flex; gap: 4px; }
+    .p-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--border-glass);
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: background .2s;
+    }
+    .p-dot.done { background: var(--accent-green); }
+    .p-dot.current { background: var(--primary); box-shadow: 0 0 6px var(--primary); }
+
+    .btn-engine {
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      border: none;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all .2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .btn-primary-engine {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: #fff;
+    }
+    .btn-primary-engine:hover { opacity: 0.85; }
+    .btn-secondary-engine {
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glass);
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    /* Tabu card */
+    .tabu-card {
+      background: linear-gradient(135deg, rgba(99,102,241,0.15), rgba(121,40,202,0.15));
+      border: 1px solid rgba(99,102,241,0.3);
+      border-radius: 14px;
+      padding: 16px;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .tabu-main-word {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
+    .tabu-banned-label {
+      font-size: 9px;
+      font-weight: 700;
+      color: var(--accent-red);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .tabu-banned-words {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: center;
+    }
+    .tabu-word-chip {
+      background: rgba(239,68,68,0.1);
+      border: 1px solid rgba(239,68,68,0.3);
+      color: #fca5a5;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+    }
+    .tabu-actions { display: flex; gap: 8px; }
+    .btn-correct {
+      flex: 1;
+      background: rgba(16,185,129,0.15);
+      border: 1px solid rgba(16,185,129,0.3);
+      color: var(--accent-green);
+    }
+    .btn-pass {
+      flex: 1;
+      background: rgba(239,68,68,0.1);
+      border: 1px solid rgba(239,68,68,0.3);
+      color: var(--accent-red);
+    }
+    .score-row {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+    }
+    .score-item { text-align: center; }
+    .score-val { font-size: 22px; font-weight: 900; color: var(--text-primary); }
+    .score-label { font-size: 10px; color: var(--text-muted); }
+
+    /* Buz kırıcı soru kartı */
+    .question-card {
+      background: linear-gradient(135deg, rgba(16,185,129,0.1), rgba(99,102,241,0.1));
+      border: 1px solid rgba(16,185,129,0.25);
+      border-radius: 14px;
+      padding: 18px;
+      text-align: center;
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+    }
+    .question-text {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.5;
+    }
+    .question-text.placeholder { color: var(--text-muted); font-size: 13px; font-weight: 400; }
+
+    /* VIP locked modal */
+    .vip-gate {
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .vip-gate-icon { font-size: 40px; margin-bottom: 10px; }
+    .vip-gate-title { font-size: 18px; font-weight: 800; color: var(--text-primary); margin-bottom: 6px; }
+    .vip-gate-desc { font-size: 12px; color: var(--text-muted); margin-bottom: 16px; line-height: 1.5; }
+    .btn-unlock {
+      width: 100%;
+      padding: 14px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #F59E0B, #F97316);
+      border: none;
+      color: #000;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: opacity .2s;
+    }
+    .btn-unlock:hover { opacity: 0.85; }
+
+    /* =============================================
+       TOAST
+    ============================================= */
+    .toast {
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-20px);
+      background: rgba(30,35,60,0.95);
+      border: 1px solid var(--border-glass);
+      border-radius: 12px;
+      padding: 10px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-primary);
+      z-index: 999;
+      opacity: 0;
+      transition: all .3s;
+      white-space: nowrap;
+      backdrop-filter: blur(16px);
+      pointer-events: none;
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* =============================================
+       ANIMATIONS
+    ============================================= */
+    @keyframes fadeSlideIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .game-card { animation: fadeSlideIn .3s ease both; }
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 12px rgba(99,102,241,0.4); }
+      50%       { box-shadow: 0 0 24px rgba(99,102,241,0.8); }
+    }
+    .cat-pill.active { animation: pulse-glow 2s infinite; }
+    @keyframes flip {
+      0%   { transform: rotateY(0deg); }
+      50%  { transform: rotateY(90deg); }
+      100% { transform: rotateY(0deg); }
+    }
+    .flip-anim { animation: flip .4s ease; }
+
+    /* =============================================
+       CLOCK UPDATE
+    ============================================= */
+  </style>
+</head>
+<body>
+
+<div class="phone-frame">
+
+  <!-- STATUS BAR -->
+  <div class="status-bar">
+    <span class="time" id="clock">09:41</span>
+    <div class="notch"><div class="notch-cam"></div></div>
+    <div class="status-icons">
+      <i class="fa fa-signal"></i>
+      <i class="fa fa-wifi"></i>
+      <div class="battery-bar"><div class="battery-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <!-- ===== TAB: OYUNLAR ===== -->
+  <div class="tab-panel active" id="tab-games">
+    <div class="screen" id="games-screen">
+
+      <!-- HEADER -->
+      <div class="app-header">
+        <div class="header-top">
+          <div class="logo">Friend<span>Games</span></div>
+          <div class="header-actions">
+            <div class="icon-btn" onclick="showToast('🔔 Bildirimler yakında!')">
+              <i class="fa fa-bell"></i>
+              <div class="notif-dot"></div>
+            </div>
+            <div class="vip-badge-header" id="vip-badge-header">FREE</div>
+          </div>
+        </div>
+        <!-- Search -->
+        <div class="search-bar">
+          <i class="fa fa-search"></i>
+          <input type="text" id="search-input" placeholder="Oyun ara..." oninput="handleSearch(this.value)" />
+          <span class="search-clear" id="search-clear" onclick="clearSearch()"><i class="fa fa-times"></i></span>
+        </div>
+      </div>
+
+      <!-- GROUP SIZE FILTER -->
+      <div class="filter-section">
+        <div class="filter-label"><i class="fa fa-users" style="margin-right:5px;"></i>Kaç Kişisiniz?</div>
+        <div class="group-filter">
+          <button class="group-btn active" data-filter="all" onclick="setGroupFilter('all', this)">
+            <i class="fa fa-users"></i>Tümü
+          </button>
+          <button class="group-btn" data-filter="1-2" onclick="setGroupFilter('1-2', this)">
+            <i class="fa fa-user-friends"></i>1-2 Kişi
+          </button>
+          <button class="group-btn" data-filter="3-4" onclick="setGroupFilter('3-4', this)">
+            <i class="fa fa-users"></i>3-4 Kişi
+          </button>
+          <button class="group-btn" data-filter="5+" onclick="setGroupFilter('5+', this)">
+            <i class="fa fa-users"></i>5+ Kişi
+          </button>
+        </div>
+
+        <!-- CATEGORY PILLS -->
+        <div class="category-scroll" id="category-pills">
+          <button class="cat-pill active" data-cat="all"          onclick="setCat('all', this)">🎮 Tüm Oyunlar</button>
+          <button class="cat-pill"        data-cat="buz-kirici"   onclick="setCat('buz-kirici', this)">🧊 Buz Kırıcılar</button>
+          <button class="cat-pill"        data-cat="gizli-rol"    onclick="setCat('gizli-rol', this)">🎭 Gizli Roller</button>
+          <button class="cat-pill"        data-cat="kelime"       onclick="setCat('kelime', this)">💬 Kelime & Anlatım</button>
+          <button class="cat-pill"        data-cat="friendgames"  onclick="setCat('friendgames', this)">⭐ FriendGames Özel</button>
+        </div>
+      </div>
+
+      <!-- SECTION HEADER -->
+      <div class="section-header">
+        <span class="section-title">Oyunlar</span>
+        <span class="game-count" id="game-count">0 oyun</span>
+      </div>
+
+      <!-- GAMES GRID -->
+      <div class="games-grid" id="games-grid"></div>
+
+    </div><!-- /screen -->
+  </div><!-- /tab-games -->
+
+  <!-- ===== TAB: FAVORİLER ===== -->
+  <div class="tab-panel" id="tab-favorites">
+    <div class="screen">
+      <div class="fav-header">
+        <div class="fav-title">❤️ Favorilerim</div>
+        <div class="fav-subtitle">Grubunuz için kaydedilen oyunlar</div>
+      </div>
+      <div id="fav-content"></div>
+    </div>
+  </div>
+
+  <!-- ===== TAB: VIP ===== -->
+  <div class="tab-panel" id="tab-vip">
+    <div class="vip-screen">
+      <div class="vip-hero">
+        <div class="vip-crown">👑</div>
+        <div class="vip-title">FriendGames Plus</div>
+        <div class="vip-tagline">Daha fazla oyun, daha az reklam, sınırsız eğlence</div>
+      </div>
+
+      <div class="plan-toggle">
+        <button class="plan-btn active" id="plan-monthly" onclick="setPlan('monthly')">Aylık</button>
+        <button class="plan-btn" id="plan-yearly" onclick="setPlan('yearly')">
+          Yıllık
+          <span class="save-badge">%40 İndirim</span>
+        </button>
+      </div>
+
+      <div class="price-card">
+        <div class="price-amount" id="price-display">₺79<span>/ay</span></div>
+        <div class="price-desc" id="price-desc">İstediğin zaman iptal et</div>
+      </div>
+
+      <div class="vip-features">
+        <div class="feature-item"><i class="fa fa-unlock-alt"></i>Tüm VIP oyunlara erişim</div>
+        <div class="feature-item"><i class="fa fa-ban"></i>Reklamsız deneyim</div>
+        <div class="feature-item"><i class="fa fa-cards-blank fa-solid"></i>500+ ekstra kart & soru</div>
+        <div class="feature-item"><i class="fa fa-bolt"></i>Yeni oyunlara öncelikli erişim</div>
+        <div class="feature-item"><i class="fa fa-users-gear"></i>Grup profili & istatistikler</div>
+        <div class="feature-item"><i class="fa fa-palette"></i>Özel tema seçenekleri</div>
+      </div>
+
+      <button class="btn-subscribe" id="subscribe-btn" onclick="toggleSubscription()">
+        <i class="fa fa-crown"></i> Deneme Aboneliğini Aç
+      </button>
+      <div class="trial-note" id="trial-note">7 gün ücretsiz deneme • İstediğin zaman iptal et</div>
+
+      <div class="vip-preview">
+        <div class="vip-preview-title">🔒 VIP Oyunlar Önizleme</div>
+        <div class="vip-prev-item"><span class="vip-prev-icon">🔮</span><span class="vip-prev-name">Sır Dedektifi</span><i class="fa fa-lock vip-prev-lock"></i></div>
+        <div class="vip-prev-item"><span class="vip-prev-icon">🌋</span><span class="vip-prev-name">Afet Adası</span><i class="fa fa-lock vip-prev-lock"></i></div>
+        <div class="vip-prev-item"><span class="vip-prev-icon">🎭</span><span class="vip-prev-name">Manipülatör</span><i class="fa fa-lock vip-prev-lock"></i></div>
+        <div class="vip-prev-item"><span class="vip-prev-icon">🧬</span><span class="vip-prev-name">Genetik Dedektif</span><i class="fa fa-lock vip-prev-lock"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TAB: AYARLAR ===== -->
+  <div class="tab-panel" id="tab-settings">
+    <div class="settings-screen">
+      <div class="settings-hero">
+        <div class="settings-title">⚙️ Ayarlar</div>
+        <div class="settings-sub">Grup modunu ve tercihleri ayarla</div>
+      </div>
+
+      <div class="settings-group">
+        <div class="settings-group-title">Grup Modu</div>
+        <div class="setting-row">
+          <div class="setting-row-left">
+            <div class="setting-row-icon si-purple"><i class="fa fa-users"></i></div>
+            <div>
+              <div class="setting-row-text">Grup Büyüklüğü</div>
+              <div class="setting-row-sub">Kaç kişiyle oynuyorsunuz?</div>
+            </div>
+          </div>
+          <div class="group-size-picker">
+            <button class="gsp-btn" onclick="changeGroupSize(-1)">−</button>
+            <span class="gsp-val" id="group-size-val">5</span>
+            <button class="gsp-btn" onclick="changeGroupSize(1)">+</button>
+          </div>
+        </div>
+        <div class="setting-row">
+          <div class="setting-row-left">
+            <div class="setting-row-icon si-gold"><i class="fa fa-sun"></i></div>
+            <div>
+              <div class="setting-row-text">Ekranı Uyanık Tut</div>
+              <div class="setting-row-sub">Oyun sırasında ekran kapanmaz</div>
+            </div>
+          </div>
+          <button class="toggle on" id="toggle-screen" onclick="this.classList.toggle('on')"></button>
+        </div>
+      </div>
+
+      <div class="settings-group">
+        <div class="settings-group-title">Ses ve Görsel</div>
+        <div class="setting-row">
+          <div class="setting-row-left">
+            <div class="setting-row-icon si-green"><i class="fa fa-volume-high"></i></div>
+            <div>
+              <div class="setting-row-text">Ses Efektleri</div>
+              <div class="setting-row-sub">Oyun içi sesler</div>
+            </div>
+          </div>
+          <button class="toggle on" onclick="this.classList.toggle('on')"></button>
+        </div>
+        <div class="setting-row">
+          <div class="setting-row-left">
+            <div class="setting-row-icon si-purple"><i class="fa fa-moon"></i></div>
+            <div>
+              <div class="setting-row-text">Karanlık Mod</div>
+              <div class="setting-row-sub">Loş ortamlarda rahat görünüm</div>
+            </div>
+          </div>
+          <button class="toggle on" onclick="this.classList.toggle('on')"></button>
+        </div>
+        <div class="setting-row">
+          <div class="setting-row-left">
+            <div class="setting-row-icon si-gold"><i class="fa fa-language"></i></div>
+            <div>
+              <div class="setting-row-text">Dil</div>
+              <div class="setting-row-sub">Türkçe</div>
+            </div>
+          </div>
+          <i class="fa fa-chevron-right setting-row-arrow"></i>
+        </div>
+      </div>
+
+      <div class="settings-group">
+        <div class="settings-group-title">Hesap</div>
+        <div class="setting-row">
+          <div class="setting-row-left">
+            <div class="setting-row-icon si-blue"><i class="fa fa-shield-halved"></i></div>
+            <div>
+              <div class="setting-row-text">Gizlilik Politikası</div>
+              <div class="setting-row-sub">Verileriniz nasıl kullanılır</div>
+            </div>
+          </div>
+          <i class="fa fa-chevron-right setting-row-arrow"></i>
+        </div>
+        <div class="setting-row">
+          <div class="setting-row-left">
+            <div class="setting-row-icon si-red"><i class="fa fa-circle-info"></i></div>
+            <div>
+              <div class="setting-row-text">Hakkında</div>
+              <div class="setting-row-sub">FriendGames v1.0.0</div>
+            </div>
+          </div>
+          <i class="fa fa-chevron-right setting-row-arrow"></i>
+        </div>
+      </div>
+
+      <div class="version-info">FriendGames v1.0.0 · Built with ❤️ for friends</div>
+    </div>
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav">
+    <div class="nav-item active" onclick="switchTab('games', this)">
+      <i class="fa fa-gamepad"></i><span>Oyunlar</span>
+    </div>
+    <div class="nav-item inactive" onclick="switchTab('favorites', this)">
+      <i class="fa fa-heart"></i><span>Favoriler</span>
+    </div>
+    <div class="nav-item inactive vip-nav" onclick="switchTab('vip', this)">
+      <i class="fa fa-crown"></i><span>VIP Pass</span>
+    </div>
+    <div class="nav-item inactive" onclick="switchTab('settings', this)">
+      <i class="fa fa-gear"></i><span>Ayarlar</span>
+    </div>
+  </nav>
+
+</div><!-- /phone-frame -->
+
+<!-- ===== GAME MODAL ===== -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModalOnOverlay(event)">
+  <div class="modal" id="game-modal">
+    <div class="modal-handle"></div>
+    <div class="modal-scroll" id="modal-content">
+      <!-- Filled dynamically -->
+    </div>
+  </div>
+</div>
+
+<script>
+/* =============================================
+   DATA
+============================================= */
+const gamesData = [
+  {
+    id: 'vampir-koylu',
+    name: 'Vampir-Köylü',
+    icon: '🧛',
+    category: 'gizli-rol',
+    categoryLabel: 'Gizli Rol',
+    badges: [{t:'Popüler',cls:'badge-pop'},{t:'Rol Oyunu',cls:'badge-red'}],
+    minPlayers: 5, maxPlayers: 20,
+    minTime: 20, maxTime: 45,
+    description: 'Kimsenin kimseye güvenemediği, vampirlerin köylüleri yok etmeye çalıştığı klasik dedektif oyunu.',
+    vip: false,
+    rules: [
+      'Herkes gözlerini kapatır. Moderatör rolleri dağıtır.',
+      'Vampirler uyandırılır, aralarında kurban seçer ve gözlerini kapatır.',
+      'Gündüz herkes tartışarak bir şüpheliyi oylamayla eler.',
+      'Vampirler köylülerin yarısını elediyse kazanır; köylüler tüm vampirleri elerse kazanır.',
+      'Doktor her gece birini kurtarabilir. Komiser vampir mi değil mi anlayabilir.'
+    ],
+    engine: 'vampir',
+  },
+  {
+    id: 'tabu',
+    name: 'Tabu',
+    icon: '🤐',
+    category: 'kelime',
+    categoryLabel: 'Kelime & Anlatım',
+    badges: [{t:'Kelime',cls:'badge-purple'},{t:'Hızlı',cls:'badge-green'}],
+    minPlayers: 4, maxPlayers: 12,
+    minTime: 15, maxTime: 30,
+    description: 'Yasak kelimeleri kullanmadan takımına kelimeyi anlat. Dikkat: Tabu kelimeleri söylersen sayaç başlıyor!',
+    vip: false,
+    rules: [
+      'İki takıma ayrılın. Anlatıcı her turda bir kart çeker.',
+      'Ana kelimeyi tabu kelimeleri kullanmadan takımına anlat.',
+      'Tabu kelimesi söylenirse rakip takım uyarır, kart sayılmaz.',
+      'Her doğru kelimede 1 puan. Süre dolunca turlar değişir.',
+      'En çok puanı toplayan takım oyunu kazanır.'
+    ],
+    engine: 'tabu',
+  },
+  {
+    id: 'buz-kirici',
+    name: 'Buz Kırıcı',
+    icon: '🧊',
+    category: 'buz-kirici',
+    categoryLabel: 'Buz Kırıcı',
+    badges: [{t:'Buz Kırıcı',cls:'badge-green'},{t:'Kolay',cls:'badge-purple'}],
+    minPlayers: 2, maxPlayers: 20,
+    minTime: 10, maxTime: 20,
+    description: 'Yeni tanışanlar veya uzun süredir görüşmeyenler için sohbeti açan, samimi soru kartları.',
+    vip: false,
+    rules: [
+      'Sırası gelen kişi kart çeker ve soruyu yüksek sesle okur.',
+      'Soru sahibi önce cevaplar, ardından isteyen ekler.',
+      'Kimse zorla cevap vermek zorunda değil; "pas" diyebilir.',
+      'Amaç tartışmak değil, birbirini daha iyi tanımak.',
+    ],
+    engine: 'buz-kirici',
+  },
+  {
+    id: 'dogruluk-yalan',
+    name: 'Doğruluk mu Yalan mı?',
+    icon: '🤥',
+    category: 'buz-kirici',
+    categoryLabel: 'Buz Kırıcı',
+    badges: [{t:'Buz Kırıcı',cls:'badge-green'},{t:'Eğlenceli',cls:'badge-pop'}],
+    minPlayers: 3, maxPlayers: 10,
+    minTime: 10, maxTime: 25,
+    description: 'Her oyuncu iki doğru, bir yalan söyler. Grup hangisinin yalan olduğunu tahmin eder.',
+    vip: false,
+    rules: [
+      'Sırası gelen kişi kendisi hakkında 3 cümle söyler: 2 doğru, 1 yalan.',
+      'Diğerleri tartışarak hangisinin yalan olduğuna karar verir.',
+      'Her doğru tahmin için 1 puan kazanılır.',
+      'Yanlış tahmin edilen yalancı da puan alır.',
+    ],
+    engine: 'buz-kirici',
+  },
+  {
+    id: 'mafya-lite',
+    name: 'Mafya Lite',
+    icon: '🕵️',
+    category: 'gizli-rol',
+    categoryLabel: 'Gizli Rol',
+    badges: [{t:'Gizli Rol',cls:'badge-red'},{t:'Strateji',cls:'badge-purple'}],
+    minPlayers: 5, maxPlayers: 15,
+    minTime: 20, maxTime: 40,
+    description: 'Klasik Mafya oyununun sadeleştirilmiş hızlı versiyonu. Az kuralla çok eğlence.',
+    vip: false,
+    rules: [
+      'Mafya ve vatandaşlar olarak 2 gruba ayrılın.',
+      'Gece: Mafya bir kurban seçer.',
+      'Gündüz: Herkes tartışarak bir şüpheliyi atar.',
+      'Tüm mafyayı atan şehir, ya da şehirle eşitlenen mafya kazanır.',
+    ],
+    engine: 'vampir',
+  },
+  {
+    id: 'kim-daha-cok',
+    name: 'Kim Daha Çok?',
+    icon: '🏆',
+    category: 'friendgames',
+    categoryLabel: 'FriendGames Özel',
+    badges: [{t:'Özel',cls:'badge-gold'},{t:'FG',cls:'badge-gold'}],
+    minPlayers: 3, maxPlayers: 20,
+    minTime: 10, maxTime: 20,
+    description: 'Gruptaki herkes oylanıyor! "Bunu en çok kim yapar?" sorusu okunur, herkes birini gösterir.',
+    vip: false,
+    rules: [
+      'Kart çekilir ve soru okunur: "Bunu en çok kim yapar?"',
+      'Herkes aynı anda birini işaret eder.',
+      'En çok oy alan kişi o özelliğin sahibidir.',
+      'Amaç eğlenmek; oyun puan tutmaz!',
+    ],
+    engine: 'buz-kirici',
+  },
+  {
+    id: 'sirin-cani',
+    name: 'Şirin mi Cani mi?',
+    icon: '😇',
+    category: 'friendgames',
+    categoryLabel: 'FriendGames Özel',
+    badges: [{t:'Özel',cls:'badge-gold'},{t:'18+',cls:'badge-red'}],
+    minPlayers: 4, maxPlayers: 15,
+    minTime: 15, maxTime: 30,
+    description: 'İki seçenekli absürt sorular. Hangi tarafı seçtiğini açıklayarak arkadaşlarını şaşırt!',
+    vip: true,
+    rules: [
+      'Sıradaki kişi kart çeker ve soruyu okur.',
+      'Herkes sessizce A veya B\'yi seçer.',
+      'Hep birlikte açıklanır; azınlıkta kalan neden seçtiğini anlatır.',
+      'Uzun süre konuşturan soru en iyi sorudur!',
+    ],
+    engine: 'buz-kirici',
+  },
+  {
+    id: 'ajan-mi',
+    name: 'Ajan Mı?',
+    icon: '🕶️',
+    category: 'gizli-rol',
+    categoryLabel: 'Gizli Rol',
+    badges: [{t:'Gizli Rol',cls:'badge-red'},{t:'Kelime',cls:'badge-purple'}],
+    minPlayers: 4, maxPlayers: 12,
+    minTime: 10, maxTime: 20,
+    description: 'Herkes aynı yeri bilir, sadece ajan bilmez. Ajan hangi yerde olduğunu bulmaya çalışır, diğerleri ajanı bulmaya.',
+    vip: false,
+    rules: [
+      'Bir oyuncu ajan olur, diğerleri aynı konumu/yeri öğrenir.',
+      'Herkes sırayla birbirine ipucu içeren sorular sorar.',
+      'Ajan bulunmadan konumu tahmin ederse ajanlar kazanır.',
+      'Grup ajanı tespit ederse köylüler kazanır.',
+    ],
+    engine: 'vampir',
+  },
+  {
+    id: 'hiz-kelimesi',
+    name: 'Hız Kelimesi',
+    icon: '⚡',
+    category: 'kelime',
+    categoryLabel: 'Kelime & Anlatım',
+    badges: [{t:'Hızlı',cls:'badge-green'},{t:'Kelime',cls:'badge-purple'}],
+    minPlayers: 2, maxPlayers: 8,
+    minTime: 5, maxTime: 15,
+    description: 'Kategoriden ard arda kelime say! Aynı kelimeyi tekrarlamak veya donakalmak seni eler.',
+    vip: false,
+    rules: [
+      'Bir kategori belirlenir (hayvanlar, şehirler, markalar…).',
+      'Sırayla ve hızlıca o kategoriden kelime söylenir.',
+      'Tekrar eden veya 3 saniyeden fazla bekleyen elenir.',
+      'Son kalan kazanır.',
+    ],
+    engine: 'buz-kirici',
+  },
+  {
+    id: 'sinir-sorusu',
+    name: 'Sınır Sorusu',
+    icon: '🔥',
+    category: 'friendgames',
+    categoryLabel: 'FriendGames Özel',
+    badges: [{t:'Özel',cls:'badge-gold'},{t:'Cesur',cls:'badge-red'}],
+    minPlayers: 3, maxPlayers: 12,
+    minTime: 15, maxTime: 30,
+    description: 'Cevaplamak için gerçekten cesaret isteyen sorular. Arkadaşlarını şaşırtmaya hazır mısın?',
+    vip: true,
+    rules: [
+      'Sıradaki kişi bir soru kartı çeker.',
+      '"Cevaplarım" veya "Pas" diyebilir.',
+      'Cevaplayan öz ve dürüst cevap verir, detaylandırmak zorunda değil.',
+      'Grupta herkes hakkında yapılan soruları herkes yanıtlayabilir.',
+    ],
+    engine: 'buz-kirici',
+  },
+];
+
+/* =============================================
+   QUESTIONS DATA
+============================================= */
+const buzKiriciSorular = [
+  "Çocukken olmak istediğin meslek neydi?",
+  "Şu an burada olmasan nerede olmak isterdin?",
+  "Seni en çok güldüren şey nedir?",
+  "Hiç pişman olmadığın bir karar var mı?",
+  "Süper gücün olsaydı ne olmasını isterdin?",
+  "Son bir haftanın en keyifli anı neydi?",
+  "Bir şeyi sıfırdan öğrenebilseydin ne seçerdin?",
+  "Hangisi: her zaman çok erken mi, yoksa hep geç mi kalmak?",
+  "En uzun yolculuğun ne kadardı? Nasıldı?",
+  "Telefonsuz bir hafta geçirebilir misin?",
+  "Seni en iyi tanıyan kişi kim?",
+  "Hayatında 'restart' atsan hangi döneme dönerdin?",
+  "En garip yemek kombinasyonu nedir?",
+  "Bir film karakteri olsaydın kim olmak isterdin?",
+  "Bugün biri seni mutlu etti mi?",
+];
+
+const sinirSorular = [
+  "En son kime yalan söyledin?",
+  "Sırını kimseyle paylaşmamış olduğun bir şey var mı?",
+  "Gruptaki hangi kişiyle en çok tartışırsın?",
+  "Hayatında kimden özür dilemeliydin ama dilemediydin?",
+  "En utanç verici anın neydi?",
+  "Hiç birini arkadan çekiştirdin mi? Kimi?",
+  "En son gerçekten ağladığın şey neydi?",
+  "Hangisi: Aşk mı, para mı, sağlık mı?",
+  "Bir şeyi çok geciktirdin mi? Neydi?",
+  "Gruptaki birine hiç söylemediğin bir şey var mı?",
+];
+
+const kimDahaCok = [
+  "Sabah en son uyanan?",
+  "En fazla emoji kullanan?",
+  "Yemek siparişinde en çok kararsız kalan?",
+  "Geç kalmayı en çok mazerete bağlayan?",
+  "İnterneti en çok kullanan?",
+  "En dramatik tepkiler veren?",
+  "En çok yiyen?",
+  "Favori anısını en çok tekrar anlatan?",
+  "Selfie çekmeyi en çok seven?",
+  "Grubu en çok güldüren?",
+];
+
+/* =============================================
+   TABU DATA
+============================================= */
+const tabuKartlar = [
+  { main: "ELMA", banned: ["Meyve", "Ağaç", "Kırmızı", "Yemek", "Bahçe"] },
+  { main: "DENİZ", banned: ["Su", "Kumsalı", "Dalga", "Balık", "Yüzmek"] },
+  { main: "UÇAK", banned: ["Pilot", "Hava", "Kanat", "Yolculuk", "Havalimanı"] },
+  { main: "MÜZİK", banned: ["Nota", "Şarkı", "Ses", "Enstrüman", "Konser"] },
+  { main: "FOTOĞRAF", banned: ["Kamera", "Çekmek", "Resim", "Lens", "Albüm"] },
+  { main: "SPOR", banned: ["Top", "Oyun", "Yarışma", "Antrenman", "Futbol"] },
+  { main: "KİTAP", banned: ["Okumak", "Sayfa", "Hikaye", "Yazar", "Kapak"] },
+  { main: "SOKAK", banned: ["Yol", "Cadde", "Yürümek", "Kaldırım", "Trafik"] },
+  { main: "GÜNEŞ", banned: ["Işık", "Sıcak", "Sarı", "Uzay", "Güneş sistemi"] },
+  { main: "ARKADAŞ", banned: ["Dost", "İnsan", "Beraber", "Gruba", "Yanında"] },
+  { main: "DÜĞÜN", banned: ["Evlilik", "Gelin", "Damat", "Nikah", "Tören"] },
+  { main: "PARA", banned: ["Nakit", "Madeni", "TL", "Banknot", "Maaş"] },
+  { main: "TATIL", banned: ["Deniz", "Seyahat", "Otel", "Yaz", "Dinlenmek"] },
+  { main: "TELEFON", banned: ["Cep", "Arayan", "Ekran", "Akıllı", "Uygulama"] },
+  { main: "PIZZA", banned: ["İtalya", "Hamur", "Domates", "Peynir", "Fırın"] },
+];
+
+/* =============================================
+   VAMPIR ROLES
+============================================= */
+const vampirRoles = [
+  { name: 'Vampir',  emoji: '🧛', cls: 'vampir', desc: 'Her gece bir kurban seçersin. Kimliğini saklaman gerekiyor.' },
+  { name: 'Köylü',   emoji: '🧑‍🌾', cls: 'koylu',  desc: 'Gündüz tartışarak vampirleri bulmalısın.' },
+  { name: 'Doktor',  emoji: '👨‍⚕️', cls: 'doktor', desc: 'Her gece birini koruyabilirsin. Kendini de seçebilirsin.' },
+  { name: 'Komiser', emoji: '🕵️', cls: 'komiser', desc: 'Her gece bir kişinin vampir olup olmadığını öğrenebilirsin.' },
+];
+
+/* =============================================
+   STATE
+============================================= */
+let state = {
+  search: '',
+  groupFilter: 'all',
+  catFilter: 'all',
+  isVip: false,
+  favorites: [],
+  groupSize: 5,
+  currentPlan: 'monthly',
+  // Tabu state
+  tabuScore: { correct: 0, pass: 0 },
+  tabuCard: null,
+  // Vampir state
+  vampirPlayers: 5,
+  vampirCurrentPlayer: 0,
+  vampirRolesAssigned: [],
+  vampirShowingRole: false,
+};
+
+/* =============================================
+   CLOCK
+============================================= */
+function updateClock() {
+  const now = new Date();
+  const h = String(now.getHours()).padStart(2,'0');
+  const m = String(now.getMinutes()).padStart(2,'0');
+  document.getElementById('clock').textContent = `${h}:${m}`;
+}
+updateClock();
+setInterval(updateClock, 30000);
+
+/* =============================================
+   TOAST
+============================================= */
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+/* =============================================
+   TAB SWITCHING
+============================================= */
+function switchTab(tab, el) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => { n.classList.remove('active'); n.classList.add('inactive'); });
+  document.getElementById(`tab-${tab}`).classList.add('active');
+  el.classList.add('active');
+  el.classList.remove('inactive');
+  if (tab === 'favorites') renderFavorites();
+}
+
+/* =============================================
+   FILTER FUNCTIONS
+============================================= */
+function setGroupFilter(f, btn) {
+  state.groupFilter = f;
+  document.querySelectorAll('.group-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderGames();
+}
+
+function setCat(cat, btn) {
+  state.catFilter = cat;
+  document.querySelectorAll('.cat-pill').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderGames();
+}
+
+function handleSearch(val) {
+  state.search = val.toLowerCase().trim();
+  document.getElementById('search-clear').style.display = val ? 'block' : 'none';
+  renderGames();
+}
+
+function clearSearch() {
+  document.getElementById('search-input').value = '';
+  document.getElementById('search-clear').style.display = 'none';
+  state.search = '';
+  renderGames();
+}
+
+/* =============================================
+   FILTER LOGIC
+============================================= */
+function getFilteredGames() {
+  return gamesData.filter(g => {
+    // Group filter
+    if (state.groupFilter !== 'all') {
+      if (state.groupFilter === '1-2') { if (!(g.minPlayers <= 2)) return false; }
+      else if (state.groupFilter === '3-4') { if (!(g.minPlayers <= 4 && g.maxPlayers >= 3)) return false; }
+      else if (state.groupFilter === '5+') { if (!(g.maxPlayers >= 5)) return false; }
+    }
+    // Category filter
+    if (state.catFilter !== 'all' && g.category !== state.catFilter) return false;
+    // Search
+    if (state.search) {
+      const q = state.search;
+      if (!g.name.toLowerCase().includes(q) && !g.description.toLowerCase().includes(q) && !g.categoryLabel.toLowerCase().includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+/* =============================================
+   RENDER GAMES
+============================================= */
+function renderGames() {
+  const grid = document.getElementById('games-grid');
+  const filtered = getFilteredGames();
+  document.getElementById('game-count').textContent = `${filtered.length} oyun`;
+
+  if (filtered.length === 0) {
+    grid.innerHTML = `<div class="empty-state"><i class="fa fa-search"></i><p>Bu kriterlere uygun oyun bulunamadı.<br>Filtreleri değiştirmeyi deneyin.</p></div>`;
+    return;
+  }
+
+  grid.innerHTML = filtered.map((g, i) => {
+    const isFav = state.favorites.includes(g.id);
+    const isLocked = g.vip && !state.isVip;
+    const delay = `animation-delay: ${i * 0.06}s`;
+    return `
+    <div class="game-card" data-cat="${g.category}" data-id="${g.id}" style="${delay}" onclick="openModal('${g.id}')">
+      <div class="card-top">
+        <span class="card-icon">${g.icon}</span>
+        ${isLocked ? `<span class="vip-lock"><i class="fa fa-crown"></i> VIP</span>` : ''}
+      </div>
+      <div class="card-badges">
+        ${g.badges.map(b => `<span class="badge ${b.cls}">${b.t}</span>`).join('')}
+      </div>
+      <div class="card-name">${g.name}</div>
+      <div class="card-desc">${g.description}</div>
+      <div class="card-meta">
+        <span class="meta-item"><i class="fa fa-users"></i>${g.minPlayers}-${g.maxPlayers}</span>
+        <span class="meta-item"><i class="fa fa-clock"></i>${g.minTime}-${g.maxTime} dk</span>
+      </div>
+      <div class="card-footer">
+        <button class="btn-start ${isLocked ? 'vip-locked' : ''}" onclick="event.stopPropagation(); openModal('${g.id}')">
+          ${isLocked ? '<i class="fa fa-lock"></i> VIP Kilidi Aç' : '<i class="fa fa-play"></i> Nasıl Oynanır'}
+        </button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+/* =============================================
+   MODAL
+============================================= */
+function openModal(id) {
+  const g = gamesData.find(x => x.id === id);
+  if (!g) return;
+  const isLocked = g.vip && !state.isVip;
+  const isFav = state.favorites.includes(g.id);
+  const overlay = document.getElementById('modal-overlay');
+  const content = document.getElementById('modal-content');
+
+  if (isLocked) {
+    content.innerHTML = `
+      <div class="modal-hero">
+        <div class="modal-icon">${g.icon}</div>
+        <div class="modal-title">${g.name}</div>
+        <div class="modal-desc">${g.description}</div>
+      </div>
+      <div class="vip-gate">
+        <div class="vip-gate-icon">👑</div>
+        <div class="vip-gate-title">Bu Oyun VIP Pass Gerektiriyor</div>
+        <div class="vip-gate-desc">FriendGames Plus'a abone olarak bu oyunun kilidini aç ve daha fazlasını keşfet.</div>
+        <button class="btn-unlock" onclick="goToVip()"><i class="fa fa-crown"></i> VIP Pass Al</button>
+      </div>`;
+  } else {
+    content.innerHTML = `
+      <div class="modal-hero">
+        <div class="modal-icon">${g.icon}</div>
+        <div class="modal-badges">
+          ${g.badges.map(b => `<span class="badge ${b.cls}">${b.t}</span>`).join('')}
+        </div>
+        <div class="modal-title">${g.name}</div>
+        <div class="modal-desc">${g.description}</div>
+        <div class="modal-meta-row">
+          <span class="modal-meta-item"><i class="fa fa-users"></i> ${g.minPlayers}–${g.maxPlayers} oyuncu</span>
+          <span class="modal-meta-item"><i class="fa fa-clock"></i> ${g.minTime}–${g.maxTime} dakika</span>
+          <span class="modal-meta-item"><i class="fa fa-tag"></i> ${g.categoryLabel}</span>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:flex-end;padding:8px 20px 0;">
+        <button onclick="toggleFav('${g.id}')" style="background:none;border:none;color:${isFav ? '#f43f5e' : 'var(--text-muted)'};font-size:20px;cursor:pointer;" id="fav-btn-${g.id}">
+          <i class="fa${isFav ? 's' : 'r'} fa-heart"></i>
+        </button>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title"><i class="fa fa-list-check" style="margin-right:5px;color:var(--primary);"></i>Nasıl Oynanır?</div>
+        <ul class="rules-list">
+          ${g.rules.map((r,i) => `<li><span class="rule-num">${i+1}</span><span>${r}</span></li>`).join('')}
+        </ul>
+      </div>
+      ${buildEngine(g)}
+    `;
+    // initialize engine state if needed
+    if (g.engine === 'tabu') initTabu();
+    if (g.engine === 'vampir') initVampir();
+  }
+
+  overlay.classList.add('open');
+}
+
+function buildEngine(g) {
+  if (g.engine === 'vampir') return buildVampirEngine(g);
+  if (g.engine === 'tabu')   return buildTabuEngine();
+  if (g.engine === 'buz-kirici') return buildBuzKiriciEngine(g);
+  return '';
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('open');
+}
+
+function closeModalOnOverlay(e) {
+  if (e.target === document.getElementById('modal-overlay')) closeModal();
+}
+
+/* =============================================
+   VAMPIR ENGINE
+============================================= */
+function buildVampirEngine(g) {
+  return `
+  <div class="engine-card">
+    <div class="engine-title"><i class="fa fa-dice"></i> Rol Dağıtım Motoru</div>
+    <div id="vampir-player-count-row" style="margin-bottom:12px;">
+      <div style="font-size:12px;color:var(--text-muted);margin-bottom:6px;">Kaç kişi oynuyor?</div>
+      <div class="group-size-picker" style="justify-content:flex-start;gap:10px;">
+        <button class="gsp-btn" onclick="changeVampirPlayers(-1)">−</button>
+        <span class="gsp-val" id="vampir-player-count">${state.vampirPlayers}</span>
+        <button class="gsp-btn" onclick="changeVampirPlayers(1)">+</button>
+        <span style="font-size:11px;color:var(--text-muted);">oyuncu</span>
+      </div>
+    </div>
+    <div class="role-card hidden-role" id="role-display">
+      <div class="cover-text">👇 Telefonu bir sonraki kişiye uzat ve butona bas</div>
+      <div class="role-content">
+        <div class="role-emoji" id="role-emoji"></div>
+        <div class="role-name" id="role-name"></div>
+        <div class="role-desc-text" id="role-desc"></div>
+      </div>
+    </div>
+    <div class="player-counter">
+      <span id="vampir-progress-label">Oyuncu 1 / ${state.vampirPlayers}</span>
+      <div class="player-dots" id="player-dots"></div>
+    </div>
+    <button class="btn-engine btn-primary-engine" id="vampir-main-btn" onclick="vampirNextAction()">
+      <i class="fa fa-eye"></i> Rolümü Gör
+    </button>
+    <button class="btn-engine btn-secondary-engine" onclick="resetVampir()">
+      <i class="fa fa-rotate-left"></i> Oyunu Sıfırla
+    </button>
+  </div>`;
+}
+
+function initVampir() {
+  state.vampirCurrentPlayer = 0;
+  state.vampirShowingRole = false;
+  buildVampirRoles();
+  renderVampirDots();
+}
+
+function buildVampirRoles() {
+  const n = state.vampirPlayers;
+  let roles = [];
+  const vampCount = Math.max(1, Math.floor(n / 4));
+  for (let i = 0; i < vampCount; i++) roles.push({ ...vampirRoles[0] });
+  if (n >= 5) roles.push({ ...vampirRoles[2] }); // Doktor
+  if (n >= 7) roles.push({ ...vampirRoles[3] }); // Komiser
+  while (roles.length < n) roles.push({ ...vampirRoles[1] }); // Köylü
+  // Shuffle
+  for (let i = roles.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [roles[i], roles[j]] = [roles[j], roles[i]];
+  }
+  state.vampirRolesAssigned = roles;
+}
+
+function renderVampirDots() {
+  const n = state.vampirPlayers;
+  const cur = state.vampirCurrentPlayer;
+  const el = document.getElementById('player-dots');
+  if (!el) return;
+  el.innerHTML = Array.from({length: n}, (_,i) =>
+    `<div class="p-dot ${i < cur ? 'done' : i === cur ? 'current' : ''}"></div>`
+  ).join('');
+  const label = document.getElementById('vampir-progress-label');
+  if (label) label.textContent = `Oyuncu ${Math.min(cur+1, n)} / ${n}`;
+}
+
+function changeVampirPlayers(delta) {
+  state.vampirPlayers = Math.max(3, Math.min(20, state.vampirPlayers + delta));
+  const el = document.getElementById('vampir-player-count');
+  if (el) el.textContent = state.vampirPlayers;
+  initVampir();
+}
+
+function vampirNextAction() {
+  const btn = document.getElementById('vampir-main-btn');
+  const card = document.getElementById('role-display');
+
+  if (state.vampirCurrentPlayer >= state.vampirPlayers) {
+    showToast('✅ Tüm roller dağıtıldı! Oyuna başlayın.');
+    return;
+  }
+
+  if (!state.vampirShowingRole) {
+    // Show role
+    const role = state.vampirRolesAssigned[state.vampirCurrentPlayer];
+    document.getElementById('role-emoji').textContent = role.emoji;
+    const rn = document.getElementById('role-name');
+    rn.textContent = role.name;
+    rn.className = 'role-name ' + role.cls;
+    document.getElementById('role-desc').textContent = role.desc;
+    card.classList.remove('hidden-role');
+    card.classList.add('flip-anim');
+    setTimeout(() => card.classList.remove('flip-anim'), 400);
+    btn.innerHTML = '<i class="fa fa-eye-slash"></i> Gizle & Sonraki Kişiye Geç';
+    state.vampirShowingRole = true;
+  } else {
+    // Hide and advance
+    card.classList.add('hidden-role');
+    state.vampirCurrentPlayer++;
+    state.vampirShowingRole = false;
+    renderVampirDots();
+    if (state.vampirCurrentPlayer >= state.vampirPlayers) {
+      btn.innerHTML = '<i class="fa fa-check"></i> Dağıtım Tamamlandı!';
+      btn.style.background = 'linear-gradient(135deg, var(--accent-green), #059669)';
+    } else {
+      btn.innerHTML = '<i class="fa fa-eye"></i> Rolümü Gör';
+    }
+  }
+}
+
+function resetVampir() {
+  initVampir();
+  const card = document.getElementById('role-display');
+  if (card) card.classList.add('hidden-role');
+  const btn = document.getElementById('vampir-main-btn');
+  if (btn) {
+    btn.innerHTML = '<i class="fa fa-eye"></i> Rolümü Gör';
+    btn.style.background = '';
+  }
+  showToast('🔄 Roller sıfırlandı!');
+}
+
+/* =============================================
+   TABU ENGINE
+============================================= */
+function buildTabuEngine() {
+  return `
+  <div class="engine-card">
+    <div class="engine-title"><i class="fa fa-cards-blank"></i> Tabu Kart Motoru</div>
+    <div class="tabu-card" id="tabu-display">
+      <div class="tabu-main-word" id="tabu-main">—</div>
+      <div class="tabu-banned-label">YASAK KELİMELER</div>
+      <div class="tabu-banned-words" id="tabu-banned"></div>
+    </div>
+    <div class="tabu-actions">
+      <button class="btn-engine btn-correct" onclick="tabuAction('correct')"><i class="fa fa-check"></i> Doğru</button>
+      <button class="btn-engine btn-pass" onclick="tabuAction('pass')"><i class="fa fa-forward"></i> Pas</button>
+    </div>
+    <div class="score-row">
+      <div class="score-item"><div class="score-val" id="tabu-correct">0</div><div class="score-label">Doğru</div></div>
+      <div class="score-item"><div class="score-val" id="tabu-pass" style="color:var(--accent-red);">0</div><div class="score-label">Pas</div></div>
+    </div>
+    <button class="btn-engine btn-secondary-engine" style="margin-top:10px;" onclick="tabuReset()">
+      <i class="fa fa-rotate-left"></i> Skoru Sıfırla
+    </button>
+  </div>`;
+}
+
+function initTabu() {
+  state.tabuScore = { correct: 0, pass: 0 };
+  state.tabuCard = null;
+  drawTabuCard();
+}
+
+function drawTabuCard() {
+  const idx = Math.floor(Math.random() * tabuKartlar.length);
+  state.tabuCard = tabuKartlar[idx];
+  const mainEl = document.getElementById('tabu-main');
+  const bannedEl = document.getElementById('tabu-banned');
+  if (!mainEl) return;
+  const display = document.getElementById('tabu-display');
+  display.classList.add('flip-anim');
+  setTimeout(() => display.classList.remove('flip-anim'), 400);
+  mainEl.textContent = state.tabuCard.main;
+  bannedEl.innerHTML = state.tabuCard.banned.map(w =>
+    `<span class="tabu-word-chip">${w}</span>`).join('');
+}
+
+function tabuAction(type) {
+  if (type === 'correct') {
+    state.tabuScore.correct++;
+    document.getElementById('tabu-correct').textContent = state.tabuScore.correct;
+    showToast('✅ Doğru!');
+  } else {
+    state.tabuScore.pass++;
+    document.getElementById('tabu-pass').textContent = state.tabuScore.pass;
+    showToast('⏭️ Pas geçildi');
+  }
+  drawTabuCard();
+}
+
+function tabuReset() {
+  state.tabuScore = { correct: 0, pass: 0 };
+  document.getElementById('tabu-correct').textContent = '0';
+  document.getElementById('tabu-pass').textContent = '0';
+  drawTabuCard();
+  showToast('🔄 Skor sıfırlandı!');
+}
+
+/* =============================================
+   BUZ KIRICI ENGINE
+============================================= */
+function buildBuzKiriciEngine(g) {
+  const pool = g.id === 'sinir-sorusu' ? sinirSorular :
+               g.id === 'kim-daha-cok' ? kimDahaCok :
+               buzKiriciSorular;
+
+  return `
+  <div class="engine-card">
+    <div class="engine-title"><i class="fa fa-lightbulb"></i> Soru Kartı</div>
+    <div class="question-card" id="question-display">
+      <div class="question-text placeholder" id="question-text">Kart çekmek için aşağıdaki butona bas</div>
+    </div>
+    <button class="btn-engine btn-primary-engine" onclick="drawQuestion('${g.id}')">
+      <i class="fa fa-shuffle"></i> Kart Çek
+    </button>
+  </div>`;
+}
+
+function drawQuestion(gameId) {
+  const pool = gameId === 'sinir-sorusu' ? sinirSorular :
+               gameId === 'kim-daha-cok' ? kimDahaCok :
+               buzKiriciSorular;
+  const idx = Math.floor(Math.random() * pool.length);
+  const el = document.getElementById('question-text');
+  if (!el) return;
+  const card = document.getElementById('question-display');
+  card.classList.add('flip-anim');
+  setTimeout(() => card.classList.remove('flip-anim'), 400);
+  el.textContent = pool[idx];
+  el.classList.remove('placeholder');
+}
+
+/* =============================================
+   FAVORITES
+============================================= */
+function toggleFav(id) {
+  const idx = state.favorites.indexOf(id);
+  if (idx === -1) {
+    state.favorites.push(id);
+    showToast('❤️ Favorilere eklendi!');
+  } else {
+    state.favorites.splice(idx, 1);
+    showToast('💔 Favorilerden çıkarıldı');
+  }
+  // update heart icon in modal if open
+  const btn = document.getElementById(`fav-btn-${id}`);
+  if (btn) {
+    const inFav = state.favorites.includes(id);
+    btn.style.color = inFav ? '#f43f5e' : 'var(--text-muted)';
+    btn.innerHTML = `<i class="fa${inFav ? 's' : 'r'} fa-heart"></i>`;
+  }
+  renderGames();
+}
+
+function renderFavorites() {
+  const el = document.getElementById('fav-content');
+  if (state.favorites.length === 0) {
+    el.innerHTML = `<div class="fav-empty"><i class="fa fa-heart"></i><p>Henüz favori oyun eklemediniz.<br>Bir oyun kartını açıp ❤️ ikonuna basın.</p></div>`;
+    return;
+  }
+  const favGames = gamesData.filter(g => state.favorites.includes(g.id));
+  el.innerHTML = `<div class="fav-list">${favGames.map(g => `
+    <div class="fav-row" onclick="openModal('${g.id}')">
+      <span class="fav-icon">${g.icon}</span>
+      <div class="fav-info">
+        <div class="fav-name">${g.name}</div>
+        <div class="fav-meta">${g.minPlayers}-${g.maxPlayers} oyuncu · ${g.minTime}-${g.maxTime} dk</div>
+      </div>
+      <span class="fav-unfav" onclick="event.stopPropagation(); toggleFav('${g.id}'); renderFavorites();"><i class="fas fa-heart"></i></span>
+    </div>`).join('')}</div>`;
+}
+
+/* =============================================
+   VIP
+============================================= */
+function setPlan(plan) {
+  state.currentPlan = plan;
+  document.getElementById('plan-monthly').classList.toggle('active', plan === 'monthly');
+  document.getElementById('plan-yearly').classList.toggle('active', plan === 'yearly');
+  const priceEl  = document.getElementById('price-display');
+  const descEl   = document.getElementById('price-desc');
+  if (plan === 'monthly') {
+    priceEl.innerHTML = '₺79<span>/ay</span>';
+    descEl.textContent = 'İstediğin zaman iptal et';
+  } else {
+    priceEl.innerHTML = '₺47<span>/ay · ₺564/yıl</span>';
+    descEl.textContent = 'Yıllık faturalama ile %40 tasarruf';
+  }
+}
+
+function toggleSubscription() {
+  state.isVip = !state.isVip;
+  const btn = document.getElementById('subscribe-btn');
+  const note = document.getElementById('trial-note');
+  const badge = document.getElementById('vip-badge-header');
+
+  if (state.isVip) {
+    btn.innerHTML = '<i class="fa fa-check-circle"></i> VIP Aktif — İptal Et';
+    btn.classList.add('active-vip');
+    note.textContent = '✅ Tüm VIP içerikler açıldı!';
+    badge.textContent = 'VIP ✓';
+    badge.style.background = 'linear-gradient(135deg, #10B981, #059669)';
+    badge.style.color = '#fff';
+    showToast('👑 VIP Pass aktif edildi!');
+  } else {
+    btn.innerHTML = '<i class="fa fa-crown"></i> Deneme Aboneliğini Aç';
+    btn.classList.remove('active-vip');
+    note.textContent = '7 gün ücretsiz deneme • İstediğin zaman iptal et';
+    badge.textContent = 'FREE';
+    badge.style.background = '';
+    badge.style.color = '';
+    showToast('VIP Pass iptal edildi');
+  }
+  renderGames();
+}
+
+function goToVip() {
+  closeModal();
+  // switch to VIP tab
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => { n.classList.remove('active'); n.classList.add('inactive'); });
+  document.getElementById('tab-vip').classList.add('active');
+  document.querySelectorAll('.nav-item')[2].classList.add('active');
+  document.querySelectorAll('.nav-item')[2].classList.remove('inactive');
+}
+
+/* =============================================
+   SETTINGS
+============================================= */
+let gsVal = 5;
+function changeGroupSize(delta) {
+  gsVal = Math.max(1, Math.min(30, gsVal + delta));
+  document.getElementById('group-size-val').textContent = gsVal;
+}
+
+/* =============================================
+   INIT
+============================================= */
+renderGames();
+</script>
+</body>
+</html>

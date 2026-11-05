@@ -1,0 +1,61 @@
+export const buzKiriciSorular: string[] = [
+  'Çocukken olmak istediğin meslek neydi?',
+  'Şu an burada olmasan nerede olmak isterdin?',
+  'Seni en çok güldüren şey nedir?',
+  'Hiç pişman olmadığın bir karar var mı?',
+  'Süper gücün olsaydı ne olmasını isterdin?',
+  'Son bir haftanın en keyifli anı neydi?',
+  'Bir şeyi sıfırdan öğrenebilseydin ne seçerdin?',
+  'Hangisi: her zaman çok erken mi, yoksa hep geç mi kalmak?',
+  'En uzun yolculuğun ne kadardı? Nasıldı?',
+  'Telefonsuz bir hafta geçirebilir misin?',
+  'Seni en iyi tanıyan kişi kim?',
+  "Hayatında 'restart' atsan hangi döneme dönerdin?",
+  'En garip yemek kombinasyonu nedir?',
+  'Bir film karakteri olsaydın kim olmak isterdin?',
+  'Bugün biri seni mutlu etti mi?',
+  'Hangi alışkanlığından en çok memnunsun?',
+  'Hayatında en çok neyi erteliyorsun?',
+  'Komşunu tanıyor musun?',
+  'En son ne zaman yabancı biriyle sohbet ettin?',
+  'Hangisi: Deniz kıyısı mı, dağ başı mı?',
+];
+
+export const sinirSorular: string[] = [
+  'En son kime yalan söyledin?',
+  'Sırını kimseyle paylaşmamış olduğun bir şey var mı?',
+  'Gruptaki hangi kişiyle en çok tartışırsın?',
+  'Hayatında kimden özür dilemeliydin ama dilemediydin?',
+  'En utanç verici anın neydi?',
+  'Hiç birini arkadan çekiştirdin mi?',
+  'En son gerçekten ağladığın şey neydi?',
+  'Hangisi: Aşk mı, para mı, sağlık mı?',
+  'Bir şeyi çok geciktirdin mi? Neydi?',
+  'Gruptaki birine hiç söylemediğin bir şey var mı?',
+  'Hayatında en büyük pişmanlığın nedir?',
+  'Şu an en çok kime kızgınsın?',
+];
+
+export const kimDahaCok: string[] = [
+  'Sabah en son uyanan?',
+  'En fazla emoji kullanan?',
+  'Yemek siparişinde en çok kararsız kalan?',
+  'Geç kalmayı en çok mazerete bağlayan?',
+  'İnterneti en çok kullanan?',
+  'En dramatik tepkiler veren?',
+  'En çok yiyen?',
+  'Favori anısını en çok tekrar anlatan?',
+  'Selfie çekmeyi en çok seven?',
+  'Grubu en çok güldüren?',
+  'En çok uyuyan?',
+  'Para harcamayı en çok seven?',
+];
+
+export const sirinCani: string[] = [
+  "Sabah 5'te uyandırılmak mı, geceyi hiç uyumadan geçirmek mi?",
+  'Herkesin düşüncelerini okuyabilmek mi, herkesin seninkileri okuması mı?',
+  'Bir yıl boyunca şarkı söyleyerek mi konuşmak, dans ederek mi yürümek?',
+  'En iyi arkadaşını kaybetmek mi, 10 yıl anılarını kaybetmek mi?',
+  'Yalan söyleyememek mi, gerçeği hiç bilememek mi?',
+  'Sürekli çok sıcak mı hissetmek, sürekli çok soğuk mu?',
+];

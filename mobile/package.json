@@ -1,0 +1,39 @@
+{
+  "name": "friendgames",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "android": "expo start --android",
+    "start": "expo start",
+    "web": "expo start --web",
+    "type-check": "tsc --noEmit",
+    "ios": "expo start --ios",
+    "test": "node --test tests/*.test.cjs"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-navigation/bottom-tabs": "^6.5.12",
+    "@react-navigation/native": "^6.1.10",
+    "@react-navigation/native-stack": "^6.9.18",
+    "axios": "^1.6.8",
+    "expo": "latest",
+    "expo-audio": "~58.0.11",
+    "expo-keep-awake": "latest",
+    "expo-linear-gradient": "latest",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-gesture-handler": "~3.3.0",
+    "react-native-safe-area-context": "latest",
+    "react-native-screens": "latest",
+    "react-native-web": "^0.21.0",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.0",
+    "@types/react": "^19.2.0",
+    "babel-preset-expo": "latest",
+    "typescript": "^6.0.3"
+  },
+  "main": "index.js"
+}
