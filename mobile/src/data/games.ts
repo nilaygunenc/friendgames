@@ -2,6 +2,28 @@ import { Game } from '../types';
 
 export const gamesData: Game[] = [
   {
+    id: 'ne-yapiyorum',
+    name: 'Ne Yapıyorum?',
+    icon: '🤫',
+    category: 'friendgames',
+    categoryLabel: 'FriendGames Özel',
+    badges: [{ label: 'Yeni', color: 'green' }, { label: 'Taklit', color: 'pop' }],
+    minPlayers: 2,
+    maxPlayers: 12,
+    minTime: 10,
+    maxTime: 25,
+    description: 'Bir oyuncu konuşmadan hareketleri uygular; diğer oyuncu yönlendirir. Sonunda yapılan eylemi tahmin et!',
+    vip: false,
+    rules: [
+      'Bir yönlendirici ve bir tahmin eden seçin. Tahmin eden oyuncu kartın cevabına bakmamalıdır.',
+      'Yönlendirici, ekrandaki hareket komutlarını sırayla ve sakin biçimde söyler. Tahmin eden konuşmadan uygular.',
+      'Komutlar bittiğinde yönlendirici “Şu an ne yapıyorsun?” diye sorar.',
+      'Tahmin eden eylemi doğru bilirse puan alır. Sonra roller değişir ve yeni kart açılır.',
+      'Hareketleri güvenli, rahat ve kimseyi rahatsız etmeyecek şekilde yapın.',
+    ],
+    engine: 'mime',
+  },
+  {
     id: 'son-teklif',
     name: 'Son Teklif! (Açık Artırma)',
     icon: '🔨',
@@ -241,7 +263,7 @@ export const gamesData: Game[] = [
       'Gündüz: Herkes tartışarak bir şüpheliyi atar.',
       'Tüm mafyayı atan şehir, ya da şehirle eşitlenen mafya kazanır.',
     ],
-    engine: 'vampir',
+    engine: 'mafia-lite',
   },
   {
     id: 'kim-daha-cok',
@@ -316,7 +338,7 @@ export const gamesData: Game[] = [
       'Ajan bulunmadan konumu tahmin ederse ajanlar kazanır.',
       'Grup ajanı tespit ederse köylüler kazanır.',
     ],
-    engine: 'vampir',
+    engine: 'agent',
   },
   {
     id: 'hiz-kelimesi',

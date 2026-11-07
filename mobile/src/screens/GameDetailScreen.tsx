@@ -10,14 +10,6 @@ import { useAppStore } from '../store/useAppStore';
 import { useFavorites } from '../hooks/useFavorites';
 import { useToast } from '../hooks/useToast';
 import { Toast } from '../components/Toast';
-import { VampirEngine } from '../components/VampirEngine';
-import { TabuEngine } from '../components/TabuEngine';
-import { QuestionEngine } from '../components/QuestionEngine';
-import { MysteryEngine } from '../components/MysteryEngine';
-import { EveryoneEngine } from '../components/EveryoneEngine';
-import { LegalCaseEngine } from '../components/LegalCaseEngine';
-import { FingersEngine } from '../components/FingersEngine';
-import { AuctionEngine } from '../components/AuctionEngine';
 
 import { Colors, Spacing, Radius, FontSize } from '../theme';
 import { RootStackParamList } from '../types';
@@ -148,19 +140,12 @@ export const GameDetailScreen: React.FC = () => {
               ))}
             </View>
 
-            {/* ─── Divider ─────────────────────────────────────────── */}
             <View style={styles.divider} />
-
-            {/* ─── Engine ──────────────────────────────────────────── */}
-            <Text style={styles.engineLabel}>🎮 OYUN MOTORU</Text>
-            {game.engine === 'vampir'      && <VampirEngine />}
-            {game.engine === 'tabu'        && <TabuEngine />}
-            {game.engine === 'buz-kirici'  && <QuestionEngine gameId={game.id} />}
-            {game.engine === 'mystery' && <MysteryEngine />}
-            {game.engine === 'everyone' && <EveryoneEngine />}
-            {game.engine === 'legal' && <LegalCaseEngine />}
-            {game.engine === 'fingers' && <FingersEngine />}
-            {game.engine === 'auction' && <AuctionEngine />}
+            <LinearGradient colors={['#7928CA', '#6366F1']} style={styles.startButton}>
+              <TouchableOpacity onPress={() => navigation.navigate('GamePlay', { gameId: game.id })} style={styles.startButtonInner}>
+                <Text style={styles.startButtonText}>▶ Oyunu Başlat</Text>
+              </TouchableOpacity>
+            </LinearGradient>
           </>
         )}
 
@@ -278,15 +263,9 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.borderGlass,
     marginHorizontal: Spacing.xl,
   },
-  engineLabel: {
-    fontSize: FontSize.sm,
-    fontWeight: '700',
-    color: Colors.textMuted,
-    letterSpacing: 0.8,
-    paddingHorizontal: Spacing.xl,
-    marginTop: Spacing.xl,
-    marginBottom: 4,
-  },
+  startButton: { margin: Spacing.xl, borderRadius: 16 },
+  startButtonInner: { paddingVertical: 17, alignItems: 'center' },
+  startButtonText: { color: Colors.white, fontSize: FontSize.lg, fontWeight: '800' },
 
   // VIP Gate
   vipGate: {

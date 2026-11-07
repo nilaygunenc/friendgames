@@ -10,6 +10,7 @@ import { GameDetailScreen } from '../screens/GameDetailScreen';
 import { FavoritesScreen } from '../screens/FavoritesScreen';
 import { VIPScreen } from '../screens/VIPScreen';
 import { SettingsScreen } from '../screens/SettingsScreen';
+import { GamePlayScreen } from '../screens/GamePlayScreen';
 import { Colors } from '../theme';
 import { RootStackParamList, BottomTabParamList } from '../types';
 import { useThemeStyle } from '../ui';
@@ -74,6 +75,7 @@ export function AppNavigator() {
             animation: 'slide_from_bottom',
           }}
         />
+        <Stack.Screen name="GamePlay" component={GamePlayScreen} options={{ animation: 'slide_from_right' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -17,6 +17,8 @@ function rosterScore(roster: AuctionItem[]) {
 
 export function AuctionEngine() {
   const language = useAppStore(s => s.language);
+  const playerNames = useAppStore(s => s.playerNames);
+  const recordMatch = useAppStore(s => s.recordMatch);
   const [category, setCategory] = useState<AuctionCategory>('animals');
   const [deck, setDeck] = useState<AuctionItem[]>([]);
   const [index, setIndex] = useState(0);
@@ -30,7 +32,7 @@ export function AuctionEngine() {
   const [lastWinner, setLastWinner] = useState<number | null>(null);
   const [phase, setPhase] = useState<Phase>('setup');
   const l = (tr: string, en: string) => language === 'tr' ? tr : en;
-  const player = (n: number) => l(`Oyuncu ${n + 1}`, `Player ${n + 1}`);
+  const player = (n: number) => playerNames[n] || l(`Oyuncu ${n + 1}`, `Player ${n + 1}`);
   const item = deck[index];
 
   const begin = () => {
@@ -72,6 +74,11 @@ export function AuctionEngine() {
   );
   const scores = useMemo(() => rosters.map(rosterScore), [rosters]);
   const canRaise = budgets[turn] >= currentBid + 1;
+  const finish = () => {
+    const winner = scores[0].total === scores[1].total ? '' : scores[0].total > scores[1].total ? player(0) : player(1);
+    recordMatch({ gameId: 'son-teklif', gameName: 'Son Teklif! (Açık Artırma)', participants: [player(0), player(1)], winner });
+    setPhase('setup'); setDeck([]);
+  };
 
   return <View style={styles.card}>
     <Text style={styles.eyebrow}>{l('🔨 SON TEKLİF! AÇIK ARTIRMA', '🔨 FINAL BID! AUCTION')}</Text>
@@ -110,7 +117,7 @@ export function AuctionEngine() {
       {rosters.map((roster, i) => <View key={i} style={styles.roster}><Text style={styles.rosterName}>{player(i)} · ${budgets[i]} {l('kaldı', 'left')}</Text><Text style={styles.rosterItems}>{roster.length ? roster.map(item => item[language].name).join(' · ') : l('Kart yok', 'No cards')}</Text><Text style={styles.scoreText}>{l('Kalite', 'Quality')}: {scores[i].quality} + {l('Uyum', 'Synergy')}: {scores[i].synergy} = {scores[i].total}</Text></View>)}
       <Text style={styles.resultTitle}>{scores[0].total === scores[1].total ? l('Berabere! İki kadro da aynı toplam puanda.', 'Draw! Both rosters have the same total score.') : scores[0].total > scores[1].total ? l('Oyuncu 1 kazandı!', 'Player 1 wins!') : l('Oyuncu 2 kazandı!', 'Player 2 wins!')}</Text>
       <Text style={styles.note}>{l('Uyum: Kadrodaki aynı özellik etiketinin her ek tekrarı +2 puandır. Bu nedenle yalnız pahalı kartlara yüklenmek en iyi strateji olmayabilir.', 'Synergy: each extra matching trait tag in a roster is worth +2. Spending everything on expensive cards may not be the best strategy.')}</Text>
-      {button(l('Yeni açık artırma', 'New auction'), () => { setPhase('setup'); setDeck([]); })}
+      {button(l('Sonucu kaydet ve yeni açık artırma', 'Save result and start a new auction'), finish)}
     </>}
   </View>;
 }

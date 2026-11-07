@@ -30,7 +30,7 @@ const vampirRoles: VampirRole[] = [
   },
 ];
 
-export function buildRoleDeck(playerCount: number): VampirRole[] {
+export function buildRoleDeck(playerCount: number, options: { includeDoctor?: boolean } = {}): VampirRole[] {
   if (!Number.isInteger(playerCount) || playerCount < 5 || playerCount > 20) {
     throw new RangeError('Oyuncu sayısı 5–20 arasında olmalı.');
   }
@@ -38,7 +38,7 @@ export function buildRoleDeck(playerCount: number): VampirRole[] {
   const vampCount = Math.max(1, Math.floor(playerCount / 4));
 
   for (let i = 0; i < vampCount; i++) roles.push({ ...vampirRoles[0] }); // Vampir
-  if (playerCount >= 5) roles.push({ ...vampirRoles[2] });              // Doktor
+  if (options.includeDoctor !== false) roles.push({ ...vampirRoles[2] }); // Doktor
   if (playerCount >= 7) roles.push({ ...vampirRoles[3] });              // Komiser
   while (roles.length < playerCount) roles.push({ ...vampirRoles[1] }); // Köylü
 

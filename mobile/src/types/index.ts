@@ -25,7 +25,7 @@ export interface Game {
   description: string;
   vip: boolean;
   rules: string[];
-  engine: 'vampir' | 'tabu' | 'buz-kirici' | 'mystery' | 'everyone' | 'legal' | 'fingers' | 'auction';
+  engine: 'vampir' | 'mafia-lite' | 'agent' | 'mime' | 'tabu' | 'buz-kirici' | 'mystery' | 'everyone' | 'legal' | 'fingers' | 'auction';
 }
 
 export interface VampirRole {
@@ -43,6 +43,7 @@ export interface TabuCard {
 export type RootStackParamList = {
   Main: { screen: keyof BottomTabParamList } | undefined;
   GameDetail: { gameId: string };
+  GamePlay: { gameId: string };
 };
 
 export type BottomTabParamList = {
