@@ -1,7 +1,6 @@
 import { View, Text, TouchableOpacity } from '../ui';
 import React from 'react';
 import { StyleSheet, ActivityIndicator } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
 import { useQuestion } from '../hooks/useQuestion';
 import { Colors, Spacing, Radius, FontSize } from '../theme';
 
@@ -28,12 +27,7 @@ export const QuestionEngine: React.FC<Props> = ({ gameId }) => {
         )}
       </View>
 
-      <LinearGradient
-        colors={['#7928CA', '#6366F1']}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 0 }}
-        style={styles.drawBtn}
-      >
+      <View style={styles.drawBtn}>
         <TouchableOpacity
           onPress={draw}
           style={styles.drawBtnInner}
@@ -42,7 +36,7 @@ export const QuestionEngine: React.FC<Props> = ({ gameId }) => {
         >
           <Text style={styles.drawBtnText}>🔀 Kart Çek</Text>
         </TouchableOpacity>
-      </LinearGradient>
+      </View>
     </View>
   );
 };
@@ -66,10 +60,10 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.md,
   },
   questionCard: {
-    backgroundColor: 'rgba(16,185,129,0.08)',
+    backgroundColor: 'rgba(143,168,184,0.06)',
     borderWidth: 1,
-    borderColor: 'rgba(16,185,129,0.2)',
-    borderRadius: 14,
+    borderColor: 'rgba(143,168,184,0.18)',
+    borderRadius: 12,
     padding: Spacing.lg,
     minHeight: 110,
     justifyContent: 'center',
@@ -89,7 +83,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     lineHeight: 20,
   },
-  drawBtn: { borderRadius: Radius.md },
+  drawBtn: { borderRadius: 10, backgroundColor: Colors.primaryDark, borderWidth: 1, borderColor: Colors.primary },
   drawBtnInner: { paddingVertical: 13, alignItems: 'center' },
   drawBtnText: { fontSize: FontSize.md, fontWeight: '700', color: Colors.white },
 });

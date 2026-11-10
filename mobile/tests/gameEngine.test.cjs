@@ -52,14 +52,24 @@ test('fingers game supports a shared touch screen group', () => {
   assert.equal(game.maxPlayers, 8);
   assert.equal(game.vip, false);
 });
-test('auction game has two balanced categories and a $20 two-player format', () => {
+test('auction game has seven complete categories and a 20 FG two-player format', () => {
   const game = gamesData.find(g => g.id === 'son-teklif');
   assert.equal(game.engine, 'auction');
   assert.equal(game.minPlayers, 2);
   assert.equal(game.maxPlayers, 2);
-  assert.equal(auctionCategories.animals.items.length, 6);
-  assert.equal(auctionCategories.mythic.items.length, 6);
+  assert.equal(Object.keys(auctionCategories).length, 7);
   for (const category of Object.values(auctionCategories)) {
-    for (const item of category.items) assert.ok(item.power >= 3 && item.power <= 5);
+    assert.ok(category.items.length >= 6);
+    for (const item of category.items) assert.ok(item.power >= 1 && item.power <= 5);
   }
+});
+test('Expo and auction artwork assets are bundled locally', () => {
+  const app = JSON.parse(fs.readFileSync(require.resolve('../app.json'), 'utf8')).expo;
+  const configured = [app.icon, app.splash.image, app.android.adaptiveIcon.foregroundImage, app.web.favicon];
+  for (const relative of configured) assert.ok(fs.existsSync(require('node:path').join(__dirname, '..', relative)), `${relative} is missing`);
+  const artworkPath = require.resolve('../src/data/auctionArtwork.ts');
+  const source = fs.readFileSync(artworkPath, 'utf8');
+  const bundled = [...source.matchAll(/require\(['"](\.\.\/\.\.\/assets\/[^'"]+\.png)['"]\)/g)].map(match => match[1]);
+  assert.ok(bundled.length >= 16, 'Expected category and series fallback illustrations');
+  for (const relative of bundled) assert.ok(fs.existsSync(require('node:path').join(__dirname, '..', 'src/data', relative)), `${relative} is missing`);
 });

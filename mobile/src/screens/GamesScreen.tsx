@@ -3,7 +3,6 @@ import React, { useCallback } from 'react';
 import { StyleSheet, StatusBar } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { LinearGradient } from 'expo-linear-gradient';
 
 import { GameCard } from '../components/GameCard';
 import { GroupFilterBar, CategoryPills } from '../components/FilterBar';
@@ -56,24 +55,14 @@ export const GamesScreen: React.FC = () => {
       <View style={styles.header}>
         <View style={styles.headerTop}>
           {/* Logo */}
-          <LinearGradient
-            colors={['#a78bfa', '#ec4899', '#f59e0b']}
-            start={{ x: 0, y: 0 }}
-            end={{ x: 1, y: 0 }}
-            style={styles.logoBg}
-          >
+          <View style={styles.logoBg}>
             <Text style={styles.logoText}>FriendGames</Text>
-          </LinearGradient>
+          </View>
 
           <View style={styles.headerRight}>
-            <LinearGradient
-              colors={isVip ? ['#10B981', '#059669'] : ['#F59E0B', '#F97316']}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 0 }}
-              style={styles.vipTag}
-            >
+            <View style={styles.vipTag}>
               <Text style={styles.vipTagText}>{isVip ? '👑 VIP' : 'FREE'}</Text>
-            </LinearGradient>
+            </View>
           </View>
         </View>
 
@@ -119,6 +108,7 @@ export const GamesScreen: React.FC = () => {
           isVip={isVip}
           isFavorite={favorites.includes(item.id)}
           onPress={() => handleGamePress(item.id)}
+          onPlayPress={() => navigation.navigate('GamePlay', { gameId: item.id })}
           onFavPress={() => handleFavToggle(item.id)}
         />
       </View>
@@ -144,7 +134,7 @@ export const GamesScreen: React.FC = () => {
       <FlatList
         data={games}
         keyExtractor={item => item.id}
-        numColumns={2}
+        numColumns={1}
         ListHeaderComponent={renderHeader()}
         ListEmptyComponent={renderEmpty}
         renderItem={renderItem}
@@ -170,19 +160,22 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: Spacing.md,
   },
-  logoBg: { borderRadius: 4, paddingHorizontal: 2 },
+  logoBg: { borderRadius: 10, backgroundColor: 'transparent', paddingHorizontal: 0, paddingVertical: 3 },
   logoText: {
     fontSize: FontSize.title,
     fontWeight: '800',
-    color: Colors.white,
+    color: Colors.textPrimary,
   },
   headerRight: { flexDirection: 'row', alignItems: 'center', gap: Spacing.sm },
   vipTag: {
-    borderRadius: Radius.pill,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: Colors.primary,
+    backgroundColor: 'rgba(143,168,184,0.10)',
     paddingHorizontal: 10,
     paddingVertical: 4,
   },
-  vipTagText: { fontSize: FontSize.xs, fontWeight: '800', color: '#000' },
+  vipTagText: { fontSize: FontSize.xs, fontWeight: '800', color: Colors.accentGold },
 
   searchBar: {
     flexDirection: 'row',
@@ -191,7 +184,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.bgGlass,
     borderWidth: 1,
     borderColor: Colors.borderGlass,
-    borderRadius: 14,
+    borderRadius: 12,
     paddingHorizontal: 14,
     paddingVertical: 10,
     marginBottom: Spacing.lg,
@@ -232,7 +225,7 @@ const styles = StyleSheet.create({
   countText: { fontSize: FontSize.sm, color: Colors.textMuted },
 
   gridContent: { paddingBottom: 100 },
-  cardWrapper: { flex: 1, padding: Spacing.xs, paddingHorizontal: Spacing.sm },
+  cardWrapper: { width: '100%', paddingHorizontal: Spacing.xl, paddingVertical: Spacing.xs },
 
   empty: { padding: 40, alignItems: 'center', gap: Spacing.md },
   emptyIcon: { fontSize: 36, opacity: 0.4 },

@@ -60,29 +60,37 @@ export function pickRandom<T>(arr: T[]): T {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
+function supportsPlayerGroup(game: import('../types').Game, group: import('../types').GroupFilter) {
+  if (group === 'all') return true;
+  const min = Number(game.minPlayers);
+  const max = Number(game.maxPlayers);
+  if (!Number.isFinite(min) || !Number.isFinite(max) || min < 1 || max < min) return false;
+
+  const [groupMin, groupMax] = group === '1-2'
+    ? [1, 2]
+    : group === '3-4'
+      ? [3, 4]
+      : [5, Number.POSITIVE_INFINITY];
+
+  // Keep games that support at least one player count inside the selected group.
+  return min <= groupMax && max >= groupMin;
+}
+
 export function filterGames(
   games: import('../types').Game[],
   opts: {
     groupFilter: import('../types').GroupFilter;
-    categoryFilter: import('../types').GameCategory | 'all';
+    categoryFilter: import('../types').GameCategoryFilter;
     searchQuery: string;
   }
 ) {
   return games.filter(g => {
-    // Group filter
-    if (opts.groupFilter !== 'all') {
-      if (opts.groupFilter === '1-2' && g.minPlayers > 2) return false;
-      if (
-        opts.groupFilter === '3-4' &&
-        (g.minPlayers > 4 || g.maxPlayers < 3)
-      )
-        return false;
-      if (opts.groupFilter === '5+' && g.maxPlayers < 5) return false;
-    }
+    // Group ranges overlap: e.g. a 2–12 player game is also playable by a group of 3–4.
+    if (!supportsPlayerGroup(g, opts.groupFilter)) return false;
 
     // Category filter
-    if (opts.categoryFilter !== 'all' && g.category !== opts.categoryFilter)
-      return false;
+    if (opts.categoryFilter === 'party-18' && !g.badges.some(badge => badge.label === '18+')) return false;
+    if (opts.categoryFilter !== 'all' && opts.categoryFilter !== 'party-18' && g.category !== opts.categoryFilter) return false;
 
     // Search
     if (opts.searchQuery) {

@@ -72,7 +72,7 @@ Arkadaşlarınla tek telefon üzerinden parti oyunları oyna. Oyunları keşfet,
 
 Bu sürüm geliştirme aşamasındadır. VIP bir demodur; gerçek abonelik veya ödeme içermez.`}</Text>}
           </ScrollView>
-          <TouchableOpacity accessibilityRole="button" onPress={() => setPanel(null)} style={{ backgroundColor: Colors.primary, padding: 14, borderRadius: 12, alignItems: 'center', marginTop: 16 }}>
+          <TouchableOpacity accessibilityRole="button" onPress={() => setPanel(null)} style={{ backgroundColor: Colors.primary, padding: 14, borderRadius: 10, alignItems: 'center', marginTop: 16 }}>
             <Text style={{ color: '#FFFFFF', fontWeight: '700' }}>Kapat</Text>
           </TouchableOpacity>
         </View>
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
   picker: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   pickerBtn: {
     width: 28, height: 28,
-    borderRadius: 14,
+    borderRadius: 12,
     backgroundColor: Colors.bgGlass,
     borderWidth: 1,
     borderColor: Colors.borderGlass,
@@ -147,10 +147,10 @@ const styles = StyleSheet.create({
     fontSize: 11,
     color: Colors.textMuted,
   },
-  nameInput: { color: Colors.textPrimary, backgroundColor: Colors.bgDeep, borderWidth: 1, borderColor: Colors.borderGlass, borderRadius: 12, padding: 13, marginBottom: 9 },
-  saveBtn: { backgroundColor: Colors.primary, borderRadius: 12, alignItems: 'center', padding: 14, marginTop: 6 },
+  nameInput: { color: Colors.textPrimary, backgroundColor: Colors.bgDeep, borderWidth: 1, borderColor: Colors.borderGlass, borderRadius: 10, padding: 13, marginBottom: 9 },
+  saveBtn: { backgroundColor: Colors.primary, borderRadius: 10, alignItems: 'center', padding: 14, marginTop: 6 },
   saveBtnText: { color: Colors.white, fontWeight: '800' },
-  statRow: { backgroundColor: Colors.bgDeep, padding: 12, borderRadius: 12, marginBottom: 7 },
+  statRow: { backgroundColor: Colors.bgDeep, padding: 12, borderRadius: 10, marginBottom: 7 },
   historyRow: { borderBottomWidth: 1, borderBottomColor: Colors.borderGlass, paddingVertical: 10 },
   clearBtn: { padding: 12, alignItems: 'center', marginTop: 12 },
   clearText: { color: Colors.accentRed, fontWeight: '700' },

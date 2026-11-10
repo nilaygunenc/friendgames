@@ -3,21 +3,28 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-if (!process.env.DATABASE_URL) {
-  throw new Error('DATABASE_URL environment variable is required');
+// Mock mode: DATABASE_URL yoksa null pool oluştur
+// Controllers mock data kullanacak
+const databaseUrl = process.env.DATABASE_URL;
+
+export const pool = databaseUrl
+  ? new Pool({
+    connectionString: databaseUrl,
+    ssl:
+      process.env.NODE_ENV === 'production'
+        ? { rejectUnauthorized: false }
+        : false,
+    max: 10,
+    idleTimeoutMillis: 30_000,
+    connectionTimeoutMillis: 5_000,
+  })
+  : null as any; // Mock mode
+
+if (pool) {
+  pool.on('error', (err) => {
+    console.error('Unexpected DB pool error:', err);
+  });
 }
 
-export const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl:
-    process.env.NODE_ENV === 'production'
-      ? { rejectUnauthorized: false }
-      : false,
-  max: 10,
-  idleTimeoutMillis: 30_000,
-  connectionTimeoutMillis: 5_000,
-});
-
-pool.on('error', (err) => {
-  console.error('Unexpected DB pool error:', err);
-});
+// Helper: Check if using database or mock mode
+export const isUsingDatabase = () => !!databaseUrl;

@@ -18,6 +18,7 @@ export async function register(req: Request, res: Response): Promise<void> {
       'SELECT id FROM users WHERE email = $1',
       [email.toLowerCase()]
     );
+
     if ((existing.rowCount ?? 0) > 0) {
       res.status(409).json({ error: 'Email already registered' });
       return;

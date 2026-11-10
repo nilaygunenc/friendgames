@@ -1,4 +1,4 @@
-import { pool } from './pool';
+import { pool, isUsingDatabase } from './pool';
 
 const migrations = [
   /* 001 — users */
@@ -8,6 +8,7 @@ const migrations = [
     password_hash TEXT NOT NULL,
     display_name  TEXT NOT NULL,
     is_vip        BOOLEAN NOT NULL DEFAULT FALSE,
+    is_admin      BOOLEAN NOT NULL DEFAULT FALSE,
     vip_expires_at TIMESTAMPTZ,
     created_at    TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     updated_at    TIMESTAMPTZ NOT NULL DEFAULT NOW()
@@ -77,6 +78,11 @@ const migrations = [
 ];
 
 export async function runMigrations() {
+  if (!isUsingDatabase()) {
+    console.log('⚠️  Skipping migrations (mock mode)');
+    return;
+  }
+
   const client = await pool.connect();
   try {
     for (const sql of migrations) {
@@ -86,4 +92,22 @@ export async function runMigrations() {
   } finally {
     client.release();
   }
+}
+
+// Run migrations if this file is executed directly
+if (require.main === module) {
+  if (!isUsingDatabase()) {
+    console.log('❌ DATABASE_URL not set. Please configure database first.');
+    process.exit(1);
+  }
+
+  runMigrations()
+    .then(() => {
+      console.log('Done!');
+      process.exit(0);
+    })
+    .catch((err) => {
+      console.error('Migration failed:', err);
+      process.exit(1);
+    });
 }

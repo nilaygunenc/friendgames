@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriendGames Admin Panel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0B0D17;
+            color: #F1F5F9;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            background: linear-gradient(135deg, #a78bfa, #ec4899, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .tab {
+            padding: 10px 20px;
+            background: none;
+            border: none;
+            color: #94A3B8;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .tab.active {
+            color: #6366F1;
+            border-bottom-color: #6366F1;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #94A3B8;
+            margin-bottom: 5px;
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #6366F1;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #7928CA, #6366F1);
+            color: white;
+        }
+
+        .btn-success {
+            background: #10B981;
+            color: white;
+        }
+
+        .btn-danger {
+            background: #EF4444;
+            color: white;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        th {
+            background: rgba(255, 255, 255, 0.05);
+            font-weight: 600;
+            color: #94A3B8;
+        }
+
+        tr:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: #141829;
+            border-radius: 16px;
+            padding: 30px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-content h2 {
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #94A3B8;
+            font-size: 14px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            color: #F1F5F9;
+            font-family: inherit;
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .login-form {
+            max-width: 400px;
+            margin: 100px auto;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 16px;
+        }
+
+        .alert {
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .alert-error {
+            background: rgba(239, 68, 68, 0.2);
+            color: #FCA5A5;
+        }
+
+        .alert-success {
+            background: rgba(16, 185, 129, 0.2);
+            color: #6EE7B7;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script>
+        const API_URL = window.location.origin;
+        let token = localStorage.getItem('admin_token');
+        let currentTab = 'stats';
+
+        // ─── Components ───────────────────────────────────────────────────────
+        function LoginForm() {
+            return `
+        <div class="login-form">
+          <h1>🎮 FriendGames Admin</h1>
+          <p style="color: #94A3B8; margin-bottom: 20px;">Admin Panel'e giriş yapın</p>
+          <div id="login-error"></div>
+          <form onsubmit="handleLogin(event)">
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" id="email" required placeholder="admin@friendgames.app">
+            </div>
+            <div class="form-group">
+              <label>Şifre</label>
+              <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Giriş Yap</button>
+          </form>
+        </div>
+      `;
+        }
+
+        function AdminPanel(stats, games) {
+            return `
+        <div class="container">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h1>🎮 FriendGames Admin Panel</h1>
+            <button onclick="logout()" class="btn btn-danger">Çıkış</button>
+          </div>
+          
+          <div class="tabs">
+            <button class="tab ${currentTab === 'stats' ? 'active' : ''}" onclick="switchTab('stats')">
+              📊 İstatistikler
+            </button>
+            <button class="tab ${currentTab === 'games' ? 'active' : ''}" onclick="switchTab('games')">
+              🎮 Oyunlar
+            </button>
+            <button class="tab ${currentTab === 'questions' ? 'active' : ''}" onclick="switchTab('questions')">
+              ❓ Sorular
+            </button>
+            <button class="tab ${currentTab === 'tabu' ? 'active' : ''}" onclick="switchTab('tabu')">
+              🚫 Tabu Kartları
+            </button>
+          </div>
+
+          <div id="stats-tab" class="tab-content ${currentTab === 'stats' ? 'active' : ''}">
+            <div class="stats">
+              <div class="stat-card">
+                <div class="stat-label">Toplam Oyun</div>
+                <div class="stat-value">${stats.total_games || 0}</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Toplam Kullanıcı</div>
+                <div class="stat-value">${stats.total_users || 0}</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Toplam Soru</div>
+                <div class="stat-value">${stats.total_questions || 0}</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Tabu Kartları</div>
+                <div class="stat-value">${stats.total_tabu_cards || 0}</div>
+              </div>
+            </div>
+          </div>
+
+          <div id="games-tab" class="tab-content ${currentTab === 'games' ? 'active' : ''}">
+            <div style="margin-bottom: 20px;">
+              <button onclick="openGameModal()" class="btn btn-primary">+ Yeni Oyun Ekle</button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Icon</th>
+                  <th>İsim</th>
+                  <th>Kategori</th>
+                  <th>Oyuncu</th>
+                  <th>VIP</th>
+                  <th>İşlem</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${games.map(g => `
+                  <tr>
+                    <td>${g.icon}</td>
+                    <td>${g.name}</td>
+                    <td>${g.category_label}</td>
+                    <td>${g.min_players}-${g.max_players}</td>
+                    <td>${g.is_vip ? '👑 VIP' : 'Ücretsiz'}</td>
+                    <td>
+                      <button onclick="openGameModal('${g.id}')" class="btn btn-success" style="padding: 5px 10px; margin-right: 5px;">✏️</button>
+                      <button onclick="deleteGame('${g.id}')" class="btn btn-danger" style="padding: 5px 10px;">🗑️</button>
+                    </td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          </div>
+
+          <div id="questions-tab" class="tab-content ${currentTab === 'questions' ? 'active' : ''}">
+            <p style="color: #94A3B8;">Soru yönetimi yakında eklenecek...</p>
+          </div>
+
+          <div id="tabu-tab" class="tab-content ${currentTab === 'tabu' ? 'active' : ''}">
+            <p style="color: #94A3B8;">Tabu kartları yönetimi yakında eklenecek...</p>
+          </div>
+        </div>
+
+        <div id="game-modal" class="modal">
+          <div class="modal-content">
+            <h2 id="modal-title">Yeni Oyun Ekle</h2>
+            <div id="modal-error"></div>
+            <form onsubmit="saveGame(event)" id="game-form">
+              <div class="form-group">
+                <label>Oyun ID</label>
+                <input type="text" id="game-id" required>
+              </div>
+              <div class="form-group">
+                <label>İsim</label>
+                <input type="text" id="game-name" required>
+              </div>
+              <div class="form-group">
+                <label>Icon (Emoji)</label>
+                <input type="text" id="game-icon" required maxlength="2">
+              </div>
+              <div class="form-group">
+                <label>Kategori</label>
+                <select id="game-category" required>
+                  <option value="buz-kirici">Buz Kırıcı</option>
+                  <option value="gizli-rol">Gizli Rol</option>
+                  <option value="kelime">Kelime</option>
+                  <option value="friendgames">FriendGames Özel</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Açıklama</label>
+                <textarea id="game-description" required></textarea>
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <div class="form-group">
+                  <label>Min Oyuncu</label>
+                  <input type="number" id="game-min-players" required min="1">
+                </div>
+                <div class="form-group">
+                  <label>Max Oyuncu</label>
+                  <input type="number" id="game-max-players" required min="1">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" id="game-is-vip"> VIP Oyunu
+                </label>
+              </div>
+              <div style="display: flex; gap: 10px; margin-top: 20px;">
+                <button type="submit" class="btn btn-primary">Kaydet</button>
+                <button type="button" onclick="closeModal()" class="btn" style="background: #333;">İptal</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      `;
+        }
+
+        // ─── API Calls ────────────────────────────────────────────────────────
+        async function apiCall(endpoint, options = {}) {
+            const headers = {
+                'Content-Type': 'application/json',
+                ...(token && { 'Authorization': `Bearer ${token}` }),
+            };
+
+            const response = await fetch(`${API_URL}/api${endpoint}`, {
+                ...options,
+                headers: { ...headers, ...options.headers },
+            });
+
+            if (response.status === 401) {
+                logout();
+                throw new Error('Unauthorized');
+            }
+
+            return response.json();
+        }
+
+        // ─── Auth ─────────────────────────────────────────────────────────────
+        async function handleLogin(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            try {
+                const data = await apiCall('/auth/login', {
+                    method: 'POST',
+                    body: JSON.stringify({ email, password }),
+                });
+
+                token = data.token;
+                localStorage.setItem('admin_token', token);
+                render();
+            } catch (err) {
+                document.getElementById('login-error').innerHTML =
+                    '<div class="alert alert-error">Giriş başarısız. Lütfen bilgilerinizi kontrol edin.</div>';
+            }
+        }
+
+        function logout() {
+            token = null;
+            localStorage.removeItem('admin_token');
+            render();
+        }
+
+        // ─── Games ────────────────────────────────────────────────────────────
+        function switchTab(tab) {
+            currentTab = tab;
+            render();
+        }
+
+        let editingGameId = null;
+
+        async function openGameModal(gameId = null) {
+            document.getElementById('game-modal').classList.add('active');
+            editingGameId = gameId;
+
+            if (gameId) {
+                // Edit mode - load game data
+                document.getElementById('modal-title').textContent = 'Oyunu Düzenle';
+                try {
+                    const game = await apiCall(`/admin/games/${gameId}`);
+                    document.getElementById('game-id').value = game.id;
+                    document.getElementById('game-id').disabled = true; // Can't change ID
+                    document.getElementById('game-name').value = game.name;
+                    document.getElementById('game-icon').value = game.icon;
+                    document.getElementById('game-category').value = game.category;
+                    document.getElementById('game-description').value = game.description;
+                    document.getElementById('game-min-players').value = game.min_players;
+                    document.getElementById('game-max-players').value = game.max_players;
+                    document.getElementById('game-is-vip').checked = game.is_vip;
+                } catch (err) {
+                    alert('Oyun yüklenemedi!');
+                    closeModal();
+                }
+            } else {
+                // Create mode
+                document.getElementById('modal-title').textContent = 'Yeni Oyun Ekle';
+                document.getElementById('game-form').reset();
+                document.getElementById('game-id').disabled = false;
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('game-modal').classList.remove('active');
+            document.getElementById('modal-error').innerHTML = '';
+            editingGameId = null;
+        }
+
+        async function saveGame(e) {
+            e.preventDefault();
+
+            const gameData = {
+                id: document.getElementById('game-id').value,
+                name: document.getElementById('game-name').value,
+                icon: document.getElementById('game-icon').value,
+                category: document.getElementById('game-category').value,
+                category_label: getCategoryLabel(document.getElementById('game-category').value),
+                description: document.getElementById('game-description').value,
+                min_players: parseInt(document.getElementById('game-min-players').value),
+                max_players: parseInt(document.getElementById('game-max-players').value),
+                min_time: 5, // Default values
+                max_time: 30,
+                is_vip: document.getElementById('game-is-vip').checked,
+                engine: null,
+                rules: [],
+                badges: []
+            };
+
+            try {
+                if (editingGameId) {
+                    // Update existing game
+                    await apiCall(`/admin/games/${editingGameId}`, {
+                        method: 'PUT',
+                        body: JSON.stringify(gameData)
+                    });
+                } else {
+                    // Create new game
+                    await apiCall('/admin/games', {
+                        method: 'POST',
+                        body: JSON.stringify(gameData)
+                    });
+                }
+
+                closeModal();
+                render();
+            } catch (err) {
+                document.getElementById('modal-error').innerHTML =
+                    '<div class="alert alert-error">Kaydetme başarısız! Lütfen bilgileri kontrol edin.</div>';
+            }
+        }
+
+        function getCategoryLabel(category) {
+            const labels = {
+                'buz-kirici': 'Buz Kırıcı',
+                'gizli-rol': 'Gizli Rol',
+                'kelime': 'Kelime',
+                'friendgames': 'FriendGames Özel'
+            };
+            return labels[category] || category;
+        }
+
+        async function editGame(id) {
+            await openGameModal(id);
+        }
+
+        async function deleteGame(id) {
+            if (!confirm('Bu oyunu silmek istediğinize emin misiniz?')) return;
+
+            try {
+                await apiCall(`/admin/games/${id}`, { method: 'DELETE' });
+                render();
+            } catch (err) {
+                alert('Silme işlemi başarısız!');
+            }
+        }
+
+        // ─── Render ───────────────────────────────────────────────────────────
+        async function render() {
+            const app = document.getElementById('app');
+
+            if (!token) {
+                app.innerHTML = LoginForm();
+                return;
+            }
+
+            try {
+                const [stats, gamesData] = await Promise.all([
+                    apiCall('/admin/stats'),
+                    apiCall('/admin/games'),
+                ]);
+
+                app.innerHTML = AdminPanel(stats.stats, gamesData.games);
+            } catch (err) {
+                console.error(err);
+                logout();
+            }
+        }
+
+        // Initialize
+        render();
+    </script>
+</body>
+
+</html>

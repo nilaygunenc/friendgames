@@ -83,6 +83,8 @@ export async function revenuecatWebhook(
           app_user_id,
         ]
       );
+
+      console.log(`✅ VIP activated for user ${app_user_id}`);
     } else if (isRevoked) {
       await pool.query(
         `UPDATE users
@@ -90,6 +92,8 @@ export async function revenuecatWebhook(
          WHERE id = $1`,
         [app_user_id]
       );
+
+      console.log(`❌ VIP revoked for user ${app_user_id}`);
     }
 
     res.status(200).json({ received: true });

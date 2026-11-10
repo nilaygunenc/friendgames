@@ -3,29 +3,31 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Game } from '../types';
-import { Colors, Spacing, Radius, FontSize } from '../theme';
+import { Colors, Spacing, FontSize } from '../theme';
+import { GameIcon } from './GameIcon';
 
 interface Props {
   game: Game;
   isVip: boolean;
   isFavorite: boolean;
   onPress: () => void;
+  onPlayPress?: () => void;
   onFavPress?: () => void;
 }
 
 const BADGE_STYLES: Record<string, { bg: string; text: string }> = {
-  green:  { bg: 'rgba(16,185,129,0.15)', text: Colors.accentGreen },
-  red:    { bg: 'rgba(239,68,68,0.15)',  text: Colors.accentRed },
-  purple: { bg: 'rgba(99,102,241,0.15)', text: '#a5b4fc' },
-  gold:   { bg: 'rgba(245,158,11,0.15)', text: Colors.accentGold },
-  pop:    { bg: 'rgba(236,72,153,0.15)', text: '#f9a8d4' },
+  green:  { bg: '#E1ECE5', text: '#607D6D' },
+  red:    { bg: '#F0E3E3', text: '#9B6B6B' },
+  purple: { bg: '#EBE5F0', text: '#786986' },
+  gold:   { bg: '#F0EBDD', text: '#8D7950' },
+  pop:    { bg: '#E2EAF0', text: '#5D788B' },
 };
 
-const CATEGORY_BORDER: Record<string, string> = {
-  'buz-kirici':  Colors.accentGreen,
-  'gizli-rol':   Colors.accentRed,
-  'kelime':      Colors.primary,
-  'friendgames': Colors.accentGold,
+const ICON_SURFACES: Record<string, string> = {
+  'buz-kirici': '#DDEBE6',
+  'gizli-rol': '#E8E2EF',
+  kelime: '#E8E5D9',
+  friendgames: '#DCE7ED',
 };
 
 export const GameCard: React.FC<Props> = ({
@@ -33,30 +35,26 @@ export const GameCard: React.FC<Props> = ({
   isVip,
   isFavorite,
   onPress,
+  onPlayPress,
   onFavPress,
 }) => {
   const isLocked = game.vip && !isVip;
-  const borderColor = CATEGORY_BORDER[game.category] ?? Colors.primary;
-
   return (
     <TouchableOpacity
-      style={[styles.card, { borderTopColor: borderColor, borderTopWidth: 2 }]}
+      style={styles.card}
       onPress={onPress}
       activeOpacity={0.85}
     >
       {/* Top row: icon + badges */}
       <View style={styles.cardTop}>
-        <Text style={styles.icon}>{game.icon}</Text>
+        <View style={[styles.iconWrap, { backgroundColor: ICON_SURFACES[game.category] ?? '#DCE7ED' }]}>
+          <GameIcon game={game} size={54} />
+        </View>
         <View style={styles.topRight}>
           {isLocked && (
-            <LinearGradient
-              colors={['#F59E0B', '#F97316']}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 0 }}
-              style={styles.vipBadge}
-            >
+            <View style={styles.vipBadge}>
               <Text style={styles.vipBadgeText}>👑 VIP</Text>
-            </LinearGradient>
+            </View>
           )}
           {onFavPress && (
             <TouchableOpacity
@@ -95,16 +93,17 @@ export const GameCard: React.FC<Props> = ({
       </View>
 
       <View style={styles.footer}>
-        <LinearGradient
-          colors={isLocked ? ['#F59E0B', '#F97316'] : ['#7928CA', '#6366F1']}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 1, y: 0 }}
-          style={styles.startBtn}
-        >
-          <Text style={[styles.startBtnText, isLocked && { color: '#000' }]}>
-            {isLocked ? '🔒 VIP Kilidi Aç' : '▶ Nasıl Oynanır'}
-          </Text>
-        </LinearGradient>
+        {isLocked ? (
+          <TouchableOpacity onPress={e => { e.stopPropagation?.(); onPress(); }} style={[styles.startBtn, styles.vipStartBtn]}>
+            <Text style={styles.startBtnText}>🔒 VIP Kilidi Aç</Text>
+          </TouchableOpacity>
+        ) : (
+          <TouchableOpacity onPress={e => { e.stopPropagation?.(); (onPlayPress ?? onPress)(); }}>
+            <LinearGradient colors={['#718B9A', '#587383']} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={styles.startBtn}>
+              <Text style={styles.startBtnText}>▶  Hemen Oyna</Text>
+            </LinearGradient>
+          </TouchableOpacity>
+        )}
       </View>
     </TouchableOpacity>
   );
@@ -114,30 +113,39 @@ const styles = StyleSheet.create({
   card: {
     flex: 1,
     backgroundColor: Colors.bgCard,
-    borderRadius: Radius.card,
-    padding: Spacing.md,
+    borderRadius: 20,
+    padding: Spacing.lg,
     borderWidth: 1,
     borderColor: Colors.borderGlass,
     margin: Spacing.xs,
+    minHeight: 250,
+    shadowColor: '#000000',
+    shadowOpacity: 0.12,
+    shadowRadius: 12,
+    shadowOffset: { width: 0, height: 5 },
+    elevation: 3,
   },
   cardTop: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    marginBottom: Spacing.sm,
+    alignItems: 'center',
+    marginBottom: Spacing.md,
   },
   topRight: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 6,
   },
-  icon: { fontSize: 26 },
+  iconWrap: { width: 54, height: 54, borderRadius: 18, alignItems: 'center', justifyContent: 'center', shadowColor: '#4D6472', shadowOpacity: 0.10, shadowRadius: 5, shadowOffset: { width: 0, height: 3 }, elevation: 2 },
   vipBadge: {
-    borderRadius: Radius.sm,
+    borderRadius: 7,
+    borderWidth: 1,
+    borderColor: Colors.primary,
+    backgroundColor: 'rgba(143,168,184,0.10)',
     paddingHorizontal: 6,
     paddingVertical: 3,
   },
-  vipBadgeText: { fontSize: 9, fontWeight: '800', color: '#000' },
+  vipBadgeText: { fontSize: 9, fontWeight: '800', color: Colors.primaryGlow },
   favIcon: { fontSize: 14 },
 
   badges: {
@@ -147,22 +155,22 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.xs,
   },
   badge: {
-    borderRadius: Radius.pill,
+    borderRadius: 12,
     paddingHorizontal: 7,
     paddingVertical: 2,
   },
   badgeText: { fontSize: 9, fontWeight: '700' },
 
   name: {
-    fontSize: FontSize.base,
+    fontSize: FontSize.lg,
     fontWeight: '700',
     color: Colors.textPrimary,
     marginBottom: 4,
   },
   desc: {
-    fontSize: 11,
+    fontSize: FontSize.sm,
     color: Colors.textMuted,
-    lineHeight: 16,
+    lineHeight: 19,
     marginBottom: Spacing.sm,
   },
   meta: {
@@ -171,7 +179,7 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.sm,
     flexWrap: 'wrap',
   },
-  metaItem: { fontSize: 10, color: Colors.textMuted },
+  metaItem: { fontSize: FontSize.xs, color: Colors.textMuted },
 
   footer: {
     borderTopWidth: 1,
@@ -179,14 +187,23 @@ const styles = StyleSheet.create({
     paddingTop: Spacing.sm,
   },
   startBtn: {
-    borderRadius: 10,
-    paddingVertical: 8,
+    borderRadius: 14,
+    borderWidth: 0,
+    paddingVertical: 12,
     alignItems: 'center',
+    justifyContent: 'center',
+    minHeight: 46,
+    shadowColor: '#344B5A',
+    shadowOpacity: 0.18,
+    shadowRadius: 7,
+    shadowOffset: { width: 0, height: 4 },
+    elevation: 2,
   },
   startBtnText: {
     color: Colors.white,
-    fontSize: 11,
+    fontSize: FontSize.sm,
     fontWeight: '700',
   },
+  vipStartBtn: { backgroundColor: Colors.bgRaised, borderWidth: 1, borderColor: Colors.borderGlass },
 });
 

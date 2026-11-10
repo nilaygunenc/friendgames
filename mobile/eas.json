@@ -1,0 +1,36 @@
+{
+    "cli": {
+        "version": ">= 5.9.0"
+    },
+    "build": {
+        "development": {
+            "developmentClient": true,
+            "distribution": "internal",
+            "android": {
+                "gradleCommand": ":app:assembleDebug"
+            }
+        },
+        "preview": {
+            "distribution": "internal",
+            "android": {
+                "buildType": "apk"
+            }
+        },
+        "production": {
+            "android": {
+                "buildType": "aab"
+            },
+            "env": {
+                "EXPO_PUBLIC_API_URL": "https://your-backend-url.com/api"
+            }
+        }
+    },
+    "submit": {
+        "production": {
+            "android": {
+                "serviceAccountKeyPath": "./google-service-account.json",
+                "track": "internal"
+            }
+        }
+    }
+}

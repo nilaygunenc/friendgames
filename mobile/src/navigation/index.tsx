@@ -20,9 +20,9 @@ const Tab = createBottomTabNavigator<BottomTabParamList>();
 
 const TAB_ICONS: Record<string, { active: string; inactive: string }> = {
   Games:     { active: '🎮', inactive: '🎮' },
-  Favorites: { active: '❤️', inactive: '🤍' },
-  VIP:       { active: '👑', inactive: '♛' },
-  Settings:  { active: '⚙️', inactive: '⚙️' },
+  Favorites: { active: '🏆', inactive: '🌟' },
+  VIP:       { active: '💎', inactive: '🔹' },
+  Settings:  { active: '🎛️', inactive: '⚙️' },
 };
 
 const TAB_LABELS: Record<string, string> = {
@@ -83,12 +83,17 @@ export function AppNavigator() {
 
 const styles = StyleSheet.create({
   tabBar: {
-    backgroundColor: 'rgba(20,24,41,0.97)',
+    backgroundColor: Colors.bgDeep,
     borderTopColor: Colors.borderGlass,
     borderTopWidth: 1,
     height: 70,
     paddingBottom: 8,
     paddingTop: 8,
+    elevation: 12,
+    shadowColor: '#000000',
+    shadowOpacity: 0.12,
+    shadowRadius: 12,
+    shadowOffset: { width: 0, height: -4 },
   },
 });
 

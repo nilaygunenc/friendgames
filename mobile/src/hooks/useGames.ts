@@ -11,6 +11,37 @@ import { filterGames } from '../utils/gameEngine';
 import { Game } from '../types';
 import { translate } from '../i18n';
 
+function normalizeRemoteGame(value: Record<string, any>): Game {
+  const parseArray = <T,>(input: unknown, fallback: T[]): T[] => {
+    if (Array.isArray(input)) return input as T[];
+    if (typeof input === 'string') {
+      try {
+        const parsed: unknown = JSON.parse(input);
+        return Array.isArray(parsed) ? parsed as T[] : fallback;
+      } catch { return fallback; }
+    }
+    return fallback;
+  };
+
+  return {
+    ...value,
+    id: String(value.id ?? ''),
+    name: String(value.name ?? ''),
+    icon: String(value.icon ?? '🎮'),
+    category: value.category,
+    categoryLabel: String(value.categoryLabel ?? value.category_label ?? ''),
+    minPlayers: Number(value.minPlayers ?? value.min_players),
+    maxPlayers: Number(value.maxPlayers ?? value.max_players),
+    minTime: Number(value.minTime ?? value.min_time),
+    maxTime: Number(value.maxTime ?? value.max_time),
+    description: String(value.description ?? ''),
+    vip: Boolean(value.vip ?? value.is_vip),
+    engine: value.engine,
+    badges: parseArray(value.badges, []),
+    rules: parseArray(value.rules, []),
+  } as Game;
+}
+
 interface UseGamesResult {
   games: Game[];
   isLoading: boolean;
@@ -31,7 +62,7 @@ export function useGames(): UseGamesResult {
     try {
       const res = await GamesAPI.list();
       if (res.data?.games?.length) {
-        setAllGames(res.data.games);
+        setAllGames(res.data.games.map((game: Record<string, any>) => normalizeRemoteGame(game)));
       }
     } catch {
       // Silently fall back to local data — no network needed for V1

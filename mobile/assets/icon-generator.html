@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriendGames Icon Generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0B0D17;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .canvas-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .canvas-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        canvas {
+            border: 2px solid #6366F1;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #7928CA, #6366F1);
+            border: none;
+            color: white;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        .info {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🎮 FriendGames Icon Generator</h1>
+
+    <div class="info">
+        <p>Bu sayfa otomatik olarak FriendGames app icon'larını oluşturur.</p>
+        <p>Her bir canvas'a sağ tıklayıp "Resmi farklı kaydet" diyerek indirebilirsiniz.</p>
+    </div>
+
+    <div class="canvas-container">
+        <div class="canvas-item">
+            <canvas id="icon" width="1024" height="1024"></canvas>
+            <button onclick="download('icon')">icon.png İndir (1024x1024)</button>
+        </div>
+        <div class="canvas-item">
+            <canvas id="adaptive" width="1024" height="1024"></canvas>
+            <button onclick="download('adaptive')">adaptive-icon.png İndir (1024x1024)</button>
+        </div>
+        <div class="canvas-item">
+            <canvas id="splash" width="1284" height="2778"></canvas>
+            <button onclick="download('splash')">splash.png İndir (1284x2778)</button>
+        </div>
+    </div>
+
+    <script>
+        // Icon (1024x1024)
+        const iconCanvas = document.getElementById('icon');
+        const iconCtx = iconCanvas.getContext('2d');
+
+        // Gradient background
+        const gradient = iconCtx.createLinearGradient(0, 0, 1024, 1024);
+        gradient.addColorStop(0, '#7928CA');
+        gradient.addColorStop(0.5, '#6366F1');
+        gradient.addColorStop(1, '#F59E0B');
+        iconCtx.fillStyle = gradient;
+        iconCtx.fillRect(0, 0, 1024, 1024);
+
+        // Game controller icon
+        iconCtx.font = 'bold 600px Arial';
+        iconCtx.textAlign = 'center';
+        iconCtx.textBaseline = 'middle';
+        iconCtx.fillStyle = 'white';
+        iconCtx.fillText('🎮', 512, 512);
+
+        // Adaptive Icon (1024x1024)
+        const adaptiveCanvas = document.getElementById('adaptive');
+        const adaptiveCtx = adaptiveCanvas.getContext('2d');
+
+        // Same as icon
+        const gradient2 = adaptiveCtx.createLinearGradient(0, 0, 1024, 1024);
+        gradient2.addColorStop(0, '#7928CA');
+        gradient2.addColorStop(0.5, '#6366F1');
+        gradient2.addColorStop(1, '#F59E0B');
+        adaptiveCtx.fillStyle = gradient2;
+        adaptiveCtx.fillRect(0, 0, 1024, 1024);
+
+        adaptiveCtx.font = 'bold 600px Arial';
+        adaptiveCtx.textAlign = 'center';
+        adaptiveCtx.textBaseline = 'middle';
+        adaptiveCtx.fillStyle = 'white';
+        adaptiveCtx.fillText('🎮', 512, 512);
+
+        // Splash Screen (1284x2778 - iPhone 14 Pro Max)
+        const splashCanvas = document.getElementById('splash');
+        const splashCtx = splashCanvas.getContext('2d');
+
+        // Dark background
+        splashCtx.fillStyle = '#0B0D17';
+        splashCtx.fillRect(0, 0, 1284, 2778);
+
+        // Gradient circle
+        const splashGradient = splashCtx.createRadialGradient(642, 1389, 0, 642, 1389, 500);
+        splashGradient.addColorStop(0, 'rgba(121, 40, 202, 0.3)');
+        splashGradient.addColorStop(0.5, 'rgba(99, 102, 241, 0.2)');
+        splashGradient.addColorStop(1, 'rgba(11, 13, 23, 0)');
+        splashCtx.fillStyle = splashGradient;
+        splashCtx.fillRect(0, 0, 1284, 2778);
+
+        // Icon in center
+        splashCtx.font = 'bold 400px Arial';
+        splashCtx.textAlign = 'center';
+        splashCtx.textBaseline = 'middle';
+        splashCtx.fillStyle = 'white';
+        splashCtx.fillText('🎮', 642, 1200);
+
+        // App name
+        const textGradient = splashCtx.createLinearGradient(0, 1500, 1284, 1500);
+        textGradient.addColorStop(0, '#a78bfa');
+        textGradient.addColorStop(0.5, '#ec4899');
+        textGradient.addColorStop(1, '#f59e0b');
+        splashCtx.fillStyle = textGradient;
+        splashCtx.font = 'bold 120px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+        splashCtx.fillText('FriendGames', 642, 1500);
+
+        // Tagline
+        splashCtx.fillStyle = '#94A3B8';
+        splashCtx.font = '40px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+        splashCtx.fillText('Arkadaşlarla Oynanan Parti Oyunları', 642, 1600);
+
+        // Download function
+        function download(canvasId) {
+            const canvas = document.getElementById(canvasId);
+            const link = document.createElement('a');
+            link.download = `${canvasId}.png`;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+    </script>
+</body>
+
+</html>

@@ -114,7 +114,7 @@ export function FingersEngine() {
 }
 
 const styles = StyleSheet.create({
-  card: { backgroundColor: Colors.bgCard, padding: 20, margin: 20, borderRadius: 20, gap: 16, borderWidth: 1, borderColor: Colors.borderGlass },
+  card: { backgroundColor: Colors.bgCard, padding: 20, margin: 16, borderRadius: 14, gap: 16, borderWidth: 2, borderColor: Colors.primaryDark },
   eyebrow: { color: Colors.textMuted, fontSize: 12, fontWeight: '700', letterSpacing: .8 },
   title: { color: Colors.textPrimary, fontSize: 24, fontWeight: '800', textAlign: 'center' },
   instruction: { color: Colors.textPrimary, fontSize: 16, lineHeight: 24, textAlign: 'center' },
@@ -123,8 +123,8 @@ const styles = StyleSheet.create({
   pickerButton: { backgroundColor: Colors.bgDeep, borderColor: Colors.borderGlass, borderWidth: 1, width: 48, height: 48, borderRadius: 24, justifyContent: 'center', alignItems: 'center' },
   pickerText: { color: Colors.textPrimary, fontSize: 28, fontWeight: '700' },
   pickerValue: { color: Colors.textPrimary, fontSize: 40, minWidth: 48, textAlign: 'center', fontWeight: '900' },
-  button: { backgroundColor: Colors.primary, padding: 15, borderRadius: 13, alignItems: 'center' },
-  secondary: { backgroundColor: '#484288' },
+  button: { backgroundColor: Colors.primary, padding: 15, borderRadius: 10, alignItems: 'center' },
+  secondary: { backgroundColor: Colors.bgRaised, borderWidth: 1, borderColor: Colors.borderGlass },
   disabled: { opacity: .38 },
   buttonText: { color: Colors.white, fontWeight: '700', fontSize: 14, textAlign: 'center' },
   scoreboard: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', gap: 7 },
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
   guessValue: { color: Colors.accentGold, fontSize: 64, minWidth: 70, textAlign: 'center', fontWeight: '900' },
   center: { alignItems: 'center', gap: 12 },
   countdown: { color: Colors.accentGold, fontSize: 100, lineHeight: 112, fontWeight: '900' },
-  touchZone: { minHeight: 265, backgroundColor: 'rgba(16,185,129,0.14)', borderRadius: 20, borderColor: Colors.accentGreen, borderWidth: 2, justifyContent: 'center', alignItems: 'center', gap: 7, padding: 22 },
+  touchZone: { minHeight: 265, backgroundColor: 'rgba(143,168,184,0.08)', borderRadius: 12, borderColor: Colors.primary, borderWidth: 2, justifyContent: 'center', alignItems: 'center', gap: 7, padding: 22 },
   touchIcon: { fontSize: 55 },
   touchTitle: { color: Colors.accentGreen, fontSize: 25, letterSpacing: 1, fontWeight: '900' },
   touchNote: { color: Colors.textPrimary, fontSize: 14, lineHeight: 21, textAlign: 'center' },

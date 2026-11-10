@@ -4,7 +4,7 @@ export const gamesData: Game[] = [
   {
     id: 'ne-yapiyorum',
     name: 'Ne Yapıyorum?',
-    icon: '🤫',
+    icon: '',
     category: 'friendgames',
     categoryLabel: 'FriendGames Özel',
     badges: [{ label: 'Yeni', color: 'green' }, { label: 'Taklit', color: 'pop' }],
@@ -26,7 +26,7 @@ export const gamesData: Game[] = [
   {
     id: 'son-teklif',
     name: 'Son Teklif! (Açık Artırma)',
-    icon: '🔨',
+    icon: '',
     category: 'friendgames',
     categoryLabel: 'FriendGames Özel',
     badges: [{ label: 'Yeni', color: 'green' }, { label: 'Strateji', color: 'gold' }],
@@ -34,15 +34,15 @@ export const gamesData: Game[] = [
     maxPlayers: 2,
     minTime: 15,
     maxTime: 30,
-    description: '20$ bütçeni akıllıca kullan: hayvan veya efsanevi canlıları açık artırmada kap, en güçlü ve en uyumlu kadroyu kur.',
+    description: '20 FG bütçeyle hayvanlardan lüks kozmetiğe, Türk lezzetlerinden dizi karakterlerine uzanan 7 temada açık artırmaya katıl; doğru setleri tamamlayıp en yüksek puanlı kadroyu kur.',
     vip: false,
     rules: [
-      'İki oyuncu eşit 20$ bütçeyle başlar ve kategori seçer. Gelecek kartlar önceden gösterilmez.',
-      'Sıradaki oyuncu 1$ ile teklif açabilir ya da pas geçebilir. Rakip teklifi artırır veya açık artırmadan çekilir.',
-      'Çekilen oyuncu o turda tekrar teklif veremez. En yüksek teklif sahibi kartı alır ve teklif bütçesinden düşer.',
-      'Her kart yalnızca bir kadroya katılabilir. Oyuncular mevcut bütçelerini aşan teklif veremez.',
-      'Tüm kartlar tamamlanınca kalite puanı ve aynı özellik etiketlerinden gelen uyum puanı hesaplanır.',
-      'En pahalı kadro değil, en yüksek toplam kalite ve uyuma sahip kadro kazanır.',
+      'İki oyuncu eşit 20 FG bütçeyle başlar ve 7 temadan birini seçer: hayvanlar, efsanevi canlılar, lüks kozmetik, Türk yemekleri, efsane Türk dizi karakterleri, hayatta kalma ekipmanları veya üniversite/ofis hayatı. Dizi temasında her maç 9 dizilik havuzdan 4 diziyi seçer.',
+      'Kartlar tek tek ve kapalı desteden açılır. Sırası gelen 1 FG ile açar veya pas geçer; rakip teklifi her seferinde 1 FG artırabilir ya da çekilebilir. Teklif artışı ekranda sıradaki tutarı açıkça gösterir.',
+      'Çekilen oyuncu o turda tekrar teklif veremez. Kart en yüksek teklifi verene geçer ve kazanılan tutar bütçesinden düşer. İki oyuncu da pas geçerse kart satılmaz.',
+      'Kartlardaki tahmini FG değeri yalnızca fikir vermek içindir; açık artırma 1 FG’den başlar. Teklif, oyuncunun kalan bütçesini aşamaz; hiçbir oyuncu toplamda 20 FG’den fazla harcayamaz.',
+      'Oyun sonunda kart kalitesi, temaya özgü set bonusları ve hayvan/efsanevi canlı destelerinde ortak özellik tekrarı puanlanır. Dizi temasında aynı diziden 2 karakter +3, 3 karakterlik tam kadro +8 puan verir. Kozmetik setleri, eşleşen yemek menüleri, dengeli hayatta kalma setleri ve çalışma/tükenmişlik kombinleri de bonus kazandırır.',
+      'En pahalı kadro değil, en yüksek toplam kalite ve uyum puanı kazanır. Eşit puan beraberliktir.',
     ],
     engine: 'auction',
   },
@@ -118,7 +118,7 @@ export const gamesData: Game[] = [
   {
     id: 'gizemli-hikaye',
     name: 'Gizemli Hikâye (Evet / Hayır)',
-    icon: '🔎',
+    icon: '',
     category: 'friendgames',
     categoryLabel: 'FriendGames Özel',
     badges: [{ label: 'Yeni', color: 'green' }, { label: 'Mantık', color: 'purple' }],
@@ -141,7 +141,7 @@ export const gamesData: Game[] = [
   {
     id: 'vampir-koylu',
     name: 'Vampir-Köylü',
-    icon: '🧛',
+    icon: '',
     category: 'gizli-rol',
     categoryLabel: 'Gizli Rol',
     badges: [
@@ -167,7 +167,7 @@ export const gamesData: Game[] = [
   {
     id: 'tabu',
     name: 'Tabu',
-    icon: '🤐',
+    icon: '',
     category: 'kelime',
     categoryLabel: 'Kelime & Anlatım',
     badges: [

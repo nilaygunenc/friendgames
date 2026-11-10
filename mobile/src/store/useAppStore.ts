@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { GameCategory, GroupFilter } from '../types';
+import { GameCategoryFilter, GroupFilter } from '../types';
 
 export interface MatchRecord {
   id: string;
@@ -19,7 +19,7 @@ interface AppState {
   toggleDarkMode: () => void;
   // Filters
   groupFilter: GroupFilter;
-  categoryFilter: GameCategory | 'all';
+  categoryFilter: GameCategoryFilter;
   searchQuery: string;
 
   // VIP
@@ -39,7 +39,7 @@ interface AppState {
 
   // Actions
   setGroupFilter: (f: GroupFilter) => void;
-  setCategoryFilter: (c: GameCategory | 'all') => void;
+  setCategoryFilter: (c: GameCategoryFilter) => void;
   setSearchQuery: (q: string) => void;
   toggleVip: () => void;
   toggleFavorite: (id: string) => void;

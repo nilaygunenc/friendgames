@@ -1,7 +1,6 @@
 import { View, Text, ScrollView, TouchableOpacity } from '../ui';
 import React, { useState } from 'react';
 import { StyleSheet } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
 import { useAppStore } from '../store/useAppStore';
 import { Colors, Spacing, Radius, FontSize } from '../theme';
 
@@ -38,14 +37,11 @@ export const VIPScreen: React.FC = () => {
       showsVerticalScrollIndicator={false}
     >
       {/* Hero */}
-      <LinearGradient
-        colors={['rgba(121,40,202,0.25)', 'rgba(239,68,68,0.05)']}
-        style={styles.hero}
-      >
+      <View style={styles.hero}>
         <Text style={styles.crown}>👑</Text>
         <Text style={styles.heroTitle}>FriendGames Plus</Text>
         <Text style={styles.heroTagline}>Daha fazla oyun, daha az reklam, sınırsız eğlence</Text>
-      </LinearGradient>
+      </View>
 
       {/* Plan toggle */}
       <View style={styles.planToggle}>
@@ -73,13 +69,10 @@ export const VIPScreen: React.FC = () => {
       </View>
 
       {/* Price card */}
-      <LinearGradient
-        colors={['rgba(245,158,11,0.1)', 'rgba(249,115,22,0.1)']}
-        style={styles.priceCard}
-      >
+      <View style={styles.priceCard}>
         <Text style={styles.price}>{price}</Text>
         <Text style={styles.priceDesc}>{priceDesc}</Text>
-      </LinearGradient>
+      </View>
 
       {/* Features */}
       <View style={styles.featureList}>
@@ -92,16 +85,13 @@ export const VIPScreen: React.FC = () => {
       </View>
 
       {/* Subscribe button */}
-      <LinearGradient
-        colors={isVip ? ['#10B981', '#059669'] : ['#F59E0B', '#F97316']}
-        style={styles.subscribeBtn}
-      >
+      <View style={[styles.subscribeBtn, isVip && styles.subscribeBtnActive]}>
         <TouchableOpacity onPress={toggleVip} style={styles.subscribeBtnInner}>
           <Text style={[styles.subscribeBtnText, isVip && { color: Colors.white }]}>
             {isVip ? 'VIP demosunu kapat' : 'VIP demosunu aç'}
           </Text>
         </TouchableOpacity>
-      </LinearGradient>
+      </View>
 
       <Text style={styles.trialNote}>
         {isVip
@@ -131,6 +121,10 @@ const styles = StyleSheet.create({
   hero: {
     padding: Spacing.xxl,
     alignItems: 'center',
+    backgroundColor: Colors.bgCard,
+    borderWidth: 1,
+    borderColor: Colors.borderGlass,
+    borderRadius: 14,
     borderBottomWidth: 1,
     borderBottomColor: Colors.borderGlass,
   },
@@ -175,11 +169,12 @@ const styles = StyleSheet.create({
   priceCard: {
     marginHorizontal: Spacing.xl,
     marginBottom: Spacing.lg,
-    borderRadius: 20,
+    borderRadius: 14,
     padding: Spacing.xl,
     alignItems: 'center',
     borderWidth: 1.5,
-    borderColor: 'rgba(245,158,11,0.3)',
+    borderColor: Colors.borderGlass,
+    backgroundColor: Colors.bgCard,
   },
   price: { fontSize: 28, fontWeight: '900', color: Colors.accentGold, marginBottom: 4 },
   priceDesc: { fontSize: FontSize.sm, color: Colors.textMuted },
@@ -196,9 +191,10 @@ const styles = StyleSheet.create({
   featureIcon: { fontSize: 16, width: 22, textAlign: 'center' },
   featureText: { fontSize: FontSize.md, color: Colors.textPrimary },
 
-  subscribeBtn: { marginHorizontal: Spacing.xl, borderRadius: 16, marginBottom: Spacing.sm },
+  subscribeBtn: { marginHorizontal: Spacing.xl, borderRadius: 10, marginBottom: Spacing.sm, backgroundColor: Colors.primaryDark, borderWidth: 1, borderColor: Colors.primary },
+  subscribeBtnActive: { backgroundColor: Colors.bgRaised, borderColor: Colors.borderGlass },
   subscribeBtnInner: { paddingVertical: 16, alignItems: 'center' },
-  subscribeBtnText: { fontSize: FontSize.lg, fontWeight: '800', color: '#000' },
+  subscribeBtnText: { fontSize: FontSize.lg, fontWeight: '800', color: Colors.white },
 
   trialNote: {
     textAlign: 'center',

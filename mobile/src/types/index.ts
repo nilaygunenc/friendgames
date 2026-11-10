@@ -3,6 +3,7 @@ export type GameCategory =
   | 'gizli-rol'
   | 'kelime'
   | 'friendgames';
+export type GameCategoryFilter = GameCategory | 'all' | 'party-18';
 
 export type GroupFilter = 'all' | '1-2' | '3-4' | '5+';
 

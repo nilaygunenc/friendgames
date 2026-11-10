@@ -1,29 +1,30 @@
 export const Colors = {
-  bgDeep: '#0B0D17',
-  bgCard: '#141829',
-  bgGlass: 'rgba(255,255,255,0.05)',
-  borderGlass: 'rgba(255,255,255,0.08)',
+  bgDeep: '#111820',
+  bgCard: '#1B252F',
+  bgRaised: '#26333F',
+  bgGlass: 'rgba(255,255,255,0.035)',
+  borderGlass: 'rgba(210,222,232,0.11)',
 
-  primary: '#6366F1',
-  primaryDark: '#7928CA',
-  primaryGlow: '#FF0080',
+  primary: '#8FA8B8',
+  primaryDark: '#526B7C',
+  primaryGlow: '#B5C7D2',
 
-  accentGreen: '#10B981',
-  accentGold: '#F59E0B',
-  accentRed: '#EF4444',
-  accentOrange: '#F97316',
+  accentGreen: '#8FB5A3',
+  accentGold: '#C9B995',
+  accentRed: '#C98989',
+  accentOrange: '#C49A78',
 
-  textPrimary: '#F1F5F9',
-  textMuted: '#94A3B8',
+  textPrimary: '#E8EDF1',
+  textMuted: '#9BA8B3',
 
-  white: '#FFFFFF',
-  black: '#000000',
+  white: '#F5F7F9',
+  black: '#111820',
 } as const;
 
 export const Gradients = {
-  primary: ['#7928CA', '#6366F1'] as [string, string],
-  logo: ['#a78bfa', '#ec4899', '#f59e0b'] as [string, string, string],
-  vip: ['#F59E0B', '#F97316'] as [string, string],
-  green: ['#10B981', '#059669'] as [string, string],
-  card: ['rgba(255,255,255,0.03)', 'transparent'] as [string, string],
+  primary: ['#526B7C', '#718A9A'] as [string, string],
+  logo: ['#718A9A', '#526B7C', '#415765'] as [string, string, string],
+  vip: ['#C9B995', '#A79775'] as [string, string],
+  green: ['#8FB5A3', '#688A7A'] as [string, string],
+  card: ['rgba(210,222,232,0.045)', 'transparent'] as [string, string],
 } as const;

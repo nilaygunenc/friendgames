@@ -3,13 +3,13 @@ import React from 'react';
 import { StyleSheet, Alert } from 'react-native';
 import { useRoute, useNavigation, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { LinearGradient } from 'expo-linear-gradient';
 
 import { gamesData } from '../data/games';
 import { useAppStore } from '../store/useAppStore';
 import { useFavorites } from '../hooks/useFavorites';
 import { useToast } from '../hooks/useToast';
 import { Toast } from '../components/Toast';
+import { GameIcon } from '../components/GameIcon';
 
 import { Colors, Spacing, Radius, FontSize } from '../theme';
 import { RootStackParamList } from '../types';
@@ -18,11 +18,11 @@ import { translate } from '../i18n';
 type RouteP = RouteProp<RootStackParamList, 'GameDetail'>;
 
 const BADGE_STYLES: Record<string, { bg: string; text: string }> = {
-  green:  { bg: 'rgba(16,185,129,0.15)', text: Colors.accentGreen },
-  red:    { bg: 'rgba(239,68,68,0.15)',  text: Colors.accentRed },
-  purple: { bg: 'rgba(99,102,241,0.15)', text: '#a5b4fc' },
-  gold:   { bg: 'rgba(245,158,11,0.15)', text: Colors.accentGold },
-  pop:    { bg: 'rgba(236,72,153,0.15)', text: '#f9a8d4' },
+  green:  { bg: 'rgba(143,168,184,0.10)', text: Colors.accentOrange },
+  red:    { bg: 'rgba(143,168,184,0.10)', text: Colors.accentOrange },
+  purple: { bg: 'rgba(143,168,184,0.10)', text: Colors.accentOrange },
+  gold:   { bg: 'rgba(143,168,184,0.10)', text: Colors.accentOrange },
+  pop:    { bg: 'rgba(143,168,184,0.10)', text: Colors.accentOrange },
 };
 
 export const GameDetailScreen: React.FC = () => {
@@ -68,7 +68,7 @@ export const GameDetailScreen: React.FC = () => {
       >
         {/* ─── Hero ─────────────────────────────────────────────── */}
         <View style={styles.hero}>
-          <Text style={styles.heroIcon}>{game.icon}</Text>
+          <View style={styles.heroIcon}><GameIcon game={game} size={88} /></View>
 
           <View style={styles.badges}>
             {game.badges.map((b, i) => {
@@ -111,16 +111,11 @@ export const GameDetailScreen: React.FC = () => {
             <Text style={styles.vipGateDesc}>
               FriendGames Plus'a abone olarak bu oyunun kilidini aç ve daha fazlasını keşfet.
             </Text>
-            <LinearGradient
-              colors={['#F59E0B', '#F97316']}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 0 }}
-              style={styles.unlockBtn}
-            >
+            <View style={styles.unlockBtn}>
               <TouchableOpacity onPress={goToVip} style={styles.unlockBtnInner}>
                 <Text style={styles.unlockBtnText}>👑 VIP Pass Al</Text>
               </TouchableOpacity>
-            </LinearGradient>
+            </View>
           </View>
         ) : (
           <>
@@ -129,23 +124,20 @@ export const GameDetailScreen: React.FC = () => {
               <Text style={styles.sectionTitle}>📋 NASIL OYNANIR?</Text>
               {game.rules.map((rule, i) => (
                 <View key={i} style={styles.ruleRow}>
-                  <LinearGradient
-                    colors={['#7928CA', '#6366F1']}
-                    style={styles.ruleNum}
-                  >
+                  <View style={styles.ruleNum}>
                     <Text style={styles.ruleNumText}>{i + 1}</Text>
-                  </LinearGradient>
+                  </View>
                   <Text style={styles.ruleText}>{translate(rule, language)}</Text>
                 </View>
               ))}
             </View>
 
             <View style={styles.divider} />
-            <LinearGradient colors={['#7928CA', '#6366F1']} style={styles.startButton}>
+            <View style={styles.startButton}>
               <TouchableOpacity onPress={() => navigation.navigate('GamePlay', { gameId: game.id })} style={styles.startButtonInner}>
                 <Text style={styles.startButtonText}>▶ Oyunu Başlat</Text>
               </TouchableOpacity>
-            </LinearGradient>
+            </View>
           </>
         )}
 
@@ -177,7 +169,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: Colors.borderGlass,
   },
-  heroIcon: { fontSize: 48, marginBottom: Spacing.sm },
+  heroIcon: { width: 104, height: 104, alignItems: 'center', justifyContent: 'center', borderRadius: 30, backgroundColor: 'rgba(143,168,184,0.10)', marginBottom: Spacing.sm },
   badges: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -185,7 +177,7 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.sm,
   },
   badge: {
-    borderRadius: Radius.pill,
+    borderRadius: 14,
     paddingHorizontal: 7,
     paddingVertical: 2,
   },
@@ -220,7 +212,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.bgGlass,
     borderWidth: 1,
     borderColor: Colors.borderGlass,
-    borderRadius: Radius.pill,
+    borderRadius: 14,
     paddingHorizontal: 10,
     paddingVertical: 4,
   },
@@ -244,7 +236,7 @@ const styles = StyleSheet.create({
   ruleNum: {
     width: 24,
     height: 24,
-    borderRadius: 12,
+    borderRadius: 14,
     alignItems: 'center',
     justifyContent: 'center',
     flexShrink: 0,
@@ -263,7 +255,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.borderGlass,
     marginHorizontal: Spacing.xl,
   },
-  startButton: { margin: Spacing.xl, borderRadius: 16 },
+  startButton: { margin: Spacing.xl, borderRadius: 12, backgroundColor: Colors.primaryDark, borderWidth: 1, borderColor: Colors.primary },
   startButtonInner: { paddingVertical: 17, alignItems: 'center' },
   startButtonText: { color: Colors.white, fontSize: FontSize.lg, fontWeight: '800' },
 
@@ -288,8 +280,8 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.lg,
     maxWidth: 280,
   },
-  unlockBtn: { borderRadius: 14, width: '100%' },
+  unlockBtn: { borderRadius: 12, width: '100%', backgroundColor: Colors.primaryDark, borderWidth: 1, borderColor: Colors.primary },
   unlockBtnInner: { paddingVertical: 16, alignItems: 'center' },
-  unlockBtnText: { fontSize: FontSize.base, fontWeight: '800', color: '#000' },
+  unlockBtnText: { fontSize: FontSize.base, fontWeight: '800', color: Colors.white },
 });
 

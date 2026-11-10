@@ -16,8 +16,8 @@ export const Radius = {
   lg: 16,
   xl: 20,
   pill: 999,
-  card: 16,
-  modal: 28,
+  card: 18,
+  modal: 22,
 } as const;
 
 export const FontSize = {

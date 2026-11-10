@@ -7,6 +7,7 @@ import { gamesData } from '../data/games';
 import { RootStackParamList } from '../types';
 import { GameEngine } from '../components/GameEngine';
 import { Colors, Spacing, FontSize } from '../theme';
+import { GameIcon } from '../components/GameIcon';
 
 type RouteP = RouteProp<RootStackParamList, 'GamePlay'>;
 
@@ -18,7 +19,7 @@ export function GamePlayScreen() {
   return <View style={styles.container}>
     <View style={styles.header}>
       <TouchableOpacity onPress={() => navigation.goBack()} style={styles.back}><Text style={styles.backText}>← Oyun detayları</Text></TouchableOpacity>
-      <View style={styles.titleRow}><Text style={styles.icon}>{game.icon}</Text><Text style={styles.title}>{game.name}</Text></View>
+      <View style={styles.titleRow}><GameIcon game={game} size={32} /><Text style={styles.title}>{game.name}</Text></View>
     </View>
     <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
       <GameEngine game={game} />
@@ -31,6 +32,6 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: Colors.bgDeep },
   header: { paddingTop: 52, paddingHorizontal: Spacing.xl, paddingBottom: Spacing.md, borderBottomWidth: 1, borderBottomColor: Colors.borderGlass },
   back: { alignSelf: 'flex-start', paddingVertical: 5 }, backText: { color: Colors.primary, fontSize: FontSize.base, fontWeight: '700' },
-  titleRow: { flexDirection: 'row', alignItems: 'center', gap: 9, marginTop: 9 }, icon: { fontSize: 25 }, title: { color: Colors.textPrimary, fontSize: FontSize.lg, fontWeight: '800', flex: 1 },
+  titleRow: { flexDirection: 'row', alignItems: 'center', gap: 9, marginTop: 9 }, title: { color: Colors.textPrimary, fontSize: FontSize.lg, fontWeight: '800', flex: 1 },
   content: { paddingBottom: 30 },
 });

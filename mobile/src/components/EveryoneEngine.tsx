@@ -82,18 +82,18 @@ export function EveryoneEngine() {
 }
 
 const styles = StyleSheet.create({
-  card: { backgroundColor: Colors.bgCard, padding: 20, margin: 20, borderRadius: 20, gap: 16, borderWidth: 1, borderColor: Colors.borderGlass },
+  card: { backgroundColor: Colors.bgCard, padding: 20, margin: 16, borderRadius: 14, gap: 16, borderWidth: 2, borderColor: Colors.primaryDark },
   header: { flexDirection: 'row', justifyContent: 'space-between', gap: 8 },
   eyebrow: { color: Colors.textMuted, fontSize: 11, fontWeight: '700', letterSpacing: .8, flex: 1 },
   progress: { color: Colors.textMuted, fontSize: 12, fontWeight: '700' },
-  question: { backgroundColor: 'rgba(99,102,241,0.16)', borderRadius: 16, padding: 22, minHeight: 140, alignItems: 'center', justifyContent: 'center' },
+  question: { backgroundColor: 'rgba(143,168,184,0.08)', borderRadius: 12, borderWidth: 1, borderColor: Colors.borderGlass, padding: 22, minHeight: 140, alignItems: 'center', justifyContent: 'center' },
   questionText: { color: Colors.textPrimary, fontSize: 22, lineHeight: 30, fontWeight: '800', textAlign: 'center' },
   instruction: { color: Colors.textMuted, fontSize: 14, lineHeight: 21, textAlign: 'center' },
   center: { alignItems: 'center', gap: 10 },
   countdown: { color: Colors.accentGold, fontSize: 88, fontWeight: '900', lineHeight: 100 },
   point: { fontSize: 60 },
   pointTitle: { color: Colors.accentGreen, fontSize: 25, fontWeight: '900', letterSpacing: 1 },
-  button: { backgroundColor: Colors.primary, padding: 15, borderRadius: 13, alignItems: 'center' },
-  secondary: { backgroundColor: '#484288' },
+  button: { backgroundColor: Colors.primary, padding: 15, borderRadius: 10, alignItems: 'center' },
+  secondary: { backgroundColor: Colors.bgRaised, borderWidth: 1, borderColor: Colors.borderGlass },
   buttonText: { color: Colors.white, fontWeight: '700', fontSize: 14, textAlign: 'center' },
 });

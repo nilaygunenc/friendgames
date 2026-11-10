@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity, ScrollView } from '../ui';
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import { GameCategory, GroupFilter } from '../types';
+import { GameCategoryFilter, GroupFilter } from '../types';
 import { Colors, Spacing, Radius, FontSize } from '../theme';
 
 // ─── Group Size Filter ────────────────────────────────────────────────────────
@@ -65,16 +65,17 @@ const gf = StyleSheet.create({
 // ─── Category Pills ───────────────────────────────────────────────────────────
 
 interface CategoryProps {
-  value: GameCategory | 'all';
-  onChange: (c: GameCategory | 'all') => void;
+  value: GameCategoryFilter;
+  onChange: (c: GameCategoryFilter) => void;
 }
 
-const CATEGORY_OPTIONS: { label: string; value: GameCategory | 'all' }[] = [
-  { label: '🎮 Tüm Oyunlar',       value: 'all' },
-  { label: '🧊 Buz Kırıcılar',     value: 'buz-kirici' },
-  { label: '🎭 Gizli Roller',       value: 'gizli-rol' },
-  { label: '💬 Kelime & Anlatım',   value: 'kelime' },
-  { label: '⭐ FriendGames Özel',   value: 'friendgames' },
+const CATEGORY_OPTIONS: { label: string; icon: string; value: GameCategoryFilter }[] = [
+  { label: 'Tüm Oyunlar', icon: '🎲', value: 'all' },
+  { label: 'Buz Kırıcılar', icon: '🧊', value: 'buz-kirici' },
+  { label: 'Gizli Roller', icon: '🕵️', value: 'gizli-rol' },
+  { label: 'Kelime & Anlatım', icon: '🎤', value: 'kelime' },
+  { label: 'FriendGames Özel', icon: '🌟', value: 'friendgames' },
+  { label: 'Parti Modu 18+', icon: '🍷', value: 'party-18' },
 ];
 
 export const CategoryPills: React.FC<CategoryProps> = ({ value, onChange }) => (
@@ -90,9 +91,8 @@ export const CategoryPills: React.FC<CategoryProps> = ({ value, onChange }) => (
         onPress={() => onChange(opt.value)}
         activeOpacity={0.8}
       >
-        <Text style={[cp.pillText, value === opt.value && cp.pillTextActive]}>
-          {opt.label}
-        </Text>
+        <Text style={cp.pillIcon}>{opt.icon}</Text>
+        <Text style={[cp.pillText, value === opt.value && cp.pillTextActive]}>{opt.label}</Text>
       </TouchableOpacity>
     ))}
   </ScrollView>
@@ -105,18 +105,22 @@ const cp = StyleSheet.create({
     gap: Spacing.sm,
   },
   pill: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
     paddingHorizontal: 14,
     paddingVertical: 7,
-    borderRadius: Radius.pill,
+    borderRadius: 10,
     backgroundColor: Colors.bgGlass,
     borderWidth: 1,
     borderColor: Colors.borderGlass,
   },
   pillActive: {
-    backgroundColor: 'rgba(99,102,241,0.2)',
+    backgroundColor: 'rgba(143,168,184,0.20)',
     borderColor: Colors.primary,
   },
+  pillIcon: { fontSize: 14 },
   pillText: { fontSize: FontSize.sm, fontWeight: '600', color: Colors.textMuted },
-  pillTextActive: { color: '#a5b4fc' },
+  pillTextActive: { color: Colors.textPrimary },
 });
 

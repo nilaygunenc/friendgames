@@ -5,11 +5,10 @@ import { translate } from '../i18n';
 import { useAudioPlayer } from 'expo-audio';
 
 const light: Record<string, string> = {
-  '#0B0D17': '#F5F5FA', '#141829': '#FFFFFF',
-  '#F1F5F9': '#172033', '#94A3B8': '#526078',
-  'rgba(255,255,255,0.05)': 'rgba(20,24,41,0.04)',
-  'rgba(255,255,255,0.08)': 'rgba(20,24,41,0.14)',
-  'rgba(20,24,41,0.97)': 'rgba(255,255,255,0.97)',
+  '#111820': '#F3F5F7', '#1B252F': '#FFFFFF', '#26333F': '#E9EEF2',
+  '#E8EDF1': '#27343D', '#9BA8B3': '#687782',
+  'rgba(255,255,255,0.035)': 'rgba(30,50,65,0.025)', 'rgba(210,222,232,0.11)': 'rgba(40,60,75,0.12)',
+  'rgba(20,24,41,0.97)': 'rgba(255,249,242,0.97)',
 };
 const Sound = createContext<() => void>(() => {});
 export function FeedbackProvider({ children }: { children: React.ReactNode }) {
