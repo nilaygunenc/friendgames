@@ -1,56 +1,86 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import { tabuKartlar } from '../data/tabu';
-import { shuffleArray } from '../utils/gameEngine';
+import { TabuCard } from '../types';
+import { WordManager } from '../services/WordManager';
 
-export function useTabu() {
-  const deck = useRef(shuffleArray(tabuKartlar));
-  const cursor = useRef(0);
-  const [card, setCard] = useState(deck.current[0]);
+const wordManager = new WordManager();
+
+export function useTabu(cards: TabuCard[] = tabuKartlar) {
+  const [card, setCard] = useState(cards[0] ?? tabuKartlar[0]);
   const [score, setScore] = useState({ correct: 0, pass: 0 });
   const [remaining, setRemaining] = useState(60);
   const [running, setRunning] = useState(false);
+  const [cycleNotice, setCycleNotice] = useState(false);
+  const [error, setError] = useState('');
   const deadline = useRef(0);
+  const runningRef = useRef(false);
+  const startingRef = useRef(false);
+  const advancingRef = useRef(false);
+  const scoreRef = useRef(score);
+
+  const setGameRunning = (value: boolean) => {
+    runningRef.current = value;
+    setRunning(value);
+  };
+  const resetScores = () => {
+    const empty = { correct: 0, pass: 0 };
+    scoreRef.current = empty;
+    setScore(empty);
+  };
 
   useEffect(() => {
     if (!running) return;
     const id = setInterval(() => {
       const seconds = Math.max(0, Math.ceil((deadline.current - Date.now()) / 1000));
       setRemaining(seconds);
-      if (!seconds) setRunning(false);
+      if (!seconds) setGameRunning(false);
     }, 100);
     return () => clearInterval(id);
   }, [running]);
 
-  const nextCard = useCallback(() => {
-    cursor.current += 1;
-    if (cursor.current >= deck.current.length) {
-      deck.current = shuffleArray(tabuKartlar);
-      cursor.current = 0;
+  const nextCard = useCallback(async () => {
+    try {
+      const result = await wordManager.draw(cards);
+      setCard(result.card);
+      setCycleNotice(result.recycled);
+      setError('');
+      return true;
+    } catch (reason: any) {
+      setError(reason?.message ?? 'Bu filtrelerle eşleşen kart yok.');
+      setGameRunning(false);
+      return false;
     }
-    setCard(deck.current[cursor.current]);
-  }, []);
+  }, [cards]);
+
   const handleCorrect = () => {
-    if (!running || Date.now() >= deadline.current) return;
-    setScore(s => ({ ...s, correct: s.correct + 1 }));
-    nextCard();
+    if (!runningRef.current || advancingRef.current || Date.now() >= deadline.current) return;
+    advancingRef.current = true;
+    const updated = { ...scoreRef.current, correct: scoreRef.current.correct + 1 };
+    scoreRef.current = updated;
+    setScore(updated);
+    void nextCard().finally(() => { advancingRef.current = false; });
   };
   const handlePass = () => {
-    if (!running || Date.now() >= deadline.current) return;
-    setScore(s => ({ ...s, pass: s.pass + 1 }));
-    nextCard();
+    if (!runningRef.current || advancingRef.current || Date.now() >= deadline.current) return;
+    advancingRef.current = true;
+    const updated = { ...scoreRef.current, pass: scoreRef.current.pass + 1 };
+    scoreRef.current = updated;
+    setScore(updated);
+    void nextCard().finally(() => { advancingRef.current = false; });
   };
   const resetScore = () => {
-    setRunning(false);
-    setRemaining(60);
-    setScore({ correct: 0, pass: 0 });
-    nextCard();
+    setGameRunning(false); setRemaining(60); resetScores(); setError(''); setCycleNotice(false);
+    void nextCard();
   };
-  const start = () => {
-    setScore({ correct: 0, pass: 0 });
-    setRemaining(60);
-    deadline.current = Date.now() + 60000;
-    setRunning(true);
-    nextCard();
+  const start = async () => {
+    if (startingRef.current || runningRef.current) return;
+    startingRef.current = true;
+    setError('');
+    try {
+      if (!cards.length) { setError('Seçili filtrelerde kart bulunamadı.'); return; }
+      if (!await nextCard()) return;
+      resetScores(); setRemaining(60); deadline.current = Date.now() + 60000; setGameRunning(true); setCycleNotice(false);
+    } finally { startingRef.current = false; }
   };
-  return { card, score, remaining, running, start, handleCorrect, handlePass, resetScore };
+  return { card, score, remaining, running, cycleNotice, error, start, handleCorrect, handlePass, resetScore };
 }

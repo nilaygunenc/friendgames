@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available skin-thumbsize-clientpref-standard skin-underline-clientpref-browser" lang="tr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Muhteşem Yüzyıl (1. sezon) - Vikipedi</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available skin-thumbsize-clientpref-standard skin-underline-clientpref-browser";var cookie=document.cookie.match(/(?:^|; )trwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"],"wgRequestId":"54668992-6f14-4132-9f47-293132b462df","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Muhteşem_Yüzyıl_(1._sezon)","wgTitle":"Muhteşem Yüzyıl (1. sezon)","wgCurRevisionId":38092015,"wgRevisionId":38092015,"wgArticleId":1667747,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Otomatik boyutlandırılan çoklu resim kullanılan sayfalar","2011 televizyon sezonları","Muhteşem Yüzyıl sezonları"],"wgPageViewLanguage":"tr","wgPageContentLanguage":"tr","wgPageContentModel":"wikitext","wgRelevantPageName":"Muhteşem_Yüzyıl_(1._sezon)","wgRelevantArticleId":1667747,"wgTempUserName":null,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"accuracy":{"levels":2}},"namespaces":[0,6,10,828,100,12]},"wgStableRevisionId":38092015,"wgConfirmEditCaptchaNeededForGenericEdit":"hcaptcha","wgConfirmEditForceShowCaptcha":false,"wgConfirmEditHCaptchaSiteKey":"5d0c670e-a5f4-4258-ad16-1f42792c9c62","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgMediaViewerDesktopVue":false,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"tr","pageLanguageDir":"ltr","pageVariantFallbacks":"tr","editCheckSuggestionsAvailable":false},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgParsoidHtmlVersion":"2.8.0","parsermigration-parsoid":true,"wgPageAssessments":{"Televizyon dizileri":{"class":"C","importance":""}},"wgTestKitchenUserExperiments":{"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[]},"wgEditSubmitButtonLabelPublish":true,"wgVisualEditorPageIsDisambiguation":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgULSContentLanguageSelectorEnabled":true,"wgULSLanguageSelectorV2Enabled":true,"wgWikibaseItemId":"Q19345411","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"wgCheckUserClientHintsInEditRequest":true,"wgEditLatestRevision":true,"wgPersonalDashboardMenuVisible":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.parsoid.styles":"ready","ext.cite.styles":"ready","ext.wikimediamessages.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","mediawiki.skins.legacy":"ready","ext.flaggedRevs.basic":"ready","mediawiki.codex.messagebox.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.readingLists.bookmark.icons":"ready","ext.readingLists.bookmark.styles":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.HizliBilgi","ext.gadget.OpenStreetMap","ext.gadget.switcher","ext.gadget.ReferenceTooltips","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.testKitchen","ext.wikimediaCustomizations.donorAccountCreation","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","wikibase.databox.fromWikidata","ext.checkUser.clientHints","ext.readingLists.bookmark.anonymous"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=tr&amp;modules=ext.cite.parsoid.styles%7Cext.cite.styles%7Cext.flaggedRevs.basic%7Cext.readingLists.bookmark.icons%2Cstyles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cmediawiki.codex.messagebox.styles%7Cmediawiki.skins.legacy%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=tr&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=tr&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.48.0-wmf.4">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/tr/3/31/Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_1_Sezon.jpg?utm_source=tr.wikipedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail_unscaled">
+<meta property="og:image:width" content="802">
+<meta property="og:image:height" content="1200">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Muhteşem Yüzyıl (1. sezon) - Vikipedi">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//thumb.wikimedia.org">
+<link rel="alternate" type="application/x-wiki" title="Değiştir" href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Vikipedi (tr)">
+<link rel="EditURI" type="application/rsd+xml" href="//tr.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://tr.wikipedia.org/wiki/Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.tr">
+<link rel="alternate" type="application/atom+xml" title="Vikipedi Atom beslemesi" href="/w/index.php?title=%C3%96zel:SonDe%C4%9Fi%C5%9Fiklikler&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt action-view skin-vector-2022 ns-0 ns-subject mw-editable page-Muhteşem_Yüzyıl_1_sezon rootpage-Muhteşem_Yüzyıl_1_sezon skin--responsive skin-vector skin-vector-search-vue">
+<div id="mw-aria-live-region" class="mw-aria-live-region" aria-live="polite"></div><a class="mw-jump-link" href="#bodyContent">İçeriğe atla</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Ana menü" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Ana menü"   >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Ana menü</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Ana menü</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin" aria-label="Move Ana menü to sidebar">kenar çubuğuna taşı</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin" aria-label="Hide Ana menü">gizle</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Dolaşım
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Anasayfa" title="Anasayfayı ziyaret et [z]" accesskey="z"><span>Anasayfa</span></a></li><li id="n-Hakkımızda" class="mw-list-item"><a href="/wiki/Vikipedi:Hakk%C4%B1nda"><span>Hakkımızda</span></a></li><li id="n-İçindekiler" class="mw-list-item"><a href="/wiki/Vikipedi:G%C3%B6z_at"><span>İçindekiler</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/%C3%96zel:Rastgele" title="Rastgele bir sayfaya gidin [x]" accesskey="x"><span>Rastgele madde</span></a></li><li id="n-Seçkin-içerik" class="mw-list-item"><a href="/wiki/Vikipedi:Se%C3%A7kin_i%C3%A7erik"><span>Seçkin içerik</span></a></li><li id="n-Yakınımdakiler" class="mw-list-item"><a href="/wiki/%C3%96zel:Yak%C4%B1n%C4%B1mdakiler"><span>Yakınımdakiler</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-Katılım" class="vector-menu mw-portlet mw-portlet-Katılım"  >
+	<div class="vector-menu-heading">
+		Katılım
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-sandbox" class="mw-list-item"><a href="/wiki/Vikipedi:Deneme_tahtas%C4%B1"><span>Deneme tahtası</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Vikipedi:K%C3%B6y_%C3%A7e%C5%9Fmesi" title="Güncel olaylarla ilgili son bilgiler"><span>Köy çeşmesi</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/%C3%96zel:SonDe%C4%9Fi%C5%9Fiklikler" title="Vikide yapılmış son değişikliklerin listesi [r]" accesskey="r"><span>Son değişiklikler</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Vikipedi:Y%C3%BCkle"><span>Dosya yükle</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Vikipedi:Topluluk_portali" title="Proje hakkında, neler yapabilirsiniz, ne nerededir"><span>Topluluk portali</span></a></li><li id="n-shop-text" class="mw-list-item"><a href="//shop.wikimedia.org"><span>Wikimedia dükkânı</span></a></li><li id="n-help" class="mw-list-item"><a href="/wiki/Yard%C4%B1m:%C4%B0%C3%A7indekiler" title="Yardım almak için"><span>Yardım</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/%C3%96zel:%C3%96zelSayfalar" title="Tüm özel sayfaların listesi [q]" accesskey="q"><span>Özel sayfalar</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Anasayfa" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Vikipedi" src="/static/images/mobile/copyright/wikipedia-wordmark-tr.svg" style="width: 6.6875em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="Özgür Ansiklopedi" src="/static/images/mobile/copyright/wikipedia-tagline-tr.svg" width="104" height="13" style="width: 6.5em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/%C3%96zel:Ara" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Vikipedi içinde ara [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
+
+<span>Ara</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Vikipedi üzerinde ara" aria-label="Vikipedi üzerinde ara" autocapitalize="none" spellcheck="false" title="Vikipedi içinde ara [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Özel:Ara">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Ara</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Kişisel araçlar">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Görünüm">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Sayfanın yazı tipi boyutunun, genişliğinin ve renginin görünümünü değiştirin" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Görünüm"   >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Görünüm</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=tr.wikipedia.org&amp;uselang=tr" data-mw-donate-attempt="top_link" class=""><span>Bağış yapın</span></a>
+</li>
+<li id="pt-createaccount-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=%C3%96zel:HesapOlu%C5%9Ftur&amp;returnto=Muhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" title="Bir hesap oluşturup oturum açmanız tavsiye edilmektedir ancak bu zorunlu değildir" class=""><span>Hesap oluştur</span></a>
+</li>
+<li id="pt-login-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=%C3%96zel:Kullan%C4%B1c%C4%B1OturumuA%C3%A7ma&amp;returnto=Muhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" title="Oturum açmanız tavsiye edilmektedir; ancak bu zorunlu değildir [o]" accesskey="o" class=""><span>Oturum aç</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out vector-user-links-dropdown--collapsible"  title="Daha fazla seçenek" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Kişisel araçlar"   >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Kişisel araçlar</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal"  title="Kullanıcı menüsü" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=tr.wikipedia.org&amp;uselang=tr" data-mw-donate-attempt="top_link" class=""><span class="vector-icon mw-ui-icon-heart mw-ui-icon-wikimedia-heart cdx-button__icon"></span>
+
+<span>Bağış yapın</span></a>
+</li>
+<li id="pt-createaccount" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=%C3%96zel:HesapOlu%C5%9Ftur&amp;returnto=Muhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" title="Bir hesap oluşturup oturum açmanız tavsiye edilmektedir ancak bu zorunlu değildir" class=""><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
+
+<span>Hesap oluştur</span></a>
+</li>
+<li id="pt-login" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=%C3%96zel:Kullan%C4%B1c%C4%B1OturumuA%C3%A7ma&amp;returnto=Muhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" title="Oturum açmanız tavsiye edilmektedir; ancak bu zorunlu değildir [o]" accesskey="o" class=""><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn cdx-button__icon"></span>
+
+<span>Oturum aç</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="İçindekiler" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	data-pinned-container-id="vector-toc-pinned-container"
+	data-unpinned-container-id="vector-toc-unpinned-container"
+>
+	<h2 class="vector-pinnable-header-label">İçindekiler</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin" aria-label="Move İçindekiler to sidebar">kenar çubuğuna taşı</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin" aria-label="Hide İçindekiler">gizle</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">Giriş</div>
+			</a>
+		</li>
+		<li id="toc-Sezon_özeti"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Sezon_özeti">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Sezon özeti</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Sezon_özeti-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Teknik_ekip"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Teknik_ekip">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Teknik ekip</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Teknik_ekip-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Oyuncu_kadrosu"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Oyuncu_kadrosu">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Oyuncu kadrosu</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Oyuncu_kadrosu-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Yayın_bilgileri"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Yayın_bilgileri">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>Yayın bilgileri</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Yayın_bilgileri-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Ödüller_ve_adaylıklar"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Ödüller_ve_adaylıklar">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>Ödüller ve adaylıklar</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Ödüller_ve_adaylıklar-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Bölümler_listesi"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Bölümler_listesi">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">6</span>
+				<span>Bölümler listesi</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Bölümler_listesi-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Kaynakça"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Kaynakça">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">7</span>
+				<span>Kaynakça</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Kaynakça-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<nav aria-label="İçindekiler" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="İçindekiler" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="İçindekiler tablosunu değiştir"   >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">İçindekiler tablosunu değiştir</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><i>Muhteşem Yüzyıl</i> (1. sezon)</h1>
+			
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector"  aria-label="2 dil" aria-description="Başka bir dildeki sayfaya gidin. 2 dilde mevcut"  >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-2" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">2 dil</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-az mw-list-item"><a href="https://az.wikipedia.org/wiki/M%C3%B6ht%C9%99%C5%9F%C9%99m_%C9%99sr_(I_m%C3%B6vs%C3%BCm)" title="Möhtəşəm əsr (I mövsüm) - Azerbaycan dili" lang="az" hreflang="az" data-title="Möhtəşəm əsr (I mövsüm)" data-language-autonym="Azərbaycanca" data-language-local-name="Azerbaycan dili" class="interlanguage-link-target"><span>Azərbaycanca</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%BB%D0%B5%D0%BF%D0%BD%D1%8B%D0%B9_%D0%B2%D0%B5%D0%BA_(%D1%81%D0%B5%D0%B7%D0%BE%D0%BD_1)" title="Великолепный век (сезон 1) - Rusça" lang="ru" hreflang="ru" data-title="Великолепный век (сезон 1)" data-language-autonym="Русский" data-language-local-name="Rusça" class="interlanguage-link-target"><span>Русский</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q19345411#sitelinks-wikipedia" title="Dillerarası bağlantıları değiştir" class="wbc-editpage">Bağlantıları değiştir</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Ad alanları">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-nstab-main" class="selected mw-list-item vector-tab-noicon"><a data-mw-interface  href="/wiki/Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)" title="İçerik sayfasını göster [c]" accesskey="c" class=""><span>Madde</span></a>
+</li>
+<li id="ca-talk" class="mw-list-item vector-tab-noicon"><a data-mw-interface  href="/wiki/Tart%C4%B1%C5%9Fma:Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)" rel="discussion" title="İçerik ile ilgili tartışma [t]" accesskey="t" class=""><span>Tartışma</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Dil varyantını değiştir"    >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Türkçe</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Görünüm">
+			    
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-view" class="selected mw-list-item vector-menu-item--collapsible vector-tab-noicon"><a data-mw-interface  href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;stable=1" class=""><span>Oku</span></a>
+</li>
+<li id="ca-current" class="collapsible mw-list-item vector-menu-item--collapsible vector-tab-noicon"><a data-mw-interface  href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;stable=0&amp;redirect=no" title="Bu sayfayı bekleyen değişikliklerle gör [v]" accesskey="v" class=""><span>Bekleyen değişiklikler</span></a>
+</li>
+<li id="ca-ve-edit" class="mw-list-item vector-menu-item--collapsible vector-tab-noicon"><a data-mw-interface  href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;veaction=edit" title="Bu sayfayı değiştir [v]" accesskey="v" class=""><span>Değiştir</span></a>
+</li>
+<li id="ca-edit" class="collapsible mw-list-item vector-menu-item--collapsible vector-tab-noicon"><a data-mw-interface  href="//tr.wikipedia.org/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;action=edit" title="Bu sayfanın kaynak kodunu düzenleyin [e]" accesskey="e" class=""><span>Kaynağı değiştir</span></a>
+</li>
+<li id="ca-history" class="mw-list-item vector-menu-item--collapsible vector-tab-noicon"><a data-mw-interface  href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;action=history" title="Bu sayfanın geçmiş sürümleri [h]" accesskey="h" class=""><span>Geçmişi gör</span></a>
+</li>
+<li id="ca-bookmark" class="mw-list-item vector-menu-item--collapsible"><a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only reading-lists-bookmark" id="" title="Bu sayfayı kaydedilen ögelerinize ekleyin"><span class="vector-icon mw-ui-icon-bookmarkOutline mw-ui-icon-wikimedia-bookmarkOutline cdx-button__icon"></span>
+
+<span>Kaydet</span>
+</a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+			</nav>
+
+							<nav class="vector-page-tools-landmark" aria-label="Sayfa araçları">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Araçlar"   >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-verticalEllipsis mw-ui-icon-wikimedia-verticalEllipsis cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Araçlar</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Araçlar</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin" aria-label="Move Araçlar to sidebar">kenar çubuğuna taşı</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin" aria-label="Hide Araçlar">gizle</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  >
+	<div class="vector-menu-heading">
+		Eylemler
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-view-more" class="selected mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;stable=1" class=""><span>Oku</span></a>
+</li>
+<li id="ca-current-more" class="collapsible mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;stable=0&amp;redirect=no" title="Bu sayfayı bekleyen değişikliklerle gör [v]" accesskey="v" class=""><span>Bekleyen değişiklikler</span></a>
+</li>
+<li id="ca-ve-edit-more" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;veaction=edit" title="Bu sayfayı değiştir [v]" accesskey="v" class=""><span class="vector-icon mw-ui-icon-edit mw-ui-icon-wikimedia-edit cdx-button__icon"></span>
+
+<span>Değiştir</span></a>
+</li>
+<li id="ca-edit-more" class="collapsible mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="//tr.wikipedia.org/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;action=edit" title="Bu sayfanın kaynak kodunu düzenleyin [e]" accesskey="e" class=""><span class="vector-icon mw-ui-icon-wikiText mw-ui-icon-wikimedia-wikiText cdx-button__icon"></span>
+
+<span>Kaynağı değiştir</span></a>
+</li>
+<li id="ca-history-more" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;action=history" title="Bu sayfanın geçmiş sürümleri [h]" accesskey="h" class=""><span class="vector-icon mw-ui-icon-history mw-ui-icon-wikimedia-history cdx-button__icon"></span>
+
+<span>Geçmişi gör</span></a>
+</li>
+<li id="ca-bookmark-more" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="#" class="reading-lists-bookmark" title="Bu sayfayı kaydedilen ögelerinize ekleyin"><span class="vector-icon mw-ui-icon-bookmarkOutline mw-ui-icon-wikimedia-bookmarkOutline cdx-button__icon"></span>
+
+<span>Kaydet</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		Genel
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/%C3%96zel:SayfayaBa%C4%9Flant%C4%B1lar/Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)" title="Bu sayfaya bağlantı vermiş tüm viki sayfalarının listesi [j]" accesskey="j"><span>Sayfaya bağlantılar</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/%C3%96zel:%C4%B0lgiliDe%C4%9Fi%C5%9Fiklikler/Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)" rel="nofollow" title="Bu sayfadan bağlantı verilen sayfalardaki son değişiklikler [k]" accesskey="k"><span>İlgili değişiklikler</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;oldid=38092015" title="Bu sayfanın bu revizyonuna kalıcı bağlantı"><span>Kalıcı bağlantı</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;action=info" title="Bu sayfa hakkında daha fazla bilgi"><span>Sayfa bilgisi</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=%C3%96zel:KaynakG%C3%B6ster&amp;page=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_%281._sezon%29&amp;id=38092015&amp;wpFormIdentifier=titleform" title="Bu sayfadan nasıl kaynak göstereceği hakkında bilgi"><span>Bu sayfayı kaynak göster</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=%C3%96zel:UrlShortener&amp;url=https%3A%2F%2Ftr.wikipedia.org%2Fwiki%2FMuhte%25C5%259Fem_Y%25C3%25BCzy%25C4%25B1l_%281._sezon%29"><span>Kısaltılmış URL&#039;yi al</span></a></li><li id="parsermigration-switch-to-legacy" class="mw-list-item"><a href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;useparsoid=0"><span>Eski ayrıştırıcıya geç</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Yazdır/dışa aktar
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-create_a_book" class="mw-list-item"><a href="/w/index.php?title=%C3%96zel:Kitap&amp;bookcmd=book_creator&amp;referer=Muhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29"><span>Bir kitap oluştur</span></a></li><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=%C3%96zel:DownloadAsPdf&amp;page=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_%281._sezon%29&amp;action=show-download-screen"><span>PDF olarak indir</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Bu sayfanın basılmaya uygun sürümü [p]" accesskey="p"><span>Basılmaya uygun görünüm</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		Diğer projelerde
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q19345411" title="Veri havuzundaki ilgili ögeye bağlantı [g]" accesskey="g"><span>Vikiveri ögesi</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Sayfa araçları">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Görünüm">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Görünüm</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin" aria-label="Move Görünüm to sidebar">kenar çubuğuna taşı</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin" aria-label="Hide Görünüm">gizle</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		<div id="mw-indicator-indicator-fr-review-status" class="mw-indicator"><div class="mw-fr-review-status-indicator" id="mw-fr-revision-toggle"><span class="cdx-fr-css-icon-review--status--stable"></span><b>Kontrol Edilmiş</b></div></div>
+		</div>
+
+						<div id="siteSub" class="noprint">Vikipedi, özgür ansiklopedi</div>
+						<div id="contentSub"><div id="mw-content-subtitle"><div id="mw-fr-revision-messages"><div id="mw-fr-revision-details" class="mw-fr-revision-details-dialog" style="display:none;"><div tabindex="0"></div><div class="cdx-dialog cdx-dialog--horizontal-actions"><header class="cdx-dialog__header cdx-dialog__header--default"><div class="cdx-dialog__header__title-group"><h2 class="cdx-dialog__header__title">Sayfa sürüm durumu</h2><p class="cdx-dialog__header__subtitle">Bu, bu sayfanın kontrol edilmiş bir sürümüdür</p></div><button class="cdx-button cdx-button--action-default cdx-button--weight-quiet&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;cdx-button--size-medium cdx-button--icon-only cdx-dialog__header__close-button" aria-label="Kapat" onclick="document.getElementById(&quot;mw-fr-revision-details&quot;).style.display = &quot;none&quot;;" type="submit"><span class="cdx-icon cdx-icon--medium&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;cdx-fr-css-icon--close"></span></button></header><div class="cdx-dialog__body">Bu, <a href="/wiki/Vikipedi:S%C3%BCr%C3%BCm_kontrol%C3%BC" title="Vikipedi:Sürüm kontrolü">kararlı sürümdür</a>; <i>30 Eylül 2026</i> tarihinde <a class="external text" data-mw-original-href="//tr.wikipedia.org/w/index.php?title=%C3%96zel:G%C3%BCnl%C3%BCk&amp;type=review&amp;page=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)" href="https://tr.wikipedia.org/w/index.php?title=%C3%96zel:G%C3%BCnl%C3%BCk&amp;type=review&amp;page=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)">kontrol edilmiştir</a>.
+<a class="external text" data-mw-original-href="//tr.wikipedia.org/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;action=info#mw-flaggedrevs-action-info-pages-waiting-for-review" href="https://tr.wikipedia.org/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;action=info#mw-flaggedrevs-action-info-pages-waiting-for-review">Şablon değişiklikleri</a> inceleme beklemektedir.<p><table id="mw-fr-revisionratings-box" class="flaggedrevs-color-1" style="margin: auto;" cellpadding="0"><tr><td class="fr-text" style="vertical-align: middle;">Doğruluk</td><td class="fr-value40" style="vertical-align: middle;">Görüldü</td></tr></table></p></div></div><div tabindex="0"></div></div></div></div></div>
+						
+					</div>
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="tr" dir="ltr" data-mw-parsoid-version="0.25.0.0-alpha1" data-mw-html-version="2.8.0"><section data-mw-section-id="0" id="mwAQ"><span typeof="mw:Nowiki mw:Transclusion" about="#mwt1" id="mwAg" data-mw='{"parts":[{"template":{"target":{"wt":"Televizyon sezonu bilgi kutusu\n","href":"./Şablon:Televizyon_sezonu_bilgi_kutusu"},"params":{"arkaplan":{"wt":"#D09916"},"yazı_rengi":{"wt":"#fff"},"program_adı":{"wt":"Muhteşem Yüzyıl"},"sezon_no":{"wt":"1"},"resim":{"wt":"Muhteşem Yüzyıl 1 Sezon.jpg"},"altyazı":{"wt":"Sezonun afişi"},"dvd_yayın_tarihi":{"wt":""},"dvd_formatı":{"wt":""},"ülke":{"wt":"{{TUR}}"},"kanal":{"wt":"[[Show TV]]"},"ilk_gösterim":{"wt":"{{Başlangıç tarihi|2011|1|5|df=y}}"},"son_gösterim":{"wt":"{{Bitiş tarihi|2011|6|22|df=y}}"},"bölüm_sayısı":{"wt":"24"},"ana_kadro":{"wt":"[[Halit Ergenç]]&lt;br>[[Nebahat Çehre]]&lt;br>[[Meryem Uzerli]]&lt;br>[[Okan Yalabık]]&lt;br>[[Selma Ergeç]]&lt;br>[[Nur Fettahoğlu]]&lt;br>[[Selen Öztürk]]"}},"i":0}}]}'></span><style data-mw-deduplicate="TemplateStyles:r36982844" typeof="mw:Extension/templatestyles" about="#mwt1" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Infobox/styles.css"},"body":{"extsrc":""}}'>.mw-parser-output .infobox-subbox{padding:0;border:none;margin:-3px;width:auto;min-width:100%;font-size:100%;clear:none;float:none;background-color:transparent}.mw-parser-output .infobox-3cols-child{margin:auto}.mw-parser-output .infobox .navbar{font-size:100%}body.skin-minerva .mw-parser-output .infobox-header,body.skin-minerva .mw-parser-output .infobox-subheader,body.skin-minerva .mw-parser-output .infobox-above,body.skin-minerva .mw-parser-output .infobox-title,body.skin-minerva .mw-parser-output .infobox-image,body.skin-minerva .mw-parser-output .infobox-full-data,body.skin-minerva .mw-parser-output .infobox-below{text-align:center}</style><table class="infobox" about="#mwt1" id="mwAw"><tbody><tr><th colspan="2" class="infobox-above" style="padding-top: 5px; padding-bottom: 5px; background: #D09916; color: black;"><i>Muhteşem Yüzyıl</i></th></tr><tr><td colspan="2" class="infobox-subheader padding-top: 2px; padding-bottom: 2px; background: #D09916; color: black; text-align: center; line-height: 1.5em; font-weight: bold; font-size: 120%;" style="padding-top: 2px; padding-bottom: 2px; background: #D09916; color: black; text-align: center; line-height: 1.5em; font-weight: bold; font-size: 120%;">1. sezon</td></tr><tr><td colspan="2" class="infobox-image"><span class="mw-default-size" typeof="mw:File/Frameless"><a href="https://tr.wikipedia.org/wiki/Dosya:Muhteşem_Yüzyıl_1_Sezon.jpg" class="mw-file-description"><img resource="https://tr.wikipedia.org/wiki/Dosya:Muhteşem_Yüzyıl_1_Sezon.jpg" src="//thumb.wikimedia.org/wikipedia/tr/thumb/3/31/Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_1_Sezon.jpg/250px-Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_1_Sezon.jpg?utm_source=tr.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" decoding="async" loading="lazy" srcset="//thumb.wikimedia.org/wikipedia/tr/thumb/3/31/Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_1_Sezon.jpg/500px-Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_1_Sezon.jpg?utm_source=tr.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x" data-file-width="600" data-file-height="898" data-file-type="bitmap" height="374" width="250" class="mw-file-element mw-file-upright" style="--mw-file-upright: 1"/></a></span><div class="infobox-caption">Sezonun afişi</div></td></tr><tr><th scope="row" class="infobox-label">Başrol</th><td class="infobox-data"><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Halit_Ergenç" title="Halit Ergenç">Halit Ergenç</a><br/><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Nebahat_Çehre" title="Nebahat Çehre">Nebahat Çehre</a><br/><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Meryem_Uzerli" title="Meryem Uzerli">Meryem Uzerli</a><br/><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Okan_Yalabık" title="Okan Yalabık">Okan Yalabık</a><br/><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Selma_Ergeç" title="Selma Ergeç">Selma Ergeç</a><br/><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Nur_Fettahoğlu" title="Nur Fettahoğlu">Nur Fettahoğlu</a><br/><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Selen_Öztürk" title="Selen Öztürk">Selen Öztürk</a></td></tr><tr><th scope="row" class="infobox-label">Ülke</th><td class="infobox-data description"><span class="datasortkey" data-sort-value="Türkiye"><span class="flagicon"><span class="mw-image-border" typeof="mw:File"><span><img resource="https://tr.wikipedia.org/wiki/Dosya:Flag_of_Turkey.svg" src="//thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/40px-Flag_of_Turkey.svg.png?utm_source=tr.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" decoding="async" loading="lazy" srcset="//thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/60px-Flag_of_Turkey.svg.png?utm_source=tr.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x" alt="" data-file-width="1200" data-file-height="800" data-file-type="drawing" height="15" width="23" class="mw-file-element"/></span></span><span typeof="mw:Entity"> </span></span><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Türkiye" title="Türkiye">Türkiye</a></span></td></tr><tr><th scope="row" class="infobox-label">Bölüm sayısı</th><td class="infobox-data">24</td></tr><tr><th colspan="2" class="infobox-header" style="background: #D09916; color: black;">Yayın</th></tr><tr><th scope="row" class="infobox-label">Kanal</th><td class="infobox-data"><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Show_TV" title="Show TV">Show TV</a></td></tr><tr><th scope="row" class="infobox-label">Orijinal yayın tarihi</th><td class="infobox-data"><span data-sort-value="20110105 !">5 Ocak 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-01-05</span>)</span><link rel="mw:PageProp/Category" href="./Kategori:2011_televizyon_sezonları"/>-<span data-sort-value="20110622 !">22 Haziran 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-06-22</span>)</span><link rel="mw:PageProp/Category" href="./Kategori:2011_televizyon_sezonları"/></td></tr><tr><th colspan="2" class="infobox-header" style="background: #D09916; color: black;">Sezon kronolojisi</th></tr><tr><td colspan="2" class="infobox-full-data"><div style="float: left; "></div>
+<div style="float: right; "><b>Sonraki</b><span typeof="mw:Entity"> </span>→<br/><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Muhteşem_Yüzyıl_(2._sezon)" title="Muhteşem Yüzyıl (2. sezon)">2. sezon</a></div></td></tr><tr><td colspan="2" class="infobox-below"><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Muhteşem_Yüzyıl_bölümleri_listesi" title="Muhteşem Yüzyıl bölümleri listesi"><i>Muhteşem Yüzyıl </i> bölümleri</a></td></tr></tbody></table>
+
+<p id="mwBA"><i id="mwBQ"><b id="mwBg"><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Muhteşem_Yüzyıl" title="Muhteşem Yüzyıl" id="mwBw">Muhteşem Yüzyıl</a></b></i> dizisinin ilk sezonu 5 Ocak 2011 tarihinde <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Türkiye" title="Türkiye" id="mwCA">Türkiye</a>'de yayımlanmaya başladı ve 22 Haziran 2011 tarihinde sona erdi. İlk sezonda; henüz şehzade olan <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/I._Süleyman" title="I. Süleyman" id="mwCQ">Süleyman</a>'ın, babası <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/I._Selim" title="I. Selim" id="mwCg">I. Selim</a>'in ölümü üzerine Osmanlı tahtına geçmesi ve bu zamanlarda saray haremine cariye olarak getirilen <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Hürrem_Sultan" title="Hürrem Sultan" id="mwCw">Hürrem Sultan</a> ile birbirlerine âşık olmaları, ardından Süleyman'ın saltanatının ilk yılları ve Hürrem Sultan'ın intikam için başlattığı iktidar oyunu konu alınmaktadır. İlk sezon toplam 24 bölümden oluştu ve Türkiye'de çarşamba akşamları gösterildi.</p>
+
+<meta property="mw:PageProp/toc" id="mwDA" data-mw='{"autoGenerated":true}'/></section><section data-mw-section-id="1" id="mwDQ" aria-labelledby="Sezon_özeti"><div class="mw-heading mw-heading2"><h2 id="Sezon_özeti"><span id="Sezon_.C3.B6zeti" typeof="mw:FallbackId"></span>Sezon özeti</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;veaction=edit&amp;section=1" title="Değiştirilen bölüm: Sezon özeti" class="mw-editsection-visualeditor"><span>değiştir</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;action=edit&amp;section=1" title="Bölümün kaynak kodunu değiştir: Sezon özeti"><span>kaynağı değiştir</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwDg"><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/I._Süleyman" title="I. Süleyman" id="mwDw">Süleyman</a>, en yakın arkadaşı <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Pargalı_İbrahim_Paşa" title="Pargalı İbrahim Paşa" id="mwEA">Pargalı İbrahim</a> ile Manisa'da av gezisindeyken babası <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/I._Selim" title="I. Selim" id="mwEQ">I. Selim</a>'in öldüğü haberini alır ve tahtına geçmek üzere <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Topkapı_Sarayı" title="Topkapı Sarayı" id="mwEg">Topkapı Sarayı</a>'na gelir. Bu sıralarda Rutenyalı bir köle olarak deniz yoluyla <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Kırım" title="Kırım" id="mwEw">Kırım</a>'dan saraya getirilen Alexandra Lisowska, padişahtan bir erkek çocuk sahibi olduğu takdirde sarayda yükselebileceğini ve dünyaya hükmedebileceğini öğrenir. Bunun üzerine Süleyman'ın dikkatini çekmek için onun önünde bayılır ve daha sonra Süleyman tarafından halvete çağrılır. Süleyman, Alexandra'ya âşık olur ve onu Müslüman yapar; sonrasında ise ona "güler yüzlü" anlamına gelen <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Hürrem_Sultan" title="Hürrem Sultan" id="mwFA">Hürrem</a> adını verir. Hürrem, ilk oğlu <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Şehzade_Mehmed_(I._Süleyman'ın_oğlu)" title="Şehzade Mehmed (I. Süleyman'ın oğlu)" id="mwFQ">Şehzade Mehmed</a>'i dünyaya getirince sarayda yükselmeye başlar. Bu durum, padişahın hasekisi ve büyük oğlu <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Şehzade_Mustafa" title="Şehzade Mustafa" id="mwFg">Şehzade Mustafa</a>'nın annesi <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Mahidevran_Sultan" title="Mahidevran Sultan" id="mwFw">Mahidevran Sultan</a> tarafından hoş karşılanmaz. Ertesi yıl Hürrem Sultan, ilk ve tek kızı olan <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Mihrimah_Sultan_(I._Süleyman'ın_kızı)" title="Mihrimah Sultan (I. Süleyman'ın kızı)" id="mwGA">Mihrimah Sultan</a>'ı dünyaya getirir.</p>
+
+<p id="mwGQ">Süleyman, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Belgrad'ın_Fethi" title="Belgrad'ın Fethi" id="mwGg">Belgrad Seferi</a> (1521) sırasında Victoria adında birinin kocasını öldürür. Victoria ise intikam almak üzere İstanbul'a gelir ve <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Matrakçı_Nasuh" title="Matrakçı Nasuh" id="mwGw">Matrakçı Nasuh</a> tarafından Pargalı İbrahim'e götürülür. Daha sonra Topkapı Sarayı'na getirilen Victoria, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Harem_(Osmanlı_İmparatorluğu)" title="Harem (Osmanlı İmparatorluğu)" id="mwHA">hareme</a> girer ve adını Sadıka olarak değiştirip Süleyman'ın ve validesinin hizmetinde çalışmaya başlar. Haremde çıkan bir yangında şehzadeleri kurtarınca sarayda kendisine duyulan güven artar.</p>
+
+<p id="mwHQ">Süleyman, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Rodos_Kuşatması_(1522)" title="Rodos Kuşatması (1522)" id="mwHg">Rodos Seferi</a> (1522) dönüşünde <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Pîrî_Mehmed_Paşa" title="Pîrî Mehmed Paşa" id="mwHw">Pîrî Mehmed Paşa</a>'yı sadrazamlıktan azleder ve yerine has odabaşısı Pargalı İbrahim'i getirir. Bu durum devlet yöneticileri tarafından şaşkınlıkla karşılanır. İbrahim, Süleyman'a kardeşi <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Hatice_Sultan_(I._Selim'in_kızı)" title="Hatice Sultan (I. Selim'in kızı)" id="mwIA">Hatice Sultan</a>'a âşık olduğunu itiraf eder ve ikili kısa bir süre sonra görkemli bir düğünle evlenir. Düğün sırasında Hürrem, ikinci şehzadesi <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/II._Selim" title="II. Selim" id="mwIQ">Selim</a>'i doğurur. İbrahim Paşa'nın sadrazam olmasından ötürü büyük bir öfkeye kapılan <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Hain_Ahmed_Paşa" title="Hain Ahmed Paşa" id="mwIg">Ahmed Paşa</a>, devlet tarafından zorla görevlendirildiği Mısır'da isyana kalkışır ve akabinde öldürülür. İbrahim Paşa, Mısır'a düzeni sağlaması için gönderilir. Bu sırada başkentte çıkan bir <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Yeniçeri_İsyanı_(1525)" title="Yeniçeri İsyanı (1525)" id="mwIw">yeniçeri isyanı</a> kısa sürede bastırılır. Hatice Sultan, isyan sırasında çıkan kargaşada karnındaki çocuğunu düşürür.</p>
+
+<p id="mwJA">Daha sonra Hürrem Sultan'ın <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Rutenya" title="Rutenya" id="mwJQ">Rutenya</a>'daki sevgilisi Leo ortaya çıkar. Leo, Sultan Süleyman tarafından kendisiyle Hürrem Sultan'ın resmini yapması için sarayda görevlendirilir. Leo ile Hürrem, aralarındaki ilişkiyi herkesten gizlerler. Durumu öğrenen Pargalı İbrahim, bunu Hürrem Sultan'a karşı bir koz olarak kullanır. Tam da bu sırada Victoria, Süleyman'ı öldürmek üzere boğazına hançer dayar. İbrahim, Hürrem Sultan'dan kurtulmak için Leo ile Hürrem'i bir araya getirir ve ellerine bir kase zehirli lokum verir. Süleyman'ın durumu öğrenmemesi için ikisinden birinin zehirli lokumlardan yemesi gerekir.</p>
+
+</section><section data-mw-section-id="2" id="mwJg" aria-labelledby="Teknik_ekip"><div class="mw-heading mw-heading2"><h2 id="Teknik_ekip">Teknik ekip</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;veaction=edit&amp;section=2" title="Değiştirilen bölüm: Teknik ekip" class="mw-editsection-visualeditor"><span>değiştir</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;action=edit&amp;section=2" title="Bölümün kaynak kodunu değiştir: Teknik ekip"><span>kaynağı değiştir</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwJw">Sezonun prodüksiyonu, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Timur_Savcı" title="Timur Savcı" id="mwKA">Timur Savcı</a>'nın başında olduğu <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/TİMSBİ_Productions" title="TİMSBİ Productions" id="mwKQ">Tims&amp;B Productions</a> şirketi tarafından gerçekleştirildi. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Meral_Okay" title="Meral Okay" id="mwKg">Meral Okay</a> hikâyeyi ve senaryoyu, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Yılmaz_Şahin" title="Yılmaz Şahin" id="mwKw">Yılmaz Şahin</a> ise <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Tretman" title="Tretman" id="mwLA">tretmanı</a> kaleme aldı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Taylan_Biraderler" title="Taylan Biraderler" id="mwLQ">Taylan Biraderler</a> olarak bilinen Yağmur Taylan ve Durul Taylan, ilk sezondaki tüm bölümlerin yönetmenliğini üstlendiler. Dizinin müzikleri <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Fahir_Atakoğlu" title="Fahir Atakoğlu" id="mwLg">Fahir Atakoğlu</a>, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Aytekin_Ataş" title="Aytekin Ataş" id="mwLw">Aytekin Ataş</a> ve Soner Akalın tarafından bestelendi. Genel koordinatörlüğü Nermin Eroğlu üstlendi. Aydın Sarıoğlu ve <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Ercan_Özkan" title="Ercan Özkan" id="mwMA">Ercan Özkan</a> dizinin görüntü yönetmenliğini, Nilüfer Giritlioğlu ise sanat yönetmenliğini yaptı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Kurgu_(sinema)" title="Kurgu (sinema)" id="mwMQ">Kurguyu</a> ise Emrullah Hekim ve Aykut Yıldırım yaptı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Kostüm_tasarımcısı" title="Kostüm tasarımcısı" id="mwMg">Kostüm tasarımından</a> Serdar Başbuğ sorumlu oldu. Dr. Deniz Esemenli ve Doç. Dr. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Erhan_Afyoncu" title="Erhan Afyoncu" id="mwMw">Erhan Afyoncu</a>, ilk sezonun tarih danışmanları olarak görev yaptılar.</p>
+
+</section><section data-mw-section-id="3" id="mwNA" aria-labelledby="Oyuncu_kadrosu"><div class="mw-heading mw-heading2"><h2 id="Oyuncu_kadrosu">Oyuncu kadrosu</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;veaction=edit&amp;section=3" title="Değiştirilen bölüm: Oyuncu kadrosu" class="mw-editsection-visualeditor"><span>değiştir</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;action=edit&amp;section=3" title="Bölümün kaynak kodunu değiştir: Oyuncu kadrosu"><span>kaynağı değiştir</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<span class="mw-empty-elt" about="#mwt3" typeof="mw:Transclusion" id="mwNQ" data-mw='{"parts":[{"template":{"target":{"wt":"Çoklu resim","href":"./Şablon:Çoklu_resim"},"params":{"align":{"wt":"right"},"perrow":{"wt":"3"},"total_width":{"wt":"330"},"caption_align":{"wt":"center"},"title":{"wt":""},"image1":{"wt":"Nebahat Çehre.jpg"},"caption1":{"wt":""},"image2":{"wt":"Selma Ergeç.jpg"},"caption2":{"wt":""},"image3":{"wt":"Nur Fettahoğlu.jpg"},"caption3":{"wt":""},"image4":{"wt":""},"caption4":{"wt":""},"image5":{"wt":""},"image6":{"wt":""},"caption6":{"wt":""},"caption":{"wt":""},"caption5":{"wt":""},"footer":{"wt":"{{ortala|Haremin en yetkili kişisi Ayşe Hafsa Sultan&apos;ı oynayan [[Nebahat Çehre]] (solda), onun kızı Hatice Sultan&apos;ı oynayan [[Selma Ergeç]] (ortada) ve Süleyman&apos;ın hasekisi Mahidevran Sultan&apos;ı oynayan [[Nur Fettahoğlu]] (sağda).}}"}},"i":0}}]}'><style data-mw-deduplicate="TemplateStyles:r37200200/mw-parser-output/.tmulti" typeof="mw:Extension/templatestyles" about="#mwt4" data-mw='{"name":"templatestyles","attrs":{"src":"Çoklu resim/biçim.css","wrapper":".tmulti"},"body":{"extsrc":""}}'>.mw-parser-output .tmulti .multiimageinner{display:flex;flex-direction:column}.mw-parser-output .tmulti .trow{display:flex;flex-direction:row;clear:left;flex-wrap:wrap;width:100%;box-sizing:border-box}.mw-parser-output .tmulti .tsingle{margin:1px;float:left}.mw-parser-output .tmulti .theader{clear:both;font-weight:bold;text-align:center;align-self:center;background-color:transparent;width:100%}.mw-parser-output .tmulti .thumbcaption{background-color:transparent}.mw-parser-output .tmulti .text-align-left{text-align:left}.mw-parser-output .tmulti .text-align-right{text-align:right}.mw-parser-output .tmulti .text-align-center{text-align:center}@media all and (max-width:720px){.mw-parser-output .tmulti .thumbinner{width:100%!important;box-sizing:border-box;max-width:none!important;align-items:center}.mw-parser-output .tmulti .trow{justify-content:center}.mw-parser-output .tmulti .tsingle{float:none!important;max-width:100%!important;box-sizing:border-box;text-align:center}.mw-parser-output .tmulti .tsingle .thumbcaption{text-align:left}.mw-parser-output .tmulti .trow>.thumbcaption{text-align:center}}@media screen{.mw-parser-output .tmulti .multiimageinner .thumbimage{background-color:inherit}html.skin-theme-clientpref-night .mw-parser-output .tmulti .multiimageinner .thumbimage:not([style*="background-color"]) span:not(.skin-invert-image):not(.skin-invert):not(.bg-transparent) img,html.skin-theme-clientpref-day .mw-parser-output .tmulti .multiimageinner .thumbimage:not([style*="background-color"]) span:not(.bg-transparent) img{background-color:white}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .tmulti .multiimageinner .thumbimage:not([style*="background-color"]) span:not(.skin-invert-image):not(.skin-invert):not(.bg-transparent) img{background-color:white}}</style></span><div class="thumb tmulti tright" about="#mwt3"><div class="thumbinner multiimageinner" style="width:322px;max-width:322px"><div class="trow"><div class="tsingle" style="width:85px;max-width:85px"><div class="thumbimage" style="height:158px;overflow:hidden"><span typeof="mw:File"><a href="https://tr.wikipedia.org/wiki/Dosya:Nebahat_Çehre.jpg" class="mw-file-description"><img resource="https://tr.wikipedia.org/wiki/Dosya:Nebahat_Çehre.jpg" src="//upload.wikimedia.org/wikipedia/commons/7/71/Nebahat_%C3%87ehre.jpg?utm_source=tr.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled" decoding="async" loading="lazy" data-file-width="116" data-file-height="221" data-file-type="bitmap" height="158" width="83" class="mw-file-element"/></a></span></div></div><div class="tsingle" style="width:116px;max-width:116px"><div class="thumbimage" style="height:158px;overflow:hidden"><span typeof="mw:File"><a href="https://tr.wikipedia.org/wiki/Dosya:Selma_Ergeç.jpg" class="mw-file-description"><img resource="https://tr.wikipedia.org/wiki/Dosya:Selma_Ergeç.jpg" src="//thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Selma_Erge%C3%A7.jpg/120px-Selma_Erge%C3%A7.jpg?utm_source=tr.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" decoding="async" loading="lazy" srcset="//thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Selma_Erge%C3%A7.jpg/250px-Selma_Erge%C3%A7.jpg?utm_source=tr.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x" data-file-width="542" data-file-height="754" data-file-type="bitmap" height="159" width="114" class="mw-file-element"/></a></span></div></div><div class="tsingle" style="width:115px;max-width:115px"><div class="thumbimage" style="height:158px;overflow:hidden"><span typeof="mw:File"><a href="https://tr.wikipedia.org/wiki/Dosya:Nur_Fettahoğlu.jpg" class="mw-file-description"><img resource="https://tr.wikipedia.org/wiki/Dosya:Nur_Fettahoğlu.jpg" src="//thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Nur_Fettaho%C4%9Flu.jpg/120px-Nur_Fettaho%C4%9Flu.jpg?utm_source=tr.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" decoding="async" loading="lazy" srcset="//thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Nur_Fettaho%C4%9Flu.jpg/250px-Nur_Fettaho%C4%9Flu.jpg?utm_source=tr.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x" data-file-width="576" data-file-height="802" data-file-type="bitmap" height="157" width="113" class="mw-file-element"/></a></span></div></div></div><div class="trow" style="display:flow-root"><div class="thumbcaption" style="text-align:left"><div class="center" style="width:auto; margin-left:auto; margin-right:auto; ">Haremin en yetkili kişisi Ayşe Hafsa Sultan'ı oynayan <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Nebahat_Çehre" title="Nebahat Çehre">Nebahat Çehre</a> (solda), onun kızı Hatice Sultan'ı oynayan <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Selma_Ergeç" title="Selma Ergeç">Selma Ergeç</a> (ortada) ve Süleyman'ın hasekisi Mahidevran Sultan'ı oynayan <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Nur_Fettahoğlu" title="Nur Fettahoğlu">Nur Fettahoğlu</a> (sağda).</div></div></div></div></div><span class="mw-empty-elt" about="#mwt3"><link rel="mw:PageProp/Category" href="./Kategori:Otomatik_boyutlandırılan_çoklu_resim_kullanılan_sayfalar"/></span>
+<p id="mwNg"><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Halit_Ergenç" title="Halit Ergenç" id="mwNw">Halit Ergenç</a>, 10. Osmanlı padişahı <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/I._Süleyman" title="I. Süleyman" id="mwOA">I. Süleyman</a>'ı canlandırdı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Nebahat_Çehre" title="Nebahat Çehre" id="mwOQ">Nebahat Çehre</a>, Süleyman'ın annesi <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Ayşe_Hafsa_Sultan" title="Ayşe Hafsa Sultan" id="mwOg">Ayşe Hafsa Sultan</a>'ı canlandırdı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Meryem_Uzerli" title="Meryem Uzerli" id="mwOw">Meryem Uzerli</a>, başlangıçta Alexandra adıyla tanınan Rutenyalı cariye <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Hürrem_Sultan" title="Hürrem Sultan" id="mwPA">Hürrem Sultan</a>'ı canlandırdı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Okan_Yalabık" title="Okan Yalabık" id="mwPQ">Okan Yalabık</a>, Süleyman'ın can dostu ve daha sonra sadrazam olan <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Pargalı_İbrahim_Paşa" title="Pargalı İbrahim Paşa" id="mwPg">Pargalı İbrahim Paşa</a>'yı oynadı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Selma_Ergeç" title="Selma Ergeç" id="mwPw">Selma Ergeç</a>, Süleyman'ın kız kardeşi ve Ayşe Hafta Sultan'ın kızı <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Hatice_Sultan_(I._Selim'in_kızı)" title="Hatice Sultan (I. Selim'in kızı)" id="mwQA">Hatice Sultan</a>'ı canlandırdı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Nur_Fettahoğlu" title="Nur Fettahoğlu" id="mwQQ">Nur Fettahoğlu</a>, Süleyman'a bir erkek evlat (şehzade) vermiş olan <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Mahidevran_Sultan" title="Mahidevran Sultan" id="mwQg">Mahidevran Sultan</a>'ı oynadı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Selen_Öztürk" title="Selen Öztürk" id="mwQw">Selen Öztürk</a>, Sultan Süleyman'dan hamile kalmış fakat bebeği öldükten sonra Hatice Sultan'ın nedimesi olmuş olan <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Gülfem_Hatun" title="Gülfem Hatun" id="mwRA">Gülfem Hatun</a>'u canlandırdı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Filiz_Ahmet" title="Filiz Ahmet" id="mwRQ">Filiz Ahmet</a>, haremin başkalfası olan Nigar Kalfa'yı oynadı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Sema_Keçik" title="Sema Keçik" id="mwRg">Sema Keçik</a>, Ayşe Hafsa Sultan'ın nedimesi Daye Hatun'u canlandırdı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Selim_Bayraktar" title="Selim Bayraktar" id="mwRw">Selim Bayraktar</a>, haremin başağası olan Sümbül Ağa'yı canlandırdı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Nihan_Büyükağaç" title="Nihan Büyükağaç" id="mwSA">Nihan Büyükağaç</a>, Mahidevran Sultan'ın nedimesi Gülşah Hatun'u oynadı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Burcu_Tuna?action=edit&amp;redlink=1" title="Burcu Tuna (sayfa mevcut değil)" class="new" typeof="mw:LocalizedAttrs" id="mwSQ" data-mw-i18n='{"title":{"lang":"x-page","key":"red-link-title","params":["Burcu Tuna"]}}'>Burcu Tuna</a>, Hürrem'in yakın arkadaşı olan ve başlangıçta Maria adını taşıyan Gülnihal Hatun'u oynadı. Mahidevran'ın oğlu <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Şehzade_Mustafa" title="Şehzade Mustafa" id="mwSg">Şehzade Mustafa</a>'nın küçüklüğünü Yusuf Berkan Demirbağ, biraz daha büyümüş hâlini ise Tunç Oral canlandırdı.</p>
+
+<p id="mwSw">Dizinin ilk sezonuna düzenli olarak katılan birçok oyuncu daha oldu. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Alp_Öyken" title="Alp Öyken" id="mwTA">Alp Öyken</a>'in canlandırdığı karakter <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/VII._Clemens" title="VII. Clemens" id="mwTQ">Papa VII. Clemens</a>, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Arif_Erkin_Güzelbeyoğlu" title="Arif Erkin Güzelbeyoğlu" id="mwTg">Arif Erkin</a>'in canlandırdığı karakter <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Pîrî_Mehmed_Paşa" title="Pîrî Mehmed Paşa" id="mwTw">Pîrî Mehmed Paşa</a>, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Fatih_Al" title="Fatih Al" id="mwUA">Fatih Al</a> tarafından canlandırılan karakter <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Matrakçı_Nasuh" title="Matrakçı Nasuh" id="mwUQ">Matrakçı Nasuh</a>, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Oktay_Daner?action=edit&amp;redlink=1" title="Oktay Daner (sayfa mevcut değil)" class="new" typeof="mw:LocalizedAttrs" id="mwUg" data-mw-i18n='{"title":{"lang":"x-page","key":"red-link-title","params":["Oktay Daner"]}}'>Oktay Daner</a> tarafından canlandırılan karakter <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Zenbilli_Ali_Efendi" title="Zenbilli Ali Efendi" id="mwUw">Zenbilli Ali Efendi</a>, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Saadet_Işıl_Aksoy" title="Saadet Işıl Aksoy" id="mwVA">Saadet Işıl Aksoy</a>'un canlandırdığı karakter Victoria (Sadıka Hatun), <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Seçkin_Özdemir" title="Seçkin Özdemir" id="mwVQ">Seçkin Özdemir</a>'in oynadığı karakter Leo, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Kevork_Türker" title="Kevork Türker" id="mwVg">Kevork Türker</a>'in canlandırdığı karakter Manolis ve <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Merve_Oflaz" title="Merve Oflaz" id="mwVw">Merve Oflaz</a>'ın oynadığı karakter Ayşe Hatun; dizinin ilk sezonunda düzenli bir şekilde rol aldılar. Bunlara ek olarak <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Yüksel_Ünal?action=edit&amp;redlink=1" title="Yüksel Ünal (sayfa mevcut değil)" class="new" typeof="mw:LocalizedAttrs" id="mwWA" data-mw-i18n='{"title":{"lang":"x-page","key":"red-link-title","params":["Yüksel Ünal"]}}'>Yüksel Ünal</a>, sarayın mutfağından sorumlu Şeker Ağa rolünü oynadı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Naci_Adıgüzel?action=edit&amp;redlink=1" title="Naci Adıgüzel (sayfa mevcut değil)" class="new" typeof="mw:LocalizedAttrs" id="mwWQ" data-mw-i18n='{"title":{"lang":"x-page","key":"red-link-title","params":["Naci Adıgüzel"]}}'>Naci Adıgüzel</a>, İstanbul'un Venedik elçisini canlandırdı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Kadir_Çermik" title="Kadir Çermik" id="mwWg">Kadir Çermik</a>, Süleyman'ın başlıca rakibi olan Macaristan kralı <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/II._Lajos" title="II. Lajos" id="mwWw">II. Lajos</a>'u canlandırdı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Murat_Tüzün?action=edit&amp;redlink=1" title="Murat Tüzün (sayfa mevcut değil)" class="new" typeof="mw:LocalizedAttrs" id="mwXA" data-mw-i18n='{"title":{"lang":"x-page","key":"red-link-title","params":["Murat Tüzün"]}}'>Murat Tüzün</a>, Süleyman'ın veziri ve daha sonra ona ihanet eden <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Hain_Ahmed_Paşa" title="Hain Ahmed Paşa" id="mwXQ">Ahmed Paşa</a> rolünü; <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Kıvanç_Kılınç?action=edit&amp;redlink=1" title="Kıvanç Kılınç (sayfa mevcut değil)" class="new" typeof="mw:LocalizedAttrs" id="mwXg" data-mw-i18n='{"title":{"lang":"x-page","key":"red-link-title","params":["Kıvanç Kılınç"]}}'>Kıvanç Kılınç</a> ise hanedan damadı olan <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Ferhad_Paşa" title="Ferhad Paşa" class="mw-redirect" id="mwXw">Ferhad Paşa</a> rolünü oynadı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Pınar_Çağlar_Gençtürk" title="Pınar Çağlar Gençtürk" id="mwYA">Pınar Çağlar Gençtürk</a>, Ferhad Paşa'nın eşi ve Süleyman'ın kız kardeşi olan <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Beyhan_Sultan_(I._Selim'in_kızı)" title="Beyhan Sultan (I. Selim'in kızı)" id="mwYQ">Beyhan Sultan</a>'ı oynadı. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Fehmi_Karaarslan?action=edit&amp;redlink=1" title="Fehmi Karaarslan (sayfa mevcut değil)" class="new" typeof="mw:LocalizedAttrs" id="mwYg" data-mw-i18n='{"title":{"lang":"x-page","key":"red-link-title","params":["Fehmi Karaarslan"]}}'>Fehmi Karaarslan</a>, divanın vezirlerinden <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Ayas_Mehmed_Paşa" title="Ayas Mehmed Paşa" id="mwYw">Ayas Mehmed Paşa</a>'yı canlandırdı.</p>
+
+<p id="mwZA"><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/İlker_Aksum" title="İlker Aksum" id="mwZQ">İlker Aksum</a> idam edilen kaptan-ı deryâ <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Câfer_Ağa" title="Câfer Ağa" id="mwZg">Câfer Ağa</a> rolüyle, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Ali_Uyandıran" title="Ali Uyandıran" id="mwZw">Ali Uyandıran</a> Süleyman'ın babası I. Selim'in dostu <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Hasan_Can_Çelebi" title="Hasan Can Çelebi" id="mwaA">Hasan Can</a> rolüyle, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Engin_Günaydın" title="Engin Günaydın" id="mwaQ">Engin Günaydın</a> haremin ağalarından Gül Ağa rolüyle, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Nusret_Çetinel" title="Nusret Çetinel" id="mwag">Nusret Çetinel</a> padişahın lalası Kâsım Paşa rolüyle, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Binnur_Kaya" title="Binnur Kaya" id="mwaw">Binnur Kaya</a> muska yazıp büyücülük yapan Muskacı Hatun rolüyle, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Cem_Bender" title="Cem Bender" id="mwbA">Cem Bender</a> yeniçeri ağası Mustafa Ağa rolüyle, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Tansu_Biçer" title="Tansu Biçer" id="mwbQ">Tansu Biçer</a> sarayın nakkaşhanesinden sorumlu Ahmed Çelebi rolüyle, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Tansel_Öngel" title="Tansel Öngel" id="mwbg">Tansel Öngel</a> Venedik liderinin (<a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Doçe" title="Doçe" id="mwbw">doçe</a>) oğlu <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Alvise_Gritti" title="Alvise Gritti" id="mwcA">Alvise Gritti</a> rolüyle, <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Bergüzar_Korel" title="Bergüzar Korel" id="mwcQ">Bergüzar Korel</a> ise Monica Teresse rolüyle dizide konuk oyuncu olarak yer aldı. Engin Günaydın ve Tansel Öngel, dizinin ikinci sezonunda düzenli bir şekilde rol almaya başladılar.</p>
+
+</section><section data-mw-section-id="4" id="mwcg" aria-labelledby="Yayın_bilgileri"><div class="mw-heading mw-heading2"><h2 id="Yayın_bilgileri"><span id="Yay.C4.B1n_bilgileri" typeof="mw:FallbackId"></span>Yayın bilgileri</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;veaction=edit&amp;section=4" title="Değiştirilen bölüm: Yayın bilgileri" class="mw-editsection-visualeditor"><span>değiştir</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;action=edit&amp;section=4" title="Bölümün kaynak kodunu değiştir: Yayın bilgileri"><span>kaynağı değiştir</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwcw">İlk bölüm, 10,87 reyting ve 24,84 share alarak <i id="mwdA"><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Çocuklar_Duymasın" title="Çocuklar Duymasın" id="mwdQ">Çocuklar Duymasın</a></i><span typeof="mw:Nowiki" id="mwdg"></span>'ın ardından ikinci oldu. İkinci bölümden itibaren her bölümde izlenme oranını daha da arttırarak zirveye oturdu ve sonrasında zirveden inmedi. Dizinin her yeni bölümü Türkiye'de çarşamba akşamları <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Show_TV" title="Show TV" id="mwdw">Show TV</a> kanalında gösterildi. Sezonun en çok izlenen bölümü, 17,63 reyting alan 12. bölüm oldu.</p>
+
+</section><section data-mw-section-id="5" id="mweA" aria-labelledby="Ödüller_ve_adaylıklar"><div class="mw-heading mw-heading2"><h2 id="Ödüller_ve_adaylıklar"><span id=".C3.96d.C3.BCller_ve_adayl.C4.B1klar" typeof="mw:FallbackId"></span>Ödüller ve adaylıklar</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;veaction=edit&amp;section=5" title="Değiştirilen bölüm: Ödüller ve adaylıklar" class="mw-editsection-visualeditor"><span>değiştir</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;action=edit&amp;section=5" title="Bölümün kaynak kodunu değiştir: Ödüller ve adaylıklar"><span>kaynağı değiştir</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mweQ">Dizi, ilk sezonuyla <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/2011_Antalya_Televizyon_Ödülleri" title="2011 Antalya Televizyon Ödülleri" id="mweg">2011 Antalya Televizyon Ödülleri</a>'ne 10 dalda aday gösterildi ve "En İyi Drama Dizisi", "En İyi Dönem Dizisi", "En İyi Dizi Erkek Oyuncu" ve "En İyi Dizi/Film Sanat Yönetmeni" olmak üzere 4 dalda ödülün sahibi oldu. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Okan_Yalabık" title="Okan Yalabık" id="mwew">Okan Yalabık</a>, Pargalı İbrahim Paşa rolüyle "En İyi Dizi Erkek Oyuncu" seçildi. Hürrem Sultan rolünü canlandıran <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Meryem_Uzerli" title="Meryem Uzerli" id="mwfA">Meryem Uzerli</a>, "En İyi Dizi Kadın Oyuncu" dalında aday gösterildi. <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Filiz_Ahmet" title="Filiz Ahmet" id="mwfQ">Filiz Ahmet</a> ise Nigar Kalfa karakteriyle "En İyi Dizi Yardımcı Kadın Oyuncu" için aday gösterildi. Dizinin hem yönetmeni <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Taylan_Biraderler" title="Taylan Biraderler" id="mwfg">Taylan Biraderler</a> hem de senaristi <a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Meral_Okay" title="Meral Okay" id="mwfw">Meral Okay</a>, kendi dallarında verilen ödüllere aday gösterildiler.</p>
+
+</section><section data-mw-section-id="6" id="mwgA" aria-labelledby="Bölümler_listesi"><div class="mw-heading mw-heading2"><h2 id="Bölümler_listesi"><span id="B.C3.B6l.C3.BCmler_listesi" typeof="mw:FallbackId"></span>Bölümler listesi</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;veaction=edit&amp;section=6" title="Değiştirilen bölüm: Bölümler listesi" class="mw-editsection-visualeditor"><span>değiştir</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;action=edit&amp;section=6" title="Bölümün kaynak kodunu değiştir: Bölümler listesi"><span>kaynağı değiştir</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<meta typeof="mw:Includes/OnlyInclude" id="mwgQ"/><table class="wikitable plainrowheaders wikiepisodetable" style="width:100%" about="#mwt5" typeof="mw:Transclusion" id="mwgg" data-mw='{"parts":[{"template":{"target":{"wt":"Bölüm tablosu ","href":"./Şablon:Bölüm_tablosu"},"params":{"arkaplan":{"wt":"D09916"},"renk":{"wt":"fff"},"ülke":{"wt":"Türkiye"},"numara1":{"wt":""},"numara2":{"wt":""},"yönetmen":{"wt":""},"yazar":{"wt":""},"yayıntarihi":{"wt":""},"seyirci":{"wt":""},"bölümler":{"wt":"{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 1\n |numara2 = 1\n |yönetmen = [[Taylan Biraderler]]\n |yazar = [[Meral Okay]]\n |seyirci = 10,87&lt;ref>{{Web kaynağı|başlık = 5 Ocak 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|1|5}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 2\n |numara2 = 2\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 15,26&lt;ref>{{Web kaynağı|başlık = 12 Ocak 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|1|12}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 3\n |numara2 = 3\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 16,62&lt;ref>{{Web kaynağı|başlık = 19 Ocak 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|1|19}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 4\n |numara2 = 4\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 16,77&lt;ref>{{Web kaynağı|başlık = 26 Ocak 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|1|26}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 5\n |numara2 = 5\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 14,94&lt;ref>{{Web kaynağı|başlık = 2 Şubat 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|2|2}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 6\n |numara2 = 6\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 16,49&lt;ref>{{Web kaynağı|başlık = 9 Şubat 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|2|9}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 7\n |numara2 = 7\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 17,60&lt;ref>{{Web kaynağı|başlık = 16 Şubat 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|2|16}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 8\n |numara2 = 8\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 17,34&lt;ref>{{Web kaynağı|başlık = 23 Şubat 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|2|23}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 9\n |numara2 = 9\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 15,89&lt;ref>{{Web kaynağı|başlık = 2 Mart 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|3|2}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 10\n |numara2 = 10\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 15,72&lt;ref>{{Web kaynağı|başlık = 16 Mart 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|3|16}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 11\n |numara2 = 11\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 17,29&lt;ref>{{Web kaynağı|başlık = 23 Mart 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|3|23}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 12\n |numara2 = 12\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 17,63&lt;ref>{{Web kaynağı|başlık = 30 Mart 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|3|30}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1=13\n |numara2 = 13\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 15,97&lt;ref>{{Web kaynağı|başlık = 6 Nisan 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|4|6}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 14\n |numara2 = 14\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 16,88&lt;ref>{{Web kaynağı|başlık = 13 Nisan 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|4|13}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 15\n |numara2 = 15\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 17,51&lt;ref>{{Web kaynağı|başlık = 20 Nisan 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|4|20}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 16\n |numara2 = 16\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 17,00&lt;ref>{{Web kaynağı|başlık = 27 Nisan 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|4|27}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 17\n |numara2 = 17\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 16,67&lt;ref>{{Web kaynağı|başlık = 4 Mayıs 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|5|4}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 18\n |numara2 = 18\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 13,64&lt;ref>{{Web kaynağı|başlık = 11 Mayıs 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|5|11}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 19\n |numara2 = 19\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 15,37&lt;ref>{{Web kaynağı|başlık = 18 Mayıs 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|5|18}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 20\n |numara2 = 20\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 15,23&lt;ref>{{Web kaynağı|başlık = 25 Mayıs 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|5|25}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 21\n |numara2 = 21\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 15,08&lt;ref>{{Web kaynağı|başlık = 1 Haziran 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|6|1}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 22\n |numara2 = 22\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 14,15&lt;ref>{{Web kaynağı|başlık = 8 Haziran 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|6|8}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 23\n |numara2 = 23\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 15,59&lt;ref>{{Web kaynağı|başlık = 15 Haziran 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|6|15}}\n |özet = \n |altçizgirengi = D09916\n}}\n{{Bölüm listesi/altliste|Muhteşem Yüzyıl bölümleri listesi\n |numara1 = 24 (Sezon finali)\n |numara2 = 24\n |yönetmen = Taylan Biraderler\n |yazar = Meral Okay\n |seyirci = 13,33&lt;ref>{{Web kaynağı|başlık = 22 Haziran 2011 reyting sıralaması|url = http://www.ucankus.com/ratingler|yayıncı = ucankus.com|erişimtarihi = 11 Eylül 2013|arşivurl = https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler|arşivtarihi = 20 Mart 2016|ölüurl =hayır}}&lt;/ref>\n |yayıntarihi = {{Başlangıç tarihi|2011|6|22}}\n |özet = \n |altçizgirengi = D09916\n}}"}},"i":0}}]}'><tbody><tr style="color:#fff;text-align:center"><th scope="col" style="background:#D09916;width:5%;color:#fff"><abbr title="Bölüm sırası">№</abbr><br/>genel</th><th scope="col" style="background:#D09916;width:5%;color:#fff"><abbr title="Bölüm sırası">№</abbr><br/>sezon</th><th scope="col" style="background:#D09916;color:#fff">Yönetmen</th><th scope="col" style="background:#D09916;color:#fff">Senarist</th><th scope="col" style="background:#D09916;color:#fff">Yayın tarihi</th><th scope="col" style="background:#D09916;width:10%;color:#fff">Türkiye seyircisi<br/>(milyon)</th></tr><tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep1" style="text-align:center">1</th><td style="text-align:center">1</td><td style="text-align:center"><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Taylan_Biraderler" title="Taylan Biraderler">Taylan Biraderler</a></td><td style="text-align:center"><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Meral_Okay" title="Meral Okay">Meral Okay</a></td><td style="text-align:center"><span data-sort-value="20110105 !">5 Ocak 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-01-05</span>)</span></td><td style="text-align:center">10,87<sup about="#mwt7" class="mw-ref reference" id="cite_ref-1" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-1"}}'><a href="#cite_note-1" id="mwgw"><span class="mw-reflink-text" id="mwhA"><span class="cite-bracket" id="mwhQ">[</span>1<span class="cite-bracket" id="mwhg">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep2" style="text-align:center">2</th><td style="text-align:center">2</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110112 !">12 Ocak 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-01-12</span>)</span></td><td style="text-align:center">15,26<sup about="#mwt10" class="mw-ref reference" id="cite_ref-2" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-2"}}'><a href="#cite_note-2" id="mwhw"><span class="mw-reflink-text" id="mwiA"><span class="cite-bracket" id="mwiQ">[</span>2<span class="cite-bracket" id="mwig">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep3" style="text-align:center">3</th><td style="text-align:center">3</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110119 !">19 Ocak 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-01-19</span>)</span></td><td style="text-align:center">16,62<sup about="#mwt13" class="mw-ref reference" id="cite_ref-3" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-3"}}'><a href="#cite_note-3" id="mwiw"><span class="mw-reflink-text" id="mwjA"><span class="cite-bracket" id="mwjQ">[</span>3<span class="cite-bracket" id="mwjg">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep4" style="text-align:center">4</th><td style="text-align:center">4</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110126 !">26 Ocak 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-01-26</span>)</span></td><td style="text-align:center">16,77<sup about="#mwt16" class="mw-ref reference" id="cite_ref-4" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-4"}}'><a href="#cite_note-4" id="mwjw"><span class="mw-reflink-text" id="mwkA"><span class="cite-bracket" id="mwkQ">[</span>4<span class="cite-bracket" id="mwkg">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep5" style="text-align:center">5</th><td style="text-align:center">5</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110202 !">2 Şubat 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-02-02</span>)</span></td><td style="text-align:center">14,94<sup about="#mwt19" class="mw-ref reference" id="cite_ref-5" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-5"}}'><a href="#cite_note-5" id="mwkw"><span class="mw-reflink-text" id="mwlA"><span class="cite-bracket" id="mwlQ">[</span>5<span class="cite-bracket" id="mwlg">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep6" style="text-align:center">6</th><td style="text-align:center">6</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110209 !">9 Şubat 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-02-09</span>)</span></td><td style="text-align:center">16,49<sup about="#mwt22" class="mw-ref reference" id="cite_ref-6" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-6"}}'><a href="#cite_note-6" id="mwlw"><span class="mw-reflink-text" id="mwmA"><span class="cite-bracket" id="mwmQ">[</span>6<span class="cite-bracket" id="mwmg">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep7" style="text-align:center">7</th><td style="text-align:center">7</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110216 !">16 Şubat 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-02-16</span>)</span></td><td style="text-align:center">17,60<sup about="#mwt25" class="mw-ref reference" id="cite_ref-7" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-7"}}'><a href="#cite_note-7" id="mwmw"><span class="mw-reflink-text" id="mwnA"><span class="cite-bracket" id="mwnQ">[</span>7<span class="cite-bracket" id="mwng">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep8" style="text-align:center">8</th><td style="text-align:center">8</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110223 !">23 Şubat 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-02-23</span>)</span></td><td style="text-align:center">17,34<sup about="#mwt28" class="mw-ref reference" id="cite_ref-8" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-8"}}'><a href="#cite_note-8" id="mwnw"><span class="mw-reflink-text" id="mwoA"><span class="cite-bracket" id="mwoQ">[</span>8<span class="cite-bracket" id="mwog">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep9" style="text-align:center">9</th><td style="text-align:center">9</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110302 !">2 Mart 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-03-02</span>)</span></td><td style="text-align:center">15,89<sup about="#mwt31" class="mw-ref reference" id="cite_ref-9" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-9"}}'><a href="#cite_note-9" id="mwow"><span class="mw-reflink-text" id="mwpA"><span class="cite-bracket" id="mwpQ">[</span>9<span class="cite-bracket" id="mwpg">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep10" style="text-align:center">10</th><td style="text-align:center">10</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110316 !">16 Mart 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-03-16</span>)</span></td><td style="text-align:center">15,72<sup about="#mwt34" class="mw-ref reference" id="cite_ref-10" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-10"}}'><a href="#cite_note-10" id="mwpw"><span class="mw-reflink-text" id="mwqA"><span class="cite-bracket" id="mwqQ">[</span>10<span class="cite-bracket" id="mwqg">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep11" style="text-align:center">11</th><td style="text-align:center">11</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110323 !">23 Mart 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-03-23</span>)</span></td><td style="text-align:center">17,29<sup about="#mwt37" class="mw-ref reference" id="cite_ref-11" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-11"}}'><a href="#cite_note-11" id="mwqw"><span class="mw-reflink-text" id="mwrA"><span class="cite-bracket" id="mwrQ">[</span>11<span class="cite-bracket" id="mwrg">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep12" style="text-align:center">12</th><td style="text-align:center">12</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110330 !">30 Mart 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-03-30</span>)</span></td><td style="text-align:center">17,63<sup about="#mwt40" class="mw-ref reference" id="cite_ref-12" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-12"}}'><a href="#cite_note-12" id="mwrw"><span class="mw-reflink-text" id="mwsA"><span class="cite-bracket" id="mwsQ">[</span>12<span class="cite-bracket" id="mwsg">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep13" style="text-align:center">13</th><td style="text-align:center">13</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110406 !">6 Nisan 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-04-06</span>)</span></td><td style="text-align:center">15,97<sup about="#mwt43" class="mw-ref reference" id="cite_ref-13" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-13"}}'><a href="#cite_note-13" id="mwsw"><span class="mw-reflink-text" id="mwtA"><span class="cite-bracket" id="mwtQ">[</span>13<span class="cite-bracket" id="mwtg">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep14" style="text-align:center">14</th><td style="text-align:center">14</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110413 !">13 Nisan 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-04-13</span>)</span></td><td style="text-align:center">16,88<sup about="#mwt46" class="mw-ref reference" id="cite_ref-14" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-14"}}'><a href="#cite_note-14" id="mwtw"><span class="mw-reflink-text" id="mwuA"><span class="cite-bracket" id="mwuQ">[</span>14<span class="cite-bracket" id="mwug">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep15" style="text-align:center">15</th><td style="text-align:center">15</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110420 !">20 Nisan 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-04-20</span>)</span></td><td style="text-align:center">17,51<sup about="#mwt49" class="mw-ref reference" id="cite_ref-15" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-15"}}'><a href="#cite_note-15" id="mwuw"><span class="mw-reflink-text" id="mwvA"><span class="cite-bracket" id="mwvQ">[</span>15<span class="cite-bracket" id="mwvg">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep16" style="text-align:center">16</th><td style="text-align:center">16</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110427 !">27 Nisan 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-04-27</span>)</span></td><td style="text-align:center">17,00<sup about="#mwt52" class="mw-ref reference" id="cite_ref-16" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-16"}}'><a href="#cite_note-16" id="mwvw"><span class="mw-reflink-text" id="mwwA"><span class="cite-bracket" id="mwwQ">[</span>16<span class="cite-bracket" id="mwwg">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep17" style="text-align:center">17</th><td style="text-align:center">17</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110504 !">4 Mayıs 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-05-04</span>)</span></td><td style="text-align:center">16,67<sup about="#mwt55" class="mw-ref reference" id="cite_ref-17" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-17"}}'><a href="#cite_note-17" id="mwww"><span class="mw-reflink-text" id="mwxA"><span class="cite-bracket" id="mwxQ">[</span>17<span class="cite-bracket" id="mwxg">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep18" style="text-align:center">18</th><td style="text-align:center">18</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110511 !">11 Mayıs 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-05-11</span>)</span></td><td style="text-align:center">13,64<sup about="#mwt58" class="mw-ref reference" id="cite_ref-18" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-18"}}'><a href="#cite_note-18" id="mwxw"><span class="mw-reflink-text" id="mwyA"><span class="cite-bracket" id="mwyQ">[</span>18<span class="cite-bracket" id="mwyg">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep19" style="text-align:center">19</th><td style="text-align:center">19</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110518 !">18 Mayıs 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-05-18</span>)</span></td><td style="text-align:center">15,37<sup about="#mwt61" class="mw-ref reference" id="cite_ref-19" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-19"}}'><a href="#cite_note-19" id="mwyw"><span class="mw-reflink-text" id="mwzA"><span class="cite-bracket" id="mwzQ">[</span>19<span class="cite-bracket" id="mwzg">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep20" style="text-align:center">20</th><td style="text-align:center">20</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110525 !">25 Mayıs 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-05-25</span>)</span></td><td style="text-align:center">15,23<sup about="#mwt64" class="mw-ref reference" id="cite_ref-20" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-20"}}'><a href="#cite_note-20" id="mwzw"><span class="mw-reflink-text" id="mw0A"><span class="cite-bracket" id="mw0Q">[</span>20<span class="cite-bracket" id="mw0g">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep21" style="text-align:center">21</th><td style="text-align:center">21</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110601 !">1 Haziran 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-06-01</span>)</span></td><td style="text-align:center">15,08<sup about="#mwt67" class="mw-ref reference" id="cite_ref-21" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-21"}}'><a href="#cite_note-21" id="mw0w"><span class="mw-reflink-text" id="mw1A"><span class="cite-bracket" id="mw1Q">[</span>21<span class="cite-bracket" id="mw1g">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep22" style="text-align:center">22</th><td style="text-align:center">22</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110608 !">8 Haziran 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-06-08</span>)</span></td><td style="text-align:center">14,15<sup about="#mwt70" class="mw-ref reference" id="cite_ref-22" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-22"}}'><a href="#cite_note-22" id="mw1w"><span class="mw-reflink-text" id="mw2A"><span class="cite-bracket" id="mw2Q">[</span>22<span class="cite-bracket" id="mw2g">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep23" style="text-align:center">23</th><td style="text-align:center">23</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110615 !">15 Haziran 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-06-15</span>)</span></td><td style="text-align:center">15,59<sup about="#mwt73" class="mw-ref reference" id="cite_ref-23" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-23"}}'><a href="#cite_note-23" id="mw2w"><span class="mw-reflink-text" id="mw3A"><span class="cite-bracket" id="mw3Q">[</span>23<span class="cite-bracket" id="mw3g">]</span></span></a></sup></td></tr>
+<tr class="vevent module-episode-list-row" style="text-align:center;background:inherit;color:inherit"><th scope="row" rowspan="1" id="ep24" style="text-align:center">24 (Sezon finali)</th><td style="text-align:center">24</td><td style="text-align:center">Taylan Biraderler</td><td style="text-align:center">Meral Okay</td><td style="text-align:center"><span data-sort-value="20110622 !">22 Haziran 2011</span><span style="display:none"><span typeof="mw:Entity"> </span>(<span class="bday dtstart published updated">2011-06-22</span>)</span></td><td style="text-align:center">13,33<sup about="#mwt76" class="mw-ref reference" id="cite_ref-24" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-24"}}'><a href="#cite_note-24" id="mw3w"><span class="mw-reflink-text" id="mw4A"><span class="cite-bracket" id="mw4Q">[</span>24<span class="cite-bracket" id="mw4g">]</span></span></a></sup></td></tr></tbody></table><meta typeof="mw:Includes/OnlyInclude/End" id="mw4w"/>
+
+</section><section data-mw-section-id="7" id="mw5A" aria-labelledby="Kaynakça"><div class="mw-heading mw-heading2"><h2 id="Kaynakça"><span id="Kaynak.C3.A7a" typeof="mw:FallbackId"></span>Kaynakça</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;veaction=edit&amp;section=7" title="Değiştirilen bölüm: Kaynakça" class="mw-editsection-visualeditor"><span>değiştir</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;action=edit&amp;section=7" title="Bölümün kaynak kodunu değiştir: Kaynakça"><span>kaynağı değiştir</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<span class="mw-empty-elt" about="#mwt78" typeof="mw:Transclusion" id="mw5Q" data-mw='{"parts":[{"template":{"target":{"wt":"kaynakça","href":"./Şablon:Kaynakça"},"params":{},"i":0}}]}'><style data-mw-deduplicate="TemplateStyles:r36973541" typeof="mw:Extension/templatestyles" about="#mwt79" data-mw='{"name":"templatestyles","attrs":{"src":"Kaynakça/styles.css"}}'>.mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style></span><div class="reflist   " about="#mwt78" id="mw5g">
+<div class="mw-references-wrap mw-references-columns" typeof="mw:Extension/references" about="#mwt80" id="mw5w" data-mw='{"name":"references","attrs":{"group":"","responsive":"1"},"body":{"extsrc":""}}'><ol class="mw-references references" id="mw6A"><li about="#cite_note-1" id="cite_note-1" data-mw-footnote-number="1"><span class="mw-cite-backlink" id="mw6Q"><a href="#cite_ref-1" rel="mw:referencedBy" id="mw6g"><span class="mw-linkback-text" id="mw6w">↑</span></a></span> <span id="mw-reference-text-cite_note-1" class="mw-reference-text reference-text"><cite class="kaynak web" id="mw7A"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mw7Q">"5 Ocak 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mw7g">arşivlendi</a><span class="reference-accessdate" id="mw7w">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=5+Ocak+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mw8A"><span style="display:none;" id="mw8Q"><span typeof="mw:Entity" id="mw8g"> </span></span></span></span></li>
+<li about="#cite_note-2" id="cite_note-2" data-mw-footnote-number="2"><span class="mw-cite-backlink" id="mw8w"><a href="#cite_ref-2" rel="mw:referencedBy" id="mw9A"><span class="mw-linkback-text" id="mw9Q">↑</span></a></span> <span id="mw-reference-text-cite_note-2" class="mw-reference-text reference-text"><cite class="kaynak web" id="mw9g"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mw9w">"12 Ocak 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mw-A">arşivlendi</a><span class="reference-accessdate" id="mw-Q">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=12+Ocak+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mw-g"><span style="display:none;" id="mw-w"><span typeof="mw:Entity" id="mw_A"> </span></span></span></span></li>
+<li about="#cite_note-3" id="cite_note-3" data-mw-footnote-number="3"><span class="mw-cite-backlink" id="mw_Q"><a href="#cite_ref-3" rel="mw:referencedBy" id="mw_g"><span class="mw-linkback-text" id="mw_w">↑</span></a></span> <span id="mw-reference-text-cite_note-3" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAQA"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAQE">"19 Ocak 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAQI">arşivlendi</a><span class="reference-accessdate" id="mwAQM">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=19+Ocak+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAQQ"><span style="display:none;" id="mwAQU"><span typeof="mw:Entity" id="mwAQY"> </span></span></span></span></li>
+<li about="#cite_note-4" id="cite_note-4" data-mw-footnote-number="4"><span class="mw-cite-backlink" id="mwAQc"><a href="#cite_ref-4" rel="mw:referencedBy" id="mwAQg"><span class="mw-linkback-text" id="mwAQk">↑</span></a></span> <span id="mw-reference-text-cite_note-4" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAQo"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAQs">"26 Ocak 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAQw">arşivlendi</a><span class="reference-accessdate" id="mwAQ0">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=26+Ocak+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAQ4"><span style="display:none;" id="mwAQ8"><span typeof="mw:Entity" id="mwARA"> </span></span></span></span></li>
+<li about="#cite_note-5" id="cite_note-5" data-mw-footnote-number="5"><span class="mw-cite-backlink" id="mwARE"><a href="#cite_ref-5" rel="mw:referencedBy" id="mwARI"><span class="mw-linkback-text" id="mwARM">↑</span></a></span> <span id="mw-reference-text-cite_note-5" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwARQ"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwARU">"2 Şubat 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwARY">arşivlendi</a><span class="reference-accessdate" id="mwARc">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=2+%C5%9Eubat+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwARg"><span style="display:none;" id="mwARk"><span typeof="mw:Entity" id="mwARo"> </span></span></span></span></li>
+<li about="#cite_note-6" id="cite_note-6" data-mw-footnote-number="6"><span class="mw-cite-backlink" id="mwARs"><a href="#cite_ref-6" rel="mw:referencedBy" id="mwARw"><span class="mw-linkback-text" id="mwAR0">↑</span></a></span> <span id="mw-reference-text-cite_note-6" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAR4"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAR8">"9 Şubat 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwASA">arşivlendi</a><span class="reference-accessdate" id="mwASE">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=9+%C5%9Eubat+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwASI"><span style="display:none;" id="mwASM"><span typeof="mw:Entity" id="mwASQ"> </span></span></span></span></li>
+<li about="#cite_note-7" id="cite_note-7" data-mw-footnote-number="7"><span class="mw-cite-backlink" id="mwASU"><a href="#cite_ref-7" rel="mw:referencedBy" id="mwASY"><span class="mw-linkback-text" id="mwASc">↑</span></a></span> <span id="mw-reference-text-cite_note-7" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwASg"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwASk">"16 Şubat 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwASo">arşivlendi</a><span class="reference-accessdate" id="mwASs">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=16+%C5%9Eubat+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwASw"><span style="display:none;" id="mwAS0"><span typeof="mw:Entity" id="mwAS4"> </span></span></span></span></li>
+<li about="#cite_note-8" id="cite_note-8" data-mw-footnote-number="8"><span class="mw-cite-backlink" id="mwAS8"><a href="#cite_ref-8" rel="mw:referencedBy" id="mwATA"><span class="mw-linkback-text" id="mwATE">↑</span></a></span> <span id="mw-reference-text-cite_note-8" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwATI"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwATM">"23 Şubat 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwATQ">arşivlendi</a><span class="reference-accessdate" id="mwATU">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=23+%C5%9Eubat+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwATY"><span style="display:none;" id="mwATc"><span typeof="mw:Entity" id="mwATg"> </span></span></span></span></li>
+<li about="#cite_note-9" id="cite_note-9" data-mw-footnote-number="9"><span class="mw-cite-backlink" id="mwATk"><a href="#cite_ref-9" rel="mw:referencedBy" id="mwATo"><span class="mw-linkback-text" id="mwATs">↑</span></a></span> <span id="mw-reference-text-cite_note-9" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwATw"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAT0">"2 Mart 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAT4">arşivlendi</a><span class="reference-accessdate" id="mwAT8">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=2+Mart+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAUA"><span style="display:none;" id="mwAUE"><span typeof="mw:Entity" id="mwAUI"> </span></span></span></span></li>
+<li about="#cite_note-10" id="cite_note-10" data-mw-footnote-number="10"><span class="mw-cite-backlink" id="mwAUM"><a href="#cite_ref-10" rel="mw:referencedBy" id="mwAUQ"><span class="mw-linkback-text" id="mwAUU">↑</span></a></span> <span id="mw-reference-text-cite_note-10" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAUY"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAUc">"16 Mart 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAUg">arşivlendi</a><span class="reference-accessdate" id="mwAUk">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=16+Mart+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAUo"><span style="display:none;" id="mwAUs"><span typeof="mw:Entity" id="mwAUw"> </span></span></span></span></li>
+<li about="#cite_note-11" id="cite_note-11" data-mw-footnote-number="11"><span class="mw-cite-backlink" id="mwAU0"><a href="#cite_ref-11" rel="mw:referencedBy" id="mwAU4"><span class="mw-linkback-text" id="mwAU8">↑</span></a></span> <span id="mw-reference-text-cite_note-11" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAVA"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAVE">"23 Mart 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAVI">arşivlendi</a><span class="reference-accessdate" id="mwAVM">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=23+Mart+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAVQ"><span style="display:none;" id="mwAVU"><span typeof="mw:Entity" id="mwAVY"> </span></span></span></span></li>
+<li about="#cite_note-12" id="cite_note-12" data-mw-footnote-number="12"><span class="mw-cite-backlink" id="mwAVc"><a href="#cite_ref-12" rel="mw:referencedBy" id="mwAVg"><span class="mw-linkback-text" id="mwAVk">↑</span></a></span> <span id="mw-reference-text-cite_note-12" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAVo"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAVs">"30 Mart 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAVw">arşivlendi</a><span class="reference-accessdate" id="mwAV0">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=30+Mart+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAV4"><span style="display:none;" id="mwAV8"><span typeof="mw:Entity" id="mwAWA"> </span></span></span></span></li>
+<li about="#cite_note-13" id="cite_note-13" data-mw-footnote-number="13"><span class="mw-cite-backlink" id="mwAWE"><a href="#cite_ref-13" rel="mw:referencedBy" id="mwAWI"><span class="mw-linkback-text" id="mwAWM">↑</span></a></span> <span id="mw-reference-text-cite_note-13" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAWQ"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAWU">"6 Nisan 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAWY">arşivlendi</a><span class="reference-accessdate" id="mwAWc">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=6+Nisan+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAWg"><span style="display:none;" id="mwAWk"><span typeof="mw:Entity" id="mwAWo"> </span></span></span></span></li>
+<li about="#cite_note-14" id="cite_note-14" data-mw-footnote-number="14"><span class="mw-cite-backlink" id="mwAWs"><a href="#cite_ref-14" rel="mw:referencedBy" id="mwAWw"><span class="mw-linkback-text" id="mwAW0">↑</span></a></span> <span id="mw-reference-text-cite_note-14" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAW4"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAW8">"13 Nisan 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAXA">arşivlendi</a><span class="reference-accessdate" id="mwAXE">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=13+Nisan+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAXI"><span style="display:none;" id="mwAXM"><span typeof="mw:Entity" id="mwAXQ"> </span></span></span></span></li>
+<li about="#cite_note-15" id="cite_note-15" data-mw-footnote-number="15"><span class="mw-cite-backlink" id="mwAXU"><a href="#cite_ref-15" rel="mw:referencedBy" id="mwAXY"><span class="mw-linkback-text" id="mwAXc">↑</span></a></span> <span id="mw-reference-text-cite_note-15" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAXg"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAXk">"20 Nisan 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAXo">arşivlendi</a><span class="reference-accessdate" id="mwAXs">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=20+Nisan+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAXw"><span style="display:none;" id="mwAX0"><span typeof="mw:Entity" id="mwAX4"> </span></span></span></span></li>
+<li about="#cite_note-16" id="cite_note-16" data-mw-footnote-number="16"><span class="mw-cite-backlink" id="mwAX8"><a href="#cite_ref-16" rel="mw:referencedBy" id="mwAYA"><span class="mw-linkback-text" id="mwAYE">↑</span></a></span> <span id="mw-reference-text-cite_note-16" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAYI"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAYM">"27 Nisan 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAYQ">arşivlendi</a><span class="reference-accessdate" id="mwAYU">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=27+Nisan+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAYY"><span style="display:none;" id="mwAYc"><span typeof="mw:Entity" id="mwAYg"> </span></span></span></span></li>
+<li about="#cite_note-17" id="cite_note-17" data-mw-footnote-number="17"><span class="mw-cite-backlink" id="mwAYk"><a href="#cite_ref-17" rel="mw:referencedBy" id="mwAYo"><span class="mw-linkback-text" id="mwAYs">↑</span></a></span> <span id="mw-reference-text-cite_note-17" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAYw"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAY0">"4 Mayıs 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAY4">arşivlendi</a><span class="reference-accessdate" id="mwAY8">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=4+May%C4%B1s+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAZA"><span style="display:none;" id="mwAZE"><span typeof="mw:Entity" id="mwAZI"> </span></span></span></span></li>
+<li about="#cite_note-18" id="cite_note-18" data-mw-footnote-number="18"><span class="mw-cite-backlink" id="mwAZM"><a href="#cite_ref-18" rel="mw:referencedBy" id="mwAZQ"><span class="mw-linkback-text" id="mwAZU">↑</span></a></span> <span id="mw-reference-text-cite_note-18" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAZY"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAZc">"11 Mayıs 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAZg">arşivlendi</a><span class="reference-accessdate" id="mwAZk">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=11+May%C4%B1s+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAZo"><span style="display:none;" id="mwAZs"><span typeof="mw:Entity" id="mwAZw"> </span></span></span></span></li>
+<li about="#cite_note-19" id="cite_note-19" data-mw-footnote-number="19"><span class="mw-cite-backlink" id="mwAZ0"><a href="#cite_ref-19" rel="mw:referencedBy" id="mwAZ4"><span class="mw-linkback-text" id="mwAZ8">↑</span></a></span> <span id="mw-reference-text-cite_note-19" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAaA"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAaE">"18 Mayıs 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAaI">arşivlendi</a><span class="reference-accessdate" id="mwAaM">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=18+May%C4%B1s+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAaQ"><span style="display:none;" id="mwAaU"><span typeof="mw:Entity" id="mwAaY"> </span></span></span></span></li>
+<li about="#cite_note-20" id="cite_note-20" data-mw-footnote-number="20"><span class="mw-cite-backlink" id="mwAac"><a href="#cite_ref-20" rel="mw:referencedBy" id="mwAag"><span class="mw-linkback-text" id="mwAak">↑</span></a></span> <span id="mw-reference-text-cite_note-20" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAao"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAas">"25 Mayıs 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAaw">arşivlendi</a><span class="reference-accessdate" id="mwAa0">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=25+May%C4%B1s+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAa4"><span style="display:none;" id="mwAa8"><span typeof="mw:Entity" id="mwAbA"> </span></span></span></span></li>
+<li about="#cite_note-21" id="cite_note-21" data-mw-footnote-number="21"><span class="mw-cite-backlink" id="mwAbE"><a href="#cite_ref-21" rel="mw:referencedBy" id="mwAbI"><span class="mw-linkback-text" id="mwAbM">↑</span></a></span> <span id="mw-reference-text-cite_note-21" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAbQ"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAbU">"1 Haziran 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAbY">arşivlendi</a><span class="reference-accessdate" id="mwAbc">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=1+Haziran+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAbg"><span style="display:none;" id="mwAbk"><span typeof="mw:Entity" id="mwAbo"> </span></span></span></span></li>
+<li about="#cite_note-22" id="cite_note-22" data-mw-footnote-number="22"><span class="mw-cite-backlink" id="mwAbs"><a href="#cite_ref-22" rel="mw:referencedBy" id="mwAbw"><span class="mw-linkback-text" id="mwAb0">↑</span></a></span> <span id="mw-reference-text-cite_note-22" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAb4"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAb8">"8 Haziran 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAcA">arşivlendi</a><span class="reference-accessdate" id="mwAcE">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=8+Haziran+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAcI"><span style="display:none;" id="mwAcM"><span typeof="mw:Entity" id="mwAcQ"> </span></span></span></span></li>
+<li about="#cite_note-23" id="cite_note-23" data-mw-footnote-number="23"><span class="mw-cite-backlink" id="mwAcU"><a href="#cite_ref-23" rel="mw:referencedBy" id="mwAcY"><span class="mw-linkback-text" id="mwAcc">↑</span></a></span> <span id="mw-reference-text-cite_note-23" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAcg"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAck">"15 Haziran 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAco">arşivlendi</a><span class="reference-accessdate" id="mwAcs">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=15+Haziran+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAcw"><span style="display:none;" id="mwAc0"><span typeof="mw:Entity" id="mwAc4"> </span></span></span></span></li>
+<li about="#cite_note-24" id="cite_note-24" data-mw-footnote-number="24"><span class="mw-cite-backlink" id="mwAc8"><a href="#cite_ref-24" rel="mw:referencedBy" id="mwAdA"><span class="mw-linkback-text" id="mwAdE">↑</span></a></span> <span id="mw-reference-text-cite_note-24" class="mw-reference-text reference-text"><cite class="kaynak web" id="mwAdI"><a rel="mw:ExtLink nofollow" href="http://www.ucankus.com/ratingler" class="external text" id="mwAdM">"22 Haziran 2011 reyting sıralaması"</a>. ucankus.com. 20 Mart 2016 tarihinde kaynağından <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160320195047/http://www.ucankus.com/ratingler" class="external text" id="mwAdQ">arşivlendi</a><span class="reference-accessdate" id="mwAdU">. Erişim tarihi: 11 Eylül 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=22+Haziran+2011+reyting+s%C4%B1ralamas%C4%B1&amp;rft.pub=ucankus.com&amp;rft_id=http%3A%2F%2Fwww.ucankus.com%2Fratingler&amp;rfr_id=info%3Asid%2Ftr.wikipedia.org%3AMuhte%C5%9Fem+Y%C3%BCzy%C4%B1l+%281.+sezon%29" class="Z3988" id="mwAdY"><span style="display:none;" id="mwAdc"><span typeof="mw:Entity" id="mwAdg"> </span></span></span></span></li>
+</ol></div></div>
+
+<div role="navigation" class="navbox" aria-labelledby="Muhteşem_Yüzyıl" style="padding:3px" about="#mwt81" typeof="mw:Transclusion" id="mwAdk" data-mw='{"parts":[{"template":{"target":{"wt":"Muhteşem Yüzyıl","href":"./Şablon:Muhteşem_Yüzyıl"},"params":{},"i":0}}]}'><table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><style data-mw-deduplicate="TemplateStyles:r36982843" typeof="mw:Extension/templatestyles" about="#mwt82" data-mw='{"name":"templatestyles","attrs":{"src":"Modül:Dolçub/styles.css"},"body":{"extsrc":""}}'>.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}.mw-parser-output .infobox .navbar{font-size:100%}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style><div class="plainlinks hlist navbar navbar-mini"><ul><li class="nv-view"><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Şablon:Muhteşem_Yüzyıl" title="Şablon:Muhteşem Yüzyıl"><abbr title="Bu şablonu görüntüle" style=";;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">g</abbr></a></li><li class="nv-talk"><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Şablon_tartışma:Muhteşem_Yüzyıl" title="Şablon tartışma:Muhteşem Yüzyıl"><abbr title="Bu şablonu tartış" style=";;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">t</abbr></a></li><li class="nv-edit"><a rel="mw:ExtLink" href="https://tr.wikipedia.org/w/index.php?title=%C5%9Eablon:Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l&amp;action=edit" class="external text" data-mw-original-href="//tr.wikipedia.org/w/index.php?title=%C5%9Eablon:Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l&amp;action=edit"><abbr title="Bu şablonu değiştir" style=";;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">d</abbr></a></li></ul></div><div id="Muhteşem_Yüzyıl" style="font-size:114%;margin:0 4em"><i>Muhteşem Yüzyıl</i></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Televizyon dizileri</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><i><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Muhteşem_Yüzyıl" title="Muhteşem Yüzyıl">Muhteşem Yüzyıl</a></i> (2011–14)</li>
+<li><i><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Muhteşem_Yüzyıl_Kösem" title="Muhteşem Yüzyıl Kösem">Muhteşem Yüzyıl Kösem</a></i> (2015–17)</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Karakterler</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Muhteşem_Yüzyıl_karakterleri_listesi" title="Muhteşem Yüzyıl karakterleri listesi"><i>Muhteşem Yüzyıl</i> karakterleri</a></li>
+<li><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Muhteşem_Yüzyıl_Kösem_karakterleri_listesi" title="Muhteşem Yüzyıl Kösem karakterleri listesi"><i>Muhteşem Yüzyıl Kösem</i> karakterleri</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Bölüm listeleri</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Muhteşem_Yüzyıl_bölümleri_listesi" title="Muhteşem Yüzyıl bölümleri listesi"><i>Muhteşem Yüzyıl</i></a>
+<ul><li><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Muhteşem_Yüzyıl_(1._sezon)" class="mw-selflink selflink">Sezon 1</a></li>
+<li><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Muhteşem_Yüzyıl_(2._sezon)" title="Muhteşem Yüzyıl (2. sezon)">2</a></li>
+<li><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Muhteşem_Yüzyıl_(3._sezon)" title="Muhteşem Yüzyıl (3. sezon)">3</a></li>
+<li><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Muhteşem_Yüzyıl_(4._sezon)" title="Muhteşem Yüzyıl (4. sezon)">4</a></li></ul></li>
+<li><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Muhteşem_Yüzyıl_Kösem_bölümleri_listesi" title="Muhteşem Yüzyıl Kösem bölümleri listesi"><i>Muhteşem Yüzyıl Kösem</i></a>
+<ul><li><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Muhteşem_Yüzyıl_Kösem_(1._sezon)" title="Muhteşem Yüzyıl Kösem (1. sezon)">Sezon 1</a></li>
+<li><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Muhteşem_Yüzyıl_Kösem_(2._sezon)" title="Muhteşem Yüzyıl Kösem (2. sezon)">2</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Müzik</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><i><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Muhteşem_Yüzyıl_Soundtrack_Vol._1" title="Muhteşem Yüzyıl Soundtrack Vol. 1">Muhteşem Yüzyıl Soundtrack Vol. 1</a></i></li>
+<li><i><a rel="mw:WikiLink" href="https://tr.wikipedia.org/wiki/Muhteşem_Yüzyıl_Soundtrack_Vol._2" title="Muhteşem Yüzyıl Soundtrack Vol. 2">Muhteşem Yüzyıl Soundtrack Vol. 2</a></i></li></ul>
+</div></td></tr></tbody></table></div>
+
+<link rel="mw:PageProp/Category" href="./Kategori:Muhteşem_Yüzyıl_sezonları#1" id="mwAdo"/>
+<link rel="mw:PageProp/Category" href="./Kategori:2011_televizyon_sezonları" id="mwAds"/></section>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐6d9ffb4fdc‐jbth8
+Cached time: 20261109222436
+Cache expiry: 2592000
+Cache expiry source: Modül:Kaynak/KB1 (os.date(%Y))
+Reduced expiry: false
+Complications: [show‐toc, use‐parsoid]
+CPU time usage: 0.715 seconds
+Real time usage: 0.803 seconds
+Preprocessor visited node count: 4782/1000000
+Revision size: 24510/2097152 bytes
+Post‐expand include size: 121056/2097152 bytes
+Template argument size: 3523/2097152 bytes
+Highest expansion depth: 22/100
+Expensive parser function count: 6/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 12222/5000000 bytes
+Lua time usage: 0.151/10.000 seconds
+Lua memory usage: 4337109/52428800 bytes
+Number of Wikibase entities loaded: 1/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  566.495      1 -total
+ 17.32%   98.139      1 Şablon:Televizyon_sezonu_bilgi_kutusu
+ 17.28%   97.879     24 Şablon:Web_kaynağı
+ 16.57%   93.875      1 Şablon:Bölüm_tablosu
+ 15.07%   85.383     24 Şablon:Bölüm_listesi/altliste
+ 10.31%   58.423      1 Şablon:Bilgi_kutusu
+  7.47%   42.302     25 Şablon:Başlangıç_tarihi
+  6.47%   36.643     26 Şablon:Sıralama
+  3.70%   20.947      1 Şablon:İtalik_başlık_bilgi_kutusu
+  2.78%   15.760      1 Şablon:Wikidata_image
+-->
+
+<!-- Render ID 584a6f5b-dc8c-11f1-a6c3-2d4bbedd4308 -->
+
+<!-- Saved in parser cache with key trwiki:stable-parsoid-pcache:1667747:|#|:idhash:useParsoid=1 and timestamp 20261109222436 and revision id 38092015. Rendering was triggered because: unknown
+ -->
+
+<!-- Parsoid 0.25.0.0-alpha1 -->
+</div><!--
+Post‐processing cache key trwiki:stable‐parsoid‐pcache‐postproc:1667747:|#|:idhash:injectTOC=0!postproc=1!skin=vector‐2022!useParsoid=1, generated at 20261109222436
+--><noscript><img src="https://tr.wikipedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">"<a dir="ltr" href="https://tr.wikipedia.org/w/index.php?title=Muhteşem_Yüzyıl_(1._sezon)&amp;oldid=38092015">https://tr.wikipedia.org/w/index.php?title=Muhteşem_Yüzyıl_(1._sezon)&amp;oldid=38092015</a>" sayfasından alınmıştır</div></div>
+					<div id="catlinks" class="catlinks" data-mw-interface=""><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Yard%C4%B1m:Kategori" title="Yardım:Kategori">Kategoriler</a>: <ul><li><a href="/wiki/Kategori:2011_televizyon_sezonlar%C4%B1" title="Kategori:2011 televizyon sezonları">2011 televizyon sezonları</a></li><li><a href="/wiki/Kategori:Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_sezonlar%C4%B1" title="Kategori:Muhteşem Yüzyıl sezonları">Muhteşem Yüzyıl sezonları</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Gizli kategori: <ul><li><a href="/wiki/Kategori:Otomatik_boyutland%C4%B1r%C4%B1lan_%C3%A7oklu_resim_kullan%C4%B1lan_sayfalar" title="Kategori:Otomatik boyutlandırılan çoklu resim kullanılan sayfalar">Otomatik boyutlandırılan çoklu resim kullanılan sayfalar</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			<footer id="footer" class="mw-footer" >
+				<ul id="footer-info" class="mw-portlet mw-portlet-footer-info">
+	<li id="footer-info-lastmod"> Sayfa en son 10.38, 30 Eylül 2026 tarihinde değiştirildi.</li>
+	<li id="footer-info-renderedwith">Sayfa <a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Parsoid" class="extiw" title="mw:Special:MyLanguage/Parsoid">Parsoid</a> ile işlendi.</li>
+	<li id="footer-info-copyright">Metin <a rel="nofollow" class="external text" href="//creativecommons.org/licenses/by-sa/4.0/deed.tr">Creative Commons Atıf-AynıLisanslaPaylaş Lisansı</a> altındadır ve ek koşullar uygulanabilir. Bu siteyi kullanarak <a class="external text" data-mw-original-href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use/tr" href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use/tr">Kullanım Şartlarını</a> ve <a class="external text" data-mw-original-href="//foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy/tr" href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy/tr">Gizlilik Politikasını</a> kabul etmiş olursunuz.<br />Vikipedi® (ve Wikipedia®) kâr amacı gütmeyen kuruluş olan <a rel="nofollow" class="external text" data-mw-original-href="//www.wikimediafoundation.org/" href="https://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a> tescilli markasıdır.<br /></li>
+</ul>
+
+				<ul id="footer-places" class="mw-portlet mw-portlet-footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Gizlilik politikası</a></li>
+	<li id="footer-places-about"><a href="/wiki/Vikipedi:Hakk%C4%B1nda">Vikipedi hakkında</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Vikipedi:Genel_sorumluluk_reddi">Sorumluluk reddi</a></li>
+	<li id="footer-places-legal-safety-contacts"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information">Hukuk &amp; Güvenlik İletişim Noktaları</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Davranış Kuralları</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Geliştiriciler</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/tr.wikipedia.org">İstatistikler</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Çerez politikası</a></li>
+	<li id="footer-places-mobileview"><a href="//tr.wikipedia.org/w/index.php?title=Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobil görünüm</a></li>
+</ul>
+
+				<ul id="footer-icons" class="mw-portlet mw-portlet-footer-icons noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+			</footer>
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
+
+<span>Ara</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Vikipedi üzerinde ara">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Özel:Ara">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Ara</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="İçindekiler" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="İçindekiler tablosunu değiştir"   >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">İçindekiler tablosunu değiştir</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><i>Muhteşem Yüzyıl</i> (1. sezon)</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock cdx-button__icon"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language cdx-button__icon"></span>
+
+<span>2 dil</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive cdx-button__icon"></span>
+
+<span>Konu ekle</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-7c9fd7874c-7wvfg","wgBackendResponseTime":184,"wgPageParseReport":{"limitreport":{"cputime":"0.715","walltime":"0.803","ppvisitednodes":{"value":4782,"limit":1000000},"revisionsize":{"value":24510,"limit":2097152},"postexpandincludesize":{"value":121056,"limit":2097152},"templateargumentsize":{"value":3523,"limit":2097152},"expansiondepth":{"value":22,"limit":100},"expensivefunctioncount":{"value":6,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":12222,"limit":5000000},"entityaccesscount":{"value":1,"limit":500},"timingprofile":["100.00%  566.495      1 -total"," 17.32%   98.139      1 Şablon:Televizyon_sezonu_bilgi_kutusu"," 17.28%   97.879     24 Şablon:Web_kaynağı"," 16.57%   93.875      1 Şablon:Bölüm_tablosu"," 15.07%   85.383     24 Şablon:Bölüm_listesi/altliste"," 10.31%   58.423      1 Şablon:Bilgi_kutusu","  7.47%   42.302     25 Şablon:Başlangıç_tarihi","  6.47%   36.643     26 Şablon:Sıralama","  3.70%   20.947      1 Şablon:İtalik_başlık_bilgi_kutusu","  2.78%   15.760      1 Şablon:Wikidata_image"]},"scribunto":{"limitreport-timeusage":{"value":"0.151","limit":"10.000"},"limitreport-memusage":{"value":4337109,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-6d9ffb4fdc-jbth8","timestamp":"20261109222436","ttl":2592000,"transientcontent":false,"expiry-source":"Modül:Kaynak/KB1 (os.date(%Y))"}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Muhte\u015fem Y\u00fczy\u0131l (1. sezon)","url":"https:\/\/tr.wikipedia.org\/wiki\/Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_(1._sezon)","sameAs":"http:\/\/www.wikidata.org\/entity\/Q19345411","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q19345411","author":{"@type":"Organization","name":"Wikimedia projelerine katk\u0131da bulunanlar"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2013-09-08T13:09:05Z","dateModified":"2026-09-30T10:38:43Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/tr\/3\/31\/Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l_1_Sezon.jpg?utm_source=tr.wikipedia.org&utm_campaign=index&utm_content=original"}</script>
+</body>
+</html>

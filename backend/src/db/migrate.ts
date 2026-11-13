@@ -71,7 +71,20 @@ const migrations = [
     revenuecat_customer TEXT
   )`,
 
-  /* 007 — indexes */
+  /* 007 — VIP custom Tabu decks */
+  `CREATE TABLE IF NOT EXISTS tabu_decks (
+    id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    owner_id    UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    name        TEXT NOT NULL,
+    category    TEXT NOT NULL,
+    cover_color TEXT NOT NULL DEFAULT '#8FA8B8',
+    share_code  TEXT NOT NULL UNIQUE,
+    cards       JSONB NOT NULL DEFAULT '[]',
+    created_at  TIMESTAMPTZ NOT NULL DEFAULT NOW()
+  )`,
+  `CREATE INDEX IF NOT EXISTS idx_tabu_decks_owner ON tabu_decks(owner_id)`,
+
+  /* 008 — indexes */
   `CREATE INDEX IF NOT EXISTS idx_games_category ON games(category)`,
   `CREATE INDEX IF NOT EXISTS idx_games_is_vip ON games(is_vip)`,
   `CREATE INDEX IF NOT EXISTS idx_questions_pool ON questions(game_pool)`,

@@ -21,7 +21,7 @@ export const pool = databaseUrl
   : null as any; // Mock mode
 
 if (pool) {
-  pool.on('error', (err) => {
+  pool.on('error', (err: Error) => {
     console.error('Unexpected DB pool error:', err);
   });
 }

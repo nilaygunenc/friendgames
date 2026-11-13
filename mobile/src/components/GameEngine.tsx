@@ -13,13 +13,13 @@ import { AuctionEngine } from './AuctionEngine';
 import { MimeEngine } from './MimeEngine';
 
 /** Add every new game engine here. GameDetail always routes through this component. */
-export function GameEngine({ game }: { game: Game }) {
+export function GameEngine({ game, onOpenVip }: { game: Game; onOpenVip: () => void }) {
   switch (game.engine) {
     case 'vampir': return <VampirEngine />;
     case 'mafia-lite': return <MafiaLiteEngine />;
     case 'agent': return <AgentEngine />;
     case 'mime': return <MimeEngine />;
-    case 'tabu': return <TabuEngine />;
+    case 'tabu': return <TabuEngine onOpenVip={onOpenVip} />;
     case 'buz-kirici': return <QuestionEngine gameId={game.id} />;
     case 'mystery': return <MysteryEngine />;
     case 'everyone': return <EveryoneEngine />;

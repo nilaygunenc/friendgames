@@ -10,6 +10,7 @@ import gamesRoutes from './routes/games.routes';
 import userRoutes from './routes/user.routes';
 import vipRoutes from './routes/vip.routes';
 import adminRoutes from './routes/admin.routes';
+import tabuDeckRoutes from './routes/tabu-decks.routes';
 import { runMigrations } from './db/migrate';
 import { errorHandler } from './middleware/errorHandler';
 import { pool, isUsingDatabase } from './db/pool';
@@ -59,6 +60,7 @@ app.use('/api/games', gamesRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/vip', vipRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/tabu-decks', tabuDeckRoutes);
 
 // Health check
 app.get('/health', async (_req, res) => {

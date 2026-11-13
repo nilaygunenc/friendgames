@@ -1,22 +1,12 @@
 import React, { useMemo, useState } from 'react';
-import { Image, Linking, StyleSheet } from 'react-native';
+import { Image, StyleSheet } from 'react-native';
 import { Text, TouchableOpacity, View } from '../ui';
 import { auctionCategories, AuctionCategory, AuctionCategoryData, AuctionItem } from '../data/auction';
-import { auctionArtwork, auctionArtworkFallback, auctionSeriesArtwork, auctionSeriesArtworkFallback } from '../data/auctionArtwork';
-import { AuctionArtworkImage } from './AuctionArtworkImage';
 import { shuffleArray } from '../utils/gameEngine';
 import { useAppStore } from '../store/useAppStore';
 import { Colors } from '../theme';
 
 type Phase = 'setup' | 'opening' | 'auction' | 'round-result' | 'final';
-
-const foodArtwork: Record<string, number> = {
-  iskender: require('../../assets/food-iskender.png'),
-  adana: require('../../assets/food-adana.png'),
-  lahmacun: require('../../assets/food-lahmacun.png'),
-  'lahmacun-ayran-menu': require('../../assets/food-lahmacun.png'),
-  manti: require('../../assets/food-manti.png'),
-};
 
 function rosterScore(roster: AuctionItem[], categoryData: AuctionCategoryData) {
   const quality = roster.reduce((sum, item) => sum + item.power, 0);
@@ -55,21 +45,11 @@ export function AuctionEngine() {
   const player = (n: number) => playerNames[n] || l(`Oyuncu ${n + 1}`, `Player ${n + 1}`);
   const categoryData = auctionCategories[category];
   const item = deck[index];
-  const [photoLoaded, setPhotoLoaded] = useState(false);
-  const activeArtwork = category === 'characters' && item?.series
-    ? auctionSeriesArtwork[item.series] ?? auctionArtwork[category]
-    : auctionArtwork[category];
-  const localFoodImage = category === 'food' && item ? foodArtwork[item.id] : undefined;
-  const cardLabel = (card: AuctionItem) => {
-    const seriesName = card.series ? categoryData.seriesNames?.[card.series]?.[language] : undefined;
-    return seriesName ? `${card[language].name} · ${seriesName}` : card[language].name;
-  };
+  const cardLabel = (card: AuctionItem) => card[language].name;
 
   const buildDeck = () => {
     const items = auctionCategories[category].items;
-    if (category !== 'characters') return shuffleArray(items);
-    const series = shuffleArray([...new Set(items.map(card => card.series).filter((value): value is string => Boolean(value)))]).slice(0, 4);
-    return shuffleArray(items.filter(card => card.series && series.includes(card.series)));
+    return shuffleArray(items);
   };
 
   const begin = () => {
@@ -80,10 +60,16 @@ export function AuctionEngine() {
   const openBid = () => {
     setCurrentBid(1); setLeader(turn); setTurn(t => t === 0 ? 1 : 0); setPhase('auction');
   };
+  const advanceToNextAuction = () => {
+    if (index + 1 >= deck.length) { setPhase('final'); return; }
+    const nextOpener = opener === 0 ? 1 : 0;
+    setIndex(index + 1); setOpener(nextOpener); setTurn(nextOpener); setOpeningPass(false); setCurrentBid(0); setLeader(null); setLastWinner(null); setPhase('opening');
+  };
   const passOpening = () => {
     if (openingPass) {
       setLastWinner(null);
-      setPhase('round-result');
+      if (index + 1 >= deck.length) setPhase('round-result');
+      else advanceToNextAuction();
     } else {
       setOpeningPass(true);
       setTurn(t => t === 0 ? 1 : 0);
@@ -102,9 +88,7 @@ export function AuctionEngine() {
     setLastWinner(leader); setPhase('round-result');
   };
   const nextRound = () => {
-    if (index + 1 >= deck.length) { setPhase('final'); return; }
-    const nextOpener = opener === 0 ? 1 : 0;
-    setIndex(i => i + 1); setOpener(nextOpener); setTurn(nextOpener); setOpeningPass(false); setCurrentBid(0); setLeader(null); setPhase('opening');
+    advanceToNextAuction();
   };
   const button = (label: string, onPress: () => void, secondary = false, disabled = false) => (
     <TouchableOpacity accessibilityRole="button" disabled={disabled} onPress={onPress} style={[styles.button, secondary && styles.secondary, disabled && styles.disabled]}>
@@ -124,7 +108,7 @@ export function AuctionEngine() {
     {phase === 'setup' && <>
       <Text style={styles.title}>{l('Kategori seç', 'Choose a category')}</Text>
       {(Object.keys(auctionCategories) as AuctionCategory[]).map(key => <TouchableOpacity key={key} accessibilityRole="radio" accessibilityState={{ checked: category === key }} onPress={() => setCategory(key)} style={[styles.category, category === key && styles.categoryActive]}>
-        <AuctionArtworkImage uri={auctionArtwork[key].uri} fallback={auctionArtworkFallback[key]} style={styles.categoryImage} accessibilityLabel={language === 'tr' ? auctionCategories[key].tr : auctionCategories[key].en} />
+        <Image source={auctionCategories[key].items[0].image} resizeMode="cover" style={styles.categoryImage} accessibilityLabel={language === 'tr' ? auctionCategories[key].tr : auctionCategories[key].en} />
         <Text style={styles.categoryText}>{language === 'tr' ? auctionCategories[key].tr : auctionCategories[key].en}</Text>
         <Text style={styles.categoryCheck}>{category === key ? '✓' : '›'}</Text>
       </TouchableOpacity>)}
@@ -139,20 +123,9 @@ export function AuctionEngine() {
         <Text style={styles.rosterPreviewName}>{player(i)} · {roster.length} {l('kart', 'cards')}</Text>
         <Text style={styles.rosterPreviewCards} numberOfLines={2}>{roster.length ? roster.map(cardLabel).join(' · ') : l('Henüz kart yok', 'No cards yet')}</Text>
       </View>)}</View>
-      <View style={styles.itemCard}>
-        {localFoodImage ? <Image source={localFoodImage} resizeMode="cover" style={styles.foodImage} accessibilityLabel={item[language].name} /> : <AuctionArtworkImage
-          uri={activeArtwork.uri}
-          fallback={category === 'characters' && item?.series
-            ? auctionSeriesArtworkFallback[item.series] ?? auctionArtworkFallback.characters
-            : auctionArtworkFallback[category]}
-          style={styles.foodImage}
-          accessibilityLabel={item[language].name}
-          onPhotoStatus={setPhotoLoaded}
-        />}
-        {!localFoodImage && (photoLoaded ? <TouchableOpacity accessibilityRole="link" onPress={() => { void Linking.openURL(activeArtwork.source); }}>
-          <Text style={styles.artCredit}>{l('Görsel', 'Image')}: {activeArtwork.credit} · {activeArtwork.license}</Text>
-        </TouchableOpacity> : <Text style={styles.artCredit}>{l('Yerel illüstrasyon · FriendGames', 'Local illustration · FriendGames')}</Text>)}
-        <Text style={styles.itemName}>{item[language].name}</Text>{item.series && categoryData.seriesNames?.[item.series] && <Text style={styles.seriesName}>{categoryData.seriesNames[item.series][language]}</Text>}<Text style={styles.trait}>{item[language].trait}</Text><Text style={styles.power}>{l('Kalite', 'Quality')}: {'★'.repeat(item.power)}{'☆'.repeat(5 - item.power)}</Text><Text style={styles.estimate}>{l('Tahmini değer', 'Estimated value')}: {item.estimatedValue} FG</Text>
+      <View key={item.id} style={styles.itemCard}>
+        <Image key={item.id} source={item.image} resizeMode="cover" style={styles.foodImage} accessibilityLabel={item[language].name} />
+        <Text style={styles.itemName}>{item[language].name}</Text><Text style={styles.trait}>{item[language].trait}</Text><Text style={styles.power}>{l('Kalite', 'Quality')}: {'★'.repeat(item.power)}{'☆'.repeat(5 - item.power)}</Text><Text style={styles.estimate}>{l('Tahmini değer', 'Estimated value')}: {item.estimatedValue} FG</Text>
       </View>
       {phase === 'opening' && <>
         <Text style={styles.turn}>{player(turn)} · {l('açılış teklifi senin', 'your opening offer')}</Text>

@@ -36,9 +36,25 @@ export interface VampirRole {
   description: string;
 }
 
+export type TabuCategory = 'sinema' | 'teknoloji' | 'günlük-yaşam' | '90lar' | 'doğa' | 'spor' | 'kültür' | 'yemek' | 'hayvanlar' | 'diğer';
+export type TabuDifficulty = 'kolay' | 'orta' | 'zor' | 'ekstrem';
+
 export interface TabuCard {
+  id: string;
   main: string;
   banned: string[];
+  category: TabuCategory;
+  difficulty: TabuDifficulty;
+}
+
+export interface TabuDeck {
+  id: string;
+  name: string;
+  category: TabuCategory;
+  coverColor: string;
+  shareCode: string;
+  cards: TabuCard[];
+  createdAt: string;
 }
 
 export type RootStackParamList = {

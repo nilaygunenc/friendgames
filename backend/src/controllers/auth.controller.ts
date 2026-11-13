@@ -26,13 +26,13 @@ export async function register(req: Request, res: Response): Promise<void> {
 
     const passwordHash = await bcrypt.hash(password, SALT_ROUNDS);
 
-    const result = await pool.query<{ id: string }>(
+    const result = await pool.query(
       `INSERT INTO users (email, password_hash, display_name)
        VALUES ($1, $2, $3) RETURNING id`,
       [email.toLowerCase(), passwordHash, displayName]
     );
 
-    const userId = result.rows[0].id;
+    const userId = String(result.rows[0].id);
     const token = signToken(userId, email, false);
 
     res.status(201).json({ token, userId, displayName });

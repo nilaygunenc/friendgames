@@ -60,3 +60,12 @@ export const UserAPI = {
   toggleFavorite: (gameId: string) =>
     apiClient.post(`/users/me/favorites/${gameId}`),
 };
+
+export const TabuDecksAPI = {
+  list: () => apiClient.get('/tabu-decks'),
+  create: (deck: { name: string; category: string; coverColor: string; cards: unknown[] }) =>
+    apiClient.post('/tabu-decks', deck),
+  getByCode: (code: string) => apiClient.get(`/tabu-decks/${encodeURIComponent(code)}`),
+  generate: (topic: string, category: string) =>
+    apiClient.post('/tabu-decks/generate', { topic, category }),
+};

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { View, Text } from '../ui';
 import { Game } from '../types';
 
@@ -9,47 +9,8 @@ interface Props {
   textStyle?: object;
 }
 
-const CUSTOM_LOGOS: Record<string, { source: number; scale: number; label: string }> = {
-  'vampir-koylu': {
-    source: require('../../assets/vampir-koylu-logo.png'),
-    scale: 1.45,
-    label: 'Vampir-Köylü oyun logosu',
-  },
-  'gizemli-hikaye': {
-    source: require('../../assets/mystery-story-logo.png'),
-    scale: 1,
-    label: 'Gizemli Hikâye oyun logosu',
-  },
-  'son-teklif': {
-    source: require('../../assets/son-teklif-logo.png'),
-    scale: 1,
-    label: 'Son Teklif açık artırma logosu',
-  },
-  tabu: {
-    source: require('../../assets/tabu-logo.png'),
-    scale: 1,
-    label: 'Tabu oyun logosu',
-  },
-};
-
 export function GameIcon({ game, size = 32, textStyle }: Props) {
-  const logo = CUSTOM_LOGOS[game.id];
   if (game.id === 'ne-yapiyorum') return <ShushLogo size={size} />;
-  if (logo) {
-    const imageSize = size * logo.scale;
-    const offset = (size - imageSize) / 2;
-    return (
-      <View style={[styles.logo, { width: size, height: size, borderRadius: size * 0.28 }]}>
-        <Image
-          source={logo.source}
-          resizeMode="cover"
-          style={{ width: imageSize, height: imageSize, position: 'absolute', left: offset, top: offset }}
-          accessibilityLabel={logo.label}
-        />
-      </View>
-    );
-  }
-
   return <Text style={[{ fontSize: size * 0.82, lineHeight: size }, textStyle]}>{game.icon}</Text>;
 }
 
@@ -70,7 +31,6 @@ function ShushLogo({ size }: { size: number }) {
 }
 
 const styles = StyleSheet.create({
-  logo: { overflow: 'hidden', backgroundColor: '#E9E7E3', alignItems: 'center', justifyContent: 'center' },
   shushLogo: { overflow: 'hidden', backgroundColor: '#DCE8EC', alignItems: 'center', justifyContent: 'center' },
   face: { position: 'absolute', backgroundColor: '#F4C78F', borderWidth: 1, borderColor: 'rgba(118,88,62,0.16)', shadowColor: '#66513B', shadowOpacity: 0.16, shadowRadius: 4, shadowOffset: { width: 0, height: 2 }, elevation: 2 },
   eye: { position: 'absolute', backgroundColor: '#39424A', zIndex: 1 },

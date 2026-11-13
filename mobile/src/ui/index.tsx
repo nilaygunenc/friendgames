@@ -16,7 +16,11 @@ export function FeedbackProvider({ children }: { children: React.ReactNode }) {
   const enabled = useAppStore(s => s.soundEnabled);
   const play = () => {
     if (enabled) {
-      void player.seekTo(0).then(() => player.play()).catch(() => {});
+      try {
+        void player.seekTo(0).then(() => player.play()).catch(() => {});
+      } catch {
+        // Audio is optional; it must never prevent a game action from running.
+      }
     }
   };
   return <Sound.Provider value={play}>{children}</Sound.Provider>;
@@ -54,7 +58,10 @@ export function TextInput({ style, placeholder, placeholderTextColor, ...props }
 export function TouchableOpacity({ style, onPress, ...props }: RN.TouchableOpacityProps) {
   const play = useContext(Sound);
   const language = useAppStore(s => s.language);
-  return <RN.TouchableOpacity {...props} accessibilityLabel={props.accessibilityLabel && translate(props.accessibilityLabel, language)} style={useStyle(style)} onPress={onPress ? e => { play(); onPress(e); } : undefined} />;
+  return <RN.TouchableOpacity {...props} accessibilityLabel={props.accessibilityLabel && translate(props.accessibilityLabel, language)} style={useStyle(style)} onPress={onPress ? e => {
+    onPress(e);
+    try { play(); } catch { /* A failed sound must not block or undo the action. */ }
+  } : undefined} />;
 }
 export function FlatList<T>({ style, contentContainerStyle, ...props }: RN.FlatListProps<T>) {
   return <RN.FlatList {...props} style={useStyle(style)} contentContainerStyle={useStyle(contentContainerStyle)} />;

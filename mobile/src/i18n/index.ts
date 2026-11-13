@@ -4,7 +4,7 @@ const dictionary: Record<string, string> = en;
 const builtInTranslations: Record<string, string> = {
   'Son Teklif! (Açık Artırma)': 'Final Bid! (Auction)',
   'Strateji': 'Strategy',
-  '20$ bütçeni akıllıca kullan: hayvan veya efsanevi canlıları açık artırmada kap, en güçlü ve en uyumlu kadroyu kur.': 'Use your $20 wisely: win animals or mythic creatures at auction and build the strongest, most compatible roster.',
+  '20$ bütçeni akıllıca kullan: hayvan veya efsanevi canlıları açık artırmada kap, en güçlü ve en uyumlu kadroyu kur.': 'Use your $20 wisely: win items from six themed categories and build the strongest roster.',
   'İki oyuncu eşit 20$ bütçeyle başlar ve kategori seçer. Gelecek kartlar önceden gösterilmez.': 'Two players begin with equal $20 budgets and choose a category. Future cards are not revealed in advance.',
   'Sıradaki oyuncu 1$ ile teklif açabilir ya da pas geçebilir. Rakip teklifi artırır veya açık artırmadan çekilir.': 'The active player can open at $1 or pass. The opponent can raise or withdraw from the auction.',
   'Çekilen oyuncu o turda tekrar teklif veremez. En yüksek teklif sahibi kartı alır ve teklif bütçesinden düşer.': 'A player who withdraws cannot bid again that round. The highest bidder gets the card and pays the bid from their budget.',

@@ -22,7 +22,7 @@ export function GamePlayScreen() {
       <View style={styles.titleRow}><GameIcon game={game} size={32} /><Text style={styles.title}>{game.name}</Text></View>
     </View>
     <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
-      <GameEngine game={game} />
+      <GameEngine game={game} onOpenVip={() => navigation.navigate('Main', { screen: 'VIP' })} />
       <View style={{ height: 50 }} />
     </ScrollView>
   </View>;
